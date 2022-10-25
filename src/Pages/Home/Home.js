@@ -6,7 +6,7 @@ import HomeCourseCard from '../HomeCourseCard/HomeCourseCard';
 const Home = () => {
     const allCourses = useLoaderData();
     console.log(allCourses);
-    const homePageShownCourses = allCourses.slice(1, 5)
+    const homePageShownCourses = allCourses.slice(0, 4)
     return (
         <div>
             <div className="hero min-h-screen" style={{ backgroundImage: `url(${heroBg})` }}>
@@ -20,11 +20,14 @@ const Home = () => {
                 </div>
             </div>
             <div>
+                <div className='mt-36 lg:text-3xl'>
+                    <h4 className='text-center'>All Course From CSE From Home</h4>
+                </div>
                 {
                     homePageShownCourses.map(course => <HomeCourseCard key={course.courseId} course={course}></HomeCourseCard>)
                 }
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-center my-10'>
                 <button className='btn btn-outline btn-accent rounded-none'>All Course</button>
             </div>
         </div>
