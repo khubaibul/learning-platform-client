@@ -4,11 +4,13 @@ import CheckOut from "../../Pages/CheckOut/CheckOut";
 import CourseDetail from "../../Pages/CourseDetail/CourseDetail";
 import Courses from "../../Pages/Courses/Courses";
 import Home from "../../Pages/Home/Home";
+import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
 
 export const routes = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
