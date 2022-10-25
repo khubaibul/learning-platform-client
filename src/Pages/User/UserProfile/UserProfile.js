@@ -2,10 +2,13 @@ import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faG, faUser } from '@fortawesome/free-solid-svg-icons';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
     const { user, logOut } = useContext(AuthContext);
     console.log(user);
+
+
     return (
         <div>
             {
@@ -36,11 +39,15 @@ const UserProfile = () => {
                                     <span className="font-bold">2.0 k</span> Following
                                 </div>
                             </div>
-                            <button className='btn btn-sm btn-outline btn-accent rounded-none w-[30%] mx-auto mb-4'>Log Out</button>
+                            <button onClick={logOut} className='btn btn-sm btn-outline btn-accent rounded-none w-[30%] mx-auto mb-4'>Log Out</button>
                         </div>
                     </div>
                     :
-                    <h2>Your Are Not Logged In. Please Login.</h2>
+                    <div>
+                        <h2 className='my-56 text-center text-xl '>Your Are Not Logged In. Please
+                            <Link to="/login" className='underline-offset-4 underline'> Login</Link>
+                        </h2>
+                    </div>
             }
         </div>
     );

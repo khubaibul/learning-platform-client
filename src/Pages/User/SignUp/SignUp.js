@@ -118,7 +118,7 @@ const SignUp = () => {
                                 <span className="label-text">Accept Terms & Conditions</span>
                             </label>
                         </div>
-                        <p className='text-right mb-1'><Link className='underline underline-offset-4' to="login">Login</Link></p>
+                        <p className='text-right mb-1'><Link className='underline underline-offset-4' to="/login">Login</Link></p>
                     </div>
                     <button
                         disabled={!accepted}

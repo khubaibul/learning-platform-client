@@ -1,10 +1,16 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoneyBill1 } from '@fortawesome/free-solid-svg-icons';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import checkOutBg from "../../Assets/checkout.jpg";
+import toast from 'react-hot-toast';
 
 const CheckOut = () => {
+
+    const handlePay = () => {
+        toast.success("Your Order Is Placed Successfully...")
+    }
+
     const checkedCourse = useLoaderData();
     const { courseTitle, courseId, course_price } = checkedCourse;
     return (
@@ -17,7 +23,7 @@ const CheckOut = () => {
                             <tr>
                                 <th>Course ID</th>
                                 <th>Course Title</th>
-                                <th>Price</th>
+                                <th>Total</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -28,7 +34,7 @@ const CheckOut = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <button className='btn btn-outline btn-error rounded-none mt-2 text-slate-500'>Process To Pay</button>
+                    <button onClick={handlePay} className='btn btn-outline btn-error rounded-none mt-2 text-slate-500'><Link to="/">Process To Pay</Link></button>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@
 - Users can easily be logged out from the user profile page by clicking Log Out.
 - There is also a FAQ page where common questions answer is given.
 
-### The technology used in CSE From Home Web Applications
+### The Technology Used In CSE From Home Web Applications
 
 1. React
 2. Firebase

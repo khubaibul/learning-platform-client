@@ -46,10 +46,12 @@ const Navbar = () => {
                             <div>
                                 {
                                     user ?
-                                        <Link to="/user" className="btn btn-sm rounded-full">
+                                        <Link to="/user" className="rounded-full">
                                             {
-                                                user.photoURL ? <img src={user.photoURL} alt="" />
-                                                    : <img src={noUser} alt="" />
+                                                user.photoURL ? <div className="tooltip tooltip-right" data-tip={user.displayName}>
+                                                    <img className='w-10 rounded-full p-1 bg-accent' src={user.photoURL} alt="" />
+                                                </div>
+                                                    : <img className='w-10' src={noUser} alt="" />
                                             }
                                         </Link>
                                         : <div>
@@ -115,7 +117,7 @@ const Navbar = () => {
                                         </div>
                                     </div>
 
-                                        : <img src={noUser} alt="" />
+                                        : <img className='w-14' src={noUser} alt="" />
                                 }
                             </Link>
                             : <div>

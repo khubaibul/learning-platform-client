@@ -16,6 +16,19 @@ const CourseDetail = () => {
                     <button><FontAwesomeIcon className='text-3xl' icon={faFilePdf}></FontAwesomeIcon></button>
                 </div>
                 <p className='text-justify'><span className='font-bold text-lg'>Course Description: </span> {course_description}</p>
+                <p><span className='font-bold text-lg'>Common Uses: </span> {common_uses}</p>
+                <div>
+                    <h4 className='text-xl font-bold my-2'>Will Be Coverd</h4>
+                    <div className='grid grid-cols-2'>
+                        {
+                            course_module_topics.map((topic, idx) => {
+                                return <div>
+                                    <li className='list-none'><FontAwesomeIcon icon={faTools}></FontAwesomeIcon> {topic}</li>
+                                </div>
+                            })
+                        }
+                    </div>
+                </div>
                 <div className='flex gap-x-2 my-3'>
                     <button className="btn gap-2 rounded-none">
                         PRICE
@@ -29,19 +42,6 @@ const CourseDetail = () => {
                         MODULE
                         <div className="badge badge-accent">{course_module}</div>
                     </button>
-                </div>
-                <p><span className='font-bold text-lg'>Common Uses: </span> {common_uses}</p>
-                <div>
-                    <h4 className='text-xl font-bold my-2'>Will Be Coverd</h4>
-                    <div className='grid grid-cols-2'>
-                        {
-                            course_module_topics.map((topic, idx) => {
-                                return <div>
-                                    <li className='list-none'><FontAwesomeIcon icon={faTools}></FontAwesomeIcon> {topic}</li>
-                                </div>
-                            })
-                        }
-                    </div>
                 </div>
                 <div className="card-actions justify-center">
                     <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/checkout/${courseId}`}>Get Premium Access</Link></button>
