@@ -10,7 +10,7 @@ const Blog = () => {
                             Some Question With Answer
                         </h1>
                         <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                            The most common questions about Firebase,Node.
+                            The most common questions about Firebase and Node.
                         </p>
                     </div>
                     <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
@@ -21,9 +21,7 @@ const Blog = () => {
                                 </summary>
 
                                 <span>
-                                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                                    minim velit nostrud pariatur culpa magna in aute.
+                                    CORS full meaning is Cross Origin Resource Sharing. CORS is an HTTP-header that allows a server to indicate any origins other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request.
                                 </span>
                             </details>
                             <details className="mb-4">
@@ -32,20 +30,16 @@ const Blog = () => {
                                 </summary>
 
                                 <span>
-                                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                                    minim velit nostrud pariatur culpa magna in aute.
+                                    Firebase is more reliable than other option. Because it's a Google product. Google is more secured and trusty other than any. And also Firebase is developer+user friendly. That's why I am using Firebase. ML-SQL Server, Auth0, Okta, Amazon Cognito are also famous for authentication.
                                 </span>
                             </details>
                             <details className="mb-4">
                                 <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
                                     How does the private route work?
                                 </summary>
-
                                 <span>
-                                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                                    minim velit nostrud pariatur culpa magna in aute.
+                                    The private route component is similar to the public route, the difference is that redirect URL and authenticate condition.
+                                    If the user is not authenticated or unauthorized he will be redirected to the login page or which conditional path given by developer. The user can only access the authenticated routes if he is authenticated  or authorized.
                                 </span>
                             </details>
                         </div>
@@ -56,9 +50,8 @@ const Blog = () => {
                                 </summary>
 
                                 <span className="px-4 py-2">
-                                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                                    minim velit nostrud pariatur culpa magna in aute.
+                                    Node is JavaScript runtime.
+                                    Node is a used as back-end service while javascript works on the server-side. This way JavaScript is used on both frontend and backend. Node.js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.
                                 </span>
                             </details>
                         </div>

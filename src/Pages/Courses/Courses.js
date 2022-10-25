@@ -19,7 +19,7 @@ const Courses = () => {
                         })
                     }
                 </div>
-                <div className='grid grid-cols-2'>
+                <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1'>
                     {
                         allCourses.map(singleCourse => <SingleCourse key={singleCourse.courseId} singleCourse={singleCourse}></SingleCourse>)
                     }

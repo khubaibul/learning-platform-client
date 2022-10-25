@@ -2,11 +2,13 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../Assets/logo.jpg"
-import user from "../../Assets/user.png"
+import noUser from "../../Assets/user.png"
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const Navbar = () => {
-    const {user} = useContext(AuthContext);
+    const { user } = useContext(AuthContext);
+    // const { photoURL } = user;
+    console.log(user);
     return (
         <div className="navbar bg-base-100 shadow-lg lg:px-20">
             <div className="navbar-start pb-4">
@@ -22,22 +24,14 @@ const Navbar = () => {
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                             </Link>
                             <ul className="p-2 z-50">
-                                <div className='flex gap-x-1'>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>Python</Link></li>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>Java</Link></li>
-                                </div>
-                                <div className='flex gap-x-1'>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>C</Link></li>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>C++</Link></li>
-                                </div>
-                                <div className='flex gap-x-1'>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>Go</Link></li>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>Swift</Link></li>
-                                </div>
-                                <div className='flex gap-x-1'>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>PHP</Link></li>
-                                    <li><Link className='btn btn-accent text-base-200 my-1'>Kotlin</Link></li>
-                                </div>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>Python</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>Java</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>C</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>C++</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>Go</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>Swift</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>PHP</Link></li>
+                                <li><Link className='btn btn-accent text-base-200 my-1'>Kotlin</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/faq">FAQ</Link></li>
@@ -49,7 +43,21 @@ const Navbar = () => {
                                     <input type="checkbox" className="toggle toggle-accent" />
                                 </label>
                             </div>
-                            <Link to="user" className="btn">USER</Link>
+                            <div>
+                                {
+                                    user ?
+                                        <Link to="/user" className="btn btn-sm rounded-full">
+                                            {
+                                                user.photoURL ? <img src={user.photoURL} alt="" />
+                                                    : <img src={noUser} alt="" />
+                                            }
+                                        </Link>
+                                        : <div>
+                                            <Link to="/signup" className='btn btn-sm mb-2 rounded-none'>Sign Up</Link>
+                                            <Link to="/login" className='btn btn-sm mb-2 rounded-none'>Login</Link>
+                                        </div>
+                                }
+                            </div>
                         </div>
                     </ul>
                 </div>
@@ -96,9 +104,26 @@ const Navbar = () => {
                         <input type="checkbox" className="toggle toggle-accent" />
                     </label>
                 </div>
-                <Link to="/signup" className='btn btn-sm mr-2 rounded-none'>Sign Up</Link>
-                <Link to="/login" className='btn btn-sm mr-2 rounded-none'>Login</Link>
-                <Link to="/user" className="btn lg:block hidden btn-sm rounded-none">USER</Link>
+                <div className='hidden lg:block'>
+                    {
+                        user ?
+                            <Link to="/user" className="lg:block hidden">
+                                {
+                                    user.photoURL ? <div>
+                                        <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
+                                            <img className='w-14 rounded-full p-1 bg-accent' src={user.photoURL} alt="" />
+                                        </div>
+                                    </div>
+
+                                        : <img src={noUser} alt="" />
+                                }
+                            </Link>
+                            : <div>
+                                <Link to="/signup" className='btn btn-sm mr-2 rounded-none'>Sign Up</Link>
+                                <Link to="/login" className='btn btn-sm mr-2 rounded-none'>Login</Link>
+                            </div>
+                    }
+                </div>
             </div>
         </div>
     );

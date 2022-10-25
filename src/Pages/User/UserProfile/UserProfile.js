@@ -36,6 +36,7 @@ const UserProfile = () => {
                                     <span className="font-bold">2.0 k</span> Following
                                 </div>
                             </div>
+                            <button className='btn btn-sm btn-outline btn-accent rounded-none w-[30%] mx-auto mb-4'>Log Out</button>
                         </div>
                     </div>
                     :

@@ -11,6 +11,7 @@ import SignUp from "../../Pages/User/SignUp/SignUp";
 import UserProfile from "../../Pages/User/UserProfile/UserProfile";
 import About from "../../Shared/About/About";
 import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 export const routes = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ export const routes = createBrowserRouter([
             },
             {
                 path: "/course/checkout/:id",
-                element: <CheckOut></CheckOut>,
+                element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
                 loader: ({ params }) => fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`)
             },
             {
