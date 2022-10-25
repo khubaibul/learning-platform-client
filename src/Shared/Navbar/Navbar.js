@@ -36,16 +36,16 @@ const Navbar = () => {
                                 </div>
                             </ul>
                         </li>
-                        <li><Link>FAQ</Link></li>
-                        <li><Link>Blog</Link></li>
-                        <li><Link>About Us</Link></li>
+                        <li><Link to="/faq">FAQ</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
                         <div className="navbar-end lg:hidden">
                             <div className="form-control lg:mr-3">
                                 <label className="label cursor-pointer">
                                     <input type="checkbox" className="toggle toggle-accent" />
                                 </label>
                             </div>
-                            <Link className="btn">USER</Link>
+                            <Link to="user" className="btn">USER</Link>
                         </div>
                     </ul>
                 </div>
@@ -81,9 +81,9 @@ const Navbar = () => {
                             </div>
                         </ul>
                     </li>
-                    <li><Link>FAQ</Link></li>
-                    <li><Link>Blog</Link></li>
-                    <li><Link>About Us</Link></li>
+                    <li><Link to="/faq">FAQ</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
@@ -92,7 +92,9 @@ const Navbar = () => {
                         <input type="checkbox" className="toggle toggle-accent" />
                     </label>
                 </div>
-                <Link className="btn lg:block hidden">USER</Link>
+                <Link to="/signup" className='btn btn-sm mr-2 rounded-none'>Sign Up</Link>
+                <Link to="/login" className='btn btn-sm mr-2 rounded-none'>Login</Link>
+                <Link to="/user" className="btn lg:block hidden btn-sm rounded-none">USER</Link>
             </div>
         </div>
     );
