@@ -1,8 +1,14 @@
 import React from 'react';
+import googleLogo from "../../../Assets/google.png";
+import gitHubLogo from "../../../Assets/github.png";
+import facebookLogo from "../../../Assets/facebook.png";
+import email from "../../../Assets/email.png";
+import photo from "../../../Assets/photo.png";
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
-        <div className="bg-yellow-400 h-screen overflow-hidden flex items-center justify-center">
+        <div className="bg-yellow-400 h-screen overflow-hidden flex items-center justify-center pt-14">
             <div className="bg-white lg:w-5/12 md:6/12 w-10/12 shadow-3xl">
                 <div className="bg-gray-800 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-4 md:p-8">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFF">
@@ -14,7 +20,15 @@ const SignUp = () => {
                         <svg className="absolute ml-3" width="24" viewBox="0 0 24 24">
                             <path d="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z" />
                         </svg>
-                        <input type="text" id="username" className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Username" />
+                        <input type="text" id="username" className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Username Full Name" />
+                    </div>
+                    <div className="flex items-center text-lg mb-6 md:mb-8">
+                        <img className="absolute ml-3" width="24" viewBox="0 0 24 24" src={photo} alt="" />
+                        <input type="text" id="username" className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Photo URL" />
+                    </div>
+                    <div className="flex items-center text-lg mb-6 md:mb-8">
+                        <img className="absolute ml-3" width="24" viewBox="0 0 24 24" src={email} alt="" />
+                        <input type="email" id="username" className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Email" />
                     </div>
                     <div className="flex items-center text-lg mb-6 md:mb-8">
                         <svg className="absolute ml-3" viewBox="0 0 24 24" width="24">
@@ -22,8 +36,22 @@ const SignUp = () => {
                         </svg>
                         <input type="password" id="password" className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" placeholder="Password" />
                     </div>
-                    <button className="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full">Login</button>
+                    <div className='flex justify-between items-center'>
+                        <div className="form-control">
+                            <label className="label cursor-pointer">
+                                <input type="checkbox" className="checkbox" />
+                                <span className="label-text">Accept Terms & Conditions</span>
+                            </label>
+                        </div>
+                        <p className='text-right mb-1'><Link className='underline underline-offset-4' to="login">Login</Link></p>
+                    </div>
+                    <button className="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full">Sign Up</button>
                 </form>
+                <div className='flex justify-center gap-x-2 pb-5'>
+                    <button><img className='w-10' src={googleLogo} alt="" /></button>
+                    <button><img className='w-10' src={gitHubLogo} alt="" /></button>
+                    <button><img className='w-10' src={facebookLogo} alt="" /></button>
+                </div>
             </div>
         </div>
     );
