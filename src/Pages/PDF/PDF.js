@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
 
 const PDF = ({ courseDetail }) => {
-    const { common_uses, courseImage, courseTitle, courseId, course_description, course_duration, course_module, course_price, course_module_topics } = courseDetail;
+    const { common_uses, courseImage, courseTitle, courseId, course_description, course_duration, course_module, course_price } = courseDetail;
     return (
         <Document>
             <Page size="A4" style={styles.page}>
@@ -49,10 +49,10 @@ const PDF = ({ courseDetail }) => {
                 <Text style={styles.description}>
                     Description: {course_description}
                 </Text>
-                <Text  style={styles.description}>
-                    Common Uses: {courseDetail.common_uses}
+                <Text style={styles.description}>
+                    Common Uses: {common_uses}
                 </Text>
-                <Text  style={styles.description}>
+                <Text style={styles.description}>
                     Course ID:{courseId}
                 </Text>
                 <Text style={styles.description}>
