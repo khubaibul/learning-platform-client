@@ -39,7 +39,10 @@ const SignUp = () => {
                 }
                 form.reset();
             })
-            .catch(err => toast.error(err.message.slice(10)));
+            .catch(err => {
+                console.log(err);
+                toast.error(err.message.slice(10))
+            });
     }
 
     const handleTermsAndConditions = e => {

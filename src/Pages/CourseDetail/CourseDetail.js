@@ -2,18 +2,25 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf, faTools } from '@fortawesome/free-solid-svg-icons';
 import { Link, useLoaderData } from 'react-router-dom';
+// import { PDFViewer } from '@react-pdf/renderer';
+// import PDF from '../PDF/PDF';
 
 const CourseDetail = () => {
     const courseDetail = useLoaderData();
     const { common_uses, courseImage, courseTitle, courseId, course_description, course_duration, course_module, course_price, course_module_topics } = courseDetail;
-    console.log(course_module_topics);
+
     return (
         <div className="card lg:w-[40%] my-10 mx-auto bg-base-100 shadow-xl image-full rounded-none">
             <figure><img src={courseImage} alt="Course Card Img" /></figure>
             <div className="card-body rounded-none">
                 <div className='flex justify-between mb-5'>
                     <h2 className="card-title text-4xl">{courseTitle}</h2>
-                    <button><FontAwesomeIcon className='text-3xl' icon={faFilePdf}></FontAwesomeIcon></button>
+                    <button>
+                        <FontAwesomeIcon className='text-3xl' icon={faFilePdf}></FontAwesomeIcon>
+                        {/* <PDFViewer>
+                            <PDF courseDetail={courseDetail}></PDF>
+                        </PDFViewer> */}
+                    </button>
                 </div>
                 <p className='text-justify'><span className='font-bold text-lg'>Course Description: </span> {course_description}</p>
                 <p><span className='font-bold text-lg'>Common Uses: </span> {common_uses}</p>
