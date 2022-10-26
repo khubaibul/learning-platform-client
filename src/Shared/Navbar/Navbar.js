@@ -1,12 +1,25 @@
 import React from 'react';
+import { useState } from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../Assets/logo.jpg"
 import noUser from "../../Assets/user.png"
+import darkMode from "../../Assets/dark-mode.png";
+import lightMode from "../../Assets/light-mode.png";
+
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const Navbar = () => {
     const { user } = useContext(AuthContext);
+    const [theme, setTheme] = useState(false);
+    const handleToggle = (e) => {
+        if (e.target.checked) {
+            setTheme(true)
+        }
+        else if (!e.target.checked) {
+            setTheme(false)
+        }
+    }
     return (
         <div className="navbar bg-base-100 shadow-lg lg:px-20">
             <div className="navbar-start pb-4">
@@ -38,7 +51,11 @@ const Navbar = () => {
                         <div className="navbar-end lg:hidden">
                             <div className="form-control lg:mr-3">
                                 <label className="label cursor-pointer">
-                                    <input type="checkbox" className="toggle toggle-accent" />
+                                    {
+                                        theme ? <img src={darkMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                                            : <img src={lightMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                                    }
+                                    <input onChange={handleToggle} type="checkbox" className="toggle toggle-secondary" />
                                 </label>
                             </div>
                             <div>
@@ -101,7 +118,11 @@ const Navbar = () => {
             <div className="navbar-end">
                 <div className="form-control lg:mr-3 lg:block hidden">
                     <label className="label cursor-pointer">
-                        <input type="checkbox" className="toggle toggle-accent" />
+                        {
+                            theme ? <img src={darkMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                                : <img src={lightMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                        }
+                        <input onChange={handleToggle} type="checkbox" className="toggle toggle-accent" />
                     </label>
                 </div>
                 <div className='hidden lg:block'>
