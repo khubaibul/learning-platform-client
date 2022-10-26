@@ -27,9 +27,12 @@ const styles = StyleSheet.create({
         marginTop: 20,
         color: "#303952"
     },
-    info: {
-
-
+    author: {
+        color: "#b71540",
+        fontStyle: "roboto",
+        fontSize: 10,
+        marginTop: 40,
+        marginLeft: 20
     }
 });
 
@@ -63,6 +66,9 @@ const PDF = ({ courseDetail }) => {
                 </Text>
                 <Text style={styles.description}>
                     Price: BDT{course_price}
+                </Text>
+                <Text style={styles.author}>
+                    Author: CSE From Home
                 </Text>
             </Page>
         </Document>
