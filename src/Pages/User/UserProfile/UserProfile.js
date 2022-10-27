@@ -14,7 +14,7 @@ const UserProfile = () => {
                     ?
                     <div className={` ${theme ? "bg-gray-900" : "bg-yellow-400"} font-sans h-screen w-full flex flex-row justify-center items-center`}>
                         <div className={`card w-96 mx-auto ${theme ? "bg-slate-700 text-slate-300" : "bg-white"} rounded-none`}>
-                            <img className="w-32 mx-auto rounded-full border-8 border-white z-50" src={user.photoURL} alt="" />
+                            <img className="w-32 mx-auto rounded-full border-8 border-white" src={user.photoURL} alt="" />
                             <div className="text-center mt-2 text-3xl font-medium">{user?.displayName}</div>
                             {
                                 user.email && <div className="text-center mt-2 font-light text-sm"><FontAwesomeIcon icon={faG}></FontAwesomeIcon>{user?.email}</div>
@@ -37,6 +37,7 @@ const UserProfile = () => {
                                     <span className="font-bold">2.0 k</span> Following
                                 </div>
                             </div>
+                            <button className='btn btn-sm btn-outline btn-primary rounded-none w-[60%] mx-auto mb-4'>Update Profile</button>
                             <button onClick={logOut} className='btn btn-sm btn-outline btn-accent rounded-none w-[30%] mx-auto mb-4'>Log Out</button>
                         </div>
                     </div>

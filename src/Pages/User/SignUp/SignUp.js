@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import email from "../../../Assets/email.png";
 import photo from "../../../Assets/photo.png";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -9,10 +9,10 @@ const SignUp = () => {
     const navigate = useNavigate();
     const [err, setErr] = useState("");
     const [accepted, setAccepted] = useState(false);
-    const { createUser, updateUserProfile, emailVerify, theme } = useContext(AuthContext);
+    const { createUser, updateUserProfile, emailVerify, theme, user } = useContext(AuthContext);
 
     const location = useLocation();
-    const from = location?.state?.from?.pathname || "/profile";
+    const from = location?.state?.from?.pathname || "/user";
 
 
     const handleSignUp = (e) => {
@@ -72,6 +72,11 @@ const SignUp = () => {
             })
     }
 
+    useEffect(() => {
+        if (user) {
+            navigate(from);
+        }
+    }, [user]);
 
     return (
         <div className={`${theme ? "bg-gray-900" : "bg-yellow-400"} h-screen overflow-hidden flex items-center justify-center pt-14`}>
