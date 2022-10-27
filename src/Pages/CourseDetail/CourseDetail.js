@@ -50,7 +50,7 @@ const CourseDetail = () => {
                     </button>
                 </div>
                 <div className="card-actions justify-center">
-                    <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/checkout/${courseId}`}>Get Premium Access</Link></button>
+                    <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/checkout/${courseId}/${course_price}/${courseTitle}`}>Get Premium Access</Link></button>
                 </div>
             </div>
         </div>

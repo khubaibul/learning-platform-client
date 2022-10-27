@@ -1,11 +1,14 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import heroBg from "../../Assets/hero-bg.jpg";
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import HomeCourseCard from '../HomeCourseCard/HomeCourseCard';
 
 const Home = () => {
     const allCourses = useLoaderData();
-    const homePageShownCourses = allCourses.slice(0, 4)
+    const homePageShownCourses = allCourses.slice(0, 4);
+    const {theme} = useContext(AuthContext);
     return (
         <div>
             <div className="hero min-h-screen" style={{ backgroundImage: `url(${heroBg})` }}>
@@ -20,11 +23,13 @@ const Home = () => {
             </div>
             <div>
                 <div className='mt-36 lg:text-3xl'>
-                    <h4 className='text-center'>All Course From CSE From Home</h4>
+                    <h4 className={`text-center ${theme && "text-slate-300"}`} >All Course From CSE From Home</h4>
                 </div>
-                {
-                    homePageShownCourses.map(course => <HomeCourseCard key={course.courseId} course={course}></HomeCourseCard>)
-                }
+                <div>
+                    {
+                        homePageShownCourses.map(course => <HomeCourseCard key={course.courseId} course={course}></HomeCourseCard>)
+                    }
+                </div>
             </div>
             <div className='flex justify-center my-10'>
                 <button className='btn btn-outline btn-accent rounded-none'><Link to="/courses">All Course</Link></button>

@@ -9,6 +9,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [user, setUser] = useState(null);
+    const [theme, setTheme] = useState(false);
 
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
@@ -73,7 +74,7 @@ const AuthProvider = ({ children }) => {
 
 
 
-    const authInfo = { user, signInWithGoogle, signInWithGitHub, signInWithFacebook, createUser, loginUser, logOut, setLoading, loading, updateUserProfile, emailVerify }
+    const authInfo = { user, signInWithGoogle, signInWithGitHub, signInWithFacebook, createUser, loginUser, logOut, setLoading, loading, updateUserProfile, emailVerify, theme, setTheme }
     return (
         <AuthContext.Provider value={authInfo}>
             {children}

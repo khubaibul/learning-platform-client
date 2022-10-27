@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoneyBill1 } from '@fortawesome/free-solid-svg-icons';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import checkOutBg from "../../Assets/checkout.jpg";
 import toast from 'react-hot-toast';
 
@@ -10,9 +10,7 @@ const CheckOut = () => {
     const handlePay = () => {
         toast.success("Your Order Is Placed Successfully...")
     }
-
-    const checkedCourse = useLoaderData();
-    const { courseTitle, courseId, course_price } = checkedCourse;
+    const { courseId, course_price, courseTitle } = useParams();
     return (
         <div className="hero min-h-screen" style={{ backgroundImage: `url(${checkOutBg})` }}>
             <div className="hero-overlay bg-opacity-60"></div>

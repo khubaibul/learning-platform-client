@@ -1,13 +1,16 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import SingleCourse from '../SingleCourse/SingleCourse';
 import "./Courses.css";
 
 const Courses = () => {
     const allCourses = useLoaderData();
+    const { theme } = useContext(AuthContext);
     return (
         <div className='lg:px-20 mt-20'>
-            <h2 className='text-center text-3xl font-bold'>Our All Course</h2>
+            <h2 className={`text-center text-3xl font-bold ${theme && "text-slate-300"} mb-8`}>Our All Course</h2>
             <div className='px-4 lg:hidden'>
                 {
                     allCourses.map(course => {

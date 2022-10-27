@@ -9,7 +9,7 @@ const SignUp = () => {
     const navigate = useNavigate();
     const [err, setErr] = useState("");
     const [accepted, setAccepted] = useState(false);
-    const { createUser, updateUserProfile, emailVerify } = useContext(AuthContext);
+    const { createUser, updateUserProfile, emailVerify, theme } = useContext(AuthContext);
 
     const location = useLocation();
     const from = location?.state?.from?.pathname || "/profile";
@@ -74,8 +74,8 @@ const SignUp = () => {
 
 
     return (
-        <div className="bg-yellow-400 h-screen overflow-hidden flex items-center justify-center pt-14">
-            <div className="bg-white lg:w-5/12 md:6/12 w-10/12 shadow-3xl">
+        <div className={`${theme ? "bg-gray-900" : "bg-yellow-400"} h-screen overflow-hidden flex items-center justify-center pt-14`}>
+            <div className={`${theme ? "bg-slate-700" : "bg-white"} lg:w-5/12 md:6/12 w-10/12 shadow-3xl`}>
                 <div className="bg-gray-800 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-4 md:p-8">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFF">
                         <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
@@ -118,17 +118,17 @@ const SignUp = () => {
                                 <input
                                     onClick={handleTermsAndConditions}
                                     type="checkbox" className="checkbox" />
-                                <span className="label-text">Accept Terms & Conditions</span>
+                                <span className={`label-text ${theme && "text-slate-300"}`}>Accept Terms & Conditions</span>
                             </label>
                         </div>
-                        <p className='text-right mb-1'><Link className='underline underline-offset-4' to="/login">Login</Link></p>
+                        <p className='text-right mb-1'><Link className={`underline underline-offset-4 ${theme && "text-slate-300"}`} to="/login">Login</Link></p>
                     </div>
                     <button
                         disabled={!accepted}
                         className="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full">Sign Up</button>
                 </form>
             </div>
-        </div>
+        </div >
     );
 };
 

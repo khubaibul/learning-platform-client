@@ -5,17 +5,15 @@ import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
-    const { user, logOut } = useContext(AuthContext);
-    console.log(user);
-
+    const { user, logOut, theme } = useContext(AuthContext);
 
     return (
         <div>
             {
                 user
                     ?
-                    <div className="bg-yellow-400 font-sans h-screen w-full flex flex-row justify-center items-center">
-                        <div className="card w-96 mx-auto bg-white rounded-none">
+                    <div className={` ${theme ? "bg-gray-900" : "bg-yellow-400"} font-sans h-screen w-full flex flex-row justify-center items-center`}>
+                        <div className={`card w-96 mx-auto ${theme ? "bg-slate-700 text-slate-300" : "bg-white"} rounded-none`}>
                             <img className="w-32 mx-auto rounded-full border-8 border-white z-50" src={user.photoURL} alt="" />
                             <div className="text-center mt-2 text-3xl font-medium">{user?.displayName}</div>
                             {

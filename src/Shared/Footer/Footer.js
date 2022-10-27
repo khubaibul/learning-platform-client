@@ -1,10 +1,13 @@
 import React from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../Assets/logo.jpg"
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const Footer = () => {
+    const { theme } = useContext(AuthContext);
     return (
-        <footer className="bg-gradient-to-r  from-gray-100 via-[#bce1ff] to-gray-100">
+        <footer className={` ${theme ? "bg-gray-800 text-gray-200" : "bg-gradient-to-r"}  from-gray-100 via-[#bce1ff] to-gray-100`}>
             <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
