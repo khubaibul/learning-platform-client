@@ -6,9 +6,10 @@ import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import HomeCourseCard from '../HomeCourseCard/HomeCourseCard';
 
 const Home = () => {
-    const allCourses = useLoaderData();
-    const homePageShownCourses = allCourses.slice(0, 4);
-    const {theme} = useContext(AuthContext);
+    const { data } = useLoaderData();
+    console.log(data);
+    const homePageShownCourses = data.slice(0, 4);
+    const { theme } = useContext(AuthContext);
     return (
         <div>
             <div className="hero min-h-screen" style={{ backgroundImage: `url(${heroBg})` }}>
@@ -27,7 +28,7 @@ const Home = () => {
                 </div>
                 <div>
                     {
-                        homePageShownCourses.map(course => <HomeCourseCard key={course.courseId} course={course}></HomeCourseCard>)
+                        homePageShownCourses?.map(course => <HomeCourseCard key={course._id} course={course}></HomeCourseCard>)
                     }
                 </div>
             </div>

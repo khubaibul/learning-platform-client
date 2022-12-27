@@ -5,12 +5,13 @@ import logo from "../../Assets/logo.jpg"
 import noUser from "../../Assets/user.png"
 import darkMode from "../../Assets/dark-mode.png";
 import lightMode from "../../Assets/light-mode.png";
-
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Navbar = () => {
+    const [courses, setCourses] = useState([]);
     const { user, theme, setTheme } = useContext(AuthContext);
-    console.log(user);
     const handleToggle = (e) => {
         if (e.target.checked) {
             setTheme(true)
@@ -19,6 +20,13 @@ const Navbar = () => {
             setTheme(false)
         }
     }
+
+    useEffect(() => {
+        fetch("https://cse-from-home-server.vercel.app/courses")
+            .then(res => res.json())
+            .then(data => setCourses(data.data))
+    }, [])
+
     return (
         <div className={`navbar ${theme && "bg-gray-800 text-gray-300"} bg-base-100 shadow-lg lg:px-20`}>
             <div className="navbar-start pb-4">
@@ -34,18 +42,21 @@ const Navbar = () => {
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                             </Link>
                             <ul className="p-2 z-50">
-                                <li><Link to="/course/1" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Python</Link></li>
-                                <li><Link to="/course/2" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Java</Link></li>
+
+
+                                {
+                                    courses?.map(course => <li><Link to={`/course/${course._id}`} className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>{course.courseTitle}</Link></li>)
+                                }
+                                {/* <li><Link to="/course/2" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Java</Link></li>
                                 <li><Link to="/course/3" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>C</Link></li>
                                 <li><Link to="/course/4" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>C++</Link></li>
                                 <li><Link to="/course/5" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Go</Link></li>
                                 <li><Link to="/course/6" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Swift</Link></li>
                                 <li><Link to="/course/7" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>PHP</Link></li>
-                                <li><Link to="/course/8" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Kotlin</Link></li>
+                                <li><Link to="/course/8" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Kotlin</Link></li> */}
                             </ul>
                         </li>
                         <li><Link to="/faq">FAQ</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <div className="navbar-end lg:hidden">
                             <div className="form-control lg:mr-3">
@@ -90,27 +101,15 @@ const Navbar = () => {
                             Courses
                             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                         </Link>
-                        <ul className="p-2 z-50">
-                            <div className='flex gap-x-1'>
-                                <li><Link to="/course/1" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Python</Link></li>
-                                <li><Link to="/course/2" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Java</Link></li>
-                            </div>
-                            <div className='flex gap-x-1'>
-                                <li><Link to="/course/3" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>C</Link></li>
-                                <li><Link to="/course/4" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>C++</Link></li>
-                            </div>
-                            <div className='flex gap-x-1'>
-                                <li><Link to="/course/5" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Go</Link></li>
-                                <li><Link to="/course/6" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Swift</Link></li>
-                            </div>
-                            <div className='flex gap-x-1'>
-                                <li><Link to="/course/7" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>PHP</Link></li>
-                                <li><Link to="/course/8" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Kotlin</Link></li>
+                        <ul className="z-50">
+                            <div className='grid grid-cols-2 gap-1'>
+                                {
+                                    courses?.map(course => <li><Link to={`/course/${course._id}`} className='btn btn-sm !rounded-none btn-accent text-base-200'>{course.courseTitle}</Link></li>)
+                                }
                             </div>
                         </ul>
                     </li>
                     <li><Link to="/faq">FAQ</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
                     <li><Link to="/about">About Us</Link></li>
                 </ul>
             </div>

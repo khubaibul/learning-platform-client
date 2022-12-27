@@ -6,8 +6,8 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import PDF from '../PDF/PDF';
 
 const CourseDetail = () => {
-    const courseDetail = useLoaderData();
-    const { common_uses, courseImage, courseTitle, courseId, course_description, course_duration, course_module, course_price, course_module_topics } = courseDetail;
+    const { data: courseDetail } = useLoaderData();
+    const { common_uses, courseImage, courseTitle, _id, course_description, course_duration, course_module, course_price, course_module_topics } = courseDetail;
 
     return (
         <div className="card lg:w-[40%] my-10 mx-auto bg-base-100 shadow-xl image-full rounded-none">
@@ -27,7 +27,7 @@ const CourseDetail = () => {
                     <h4 className='text-xl font-bold my-2'>Will Be Covered</h4>
                     <div className='grid grid-cols-2'>
                         {
-                            course_module_topics.map((topic, idx) => {
+                            course_module_topics?.map((topic, idx) => {
                                 return <div key={idx}>
                                     <li className='list-none'><FontAwesomeIcon icon={faTools}></FontAwesomeIcon> {topic}</li>
                                 </div>
@@ -50,7 +50,7 @@ const CourseDetail = () => {
                     </button>
                 </div>
                 <div className="card-actions justify-center">
-                    <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/checkout/${courseId}/${course_price}/${courseTitle}`}>Get Premium Access</Link></button>
+                    <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/checkout/${_id}/${course_price}/${courseTitle}`}>Get Premium Access</Link></button>
                 </div>
             </div>
         </div>

@@ -2,11 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faMoneyBill1 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const SingleCourse = ({ singleCourse }) => {
-    const { common_uses, courseImage, courseTitle, courseId, course_description, course_duration, course_module, course_price } = singleCourse;
+    const { common_uses, courseImage, courseTitle, _id, course_description, course_duration, course_module, course_price } = singleCourse;
+    const { theme } = useContext(AuthContext);
     return (
-        <div className="card card-compact w-full rounded-none bg-base-100 p-4 pt-0">
+        <div className={`card card-compact w-full rounded-none ${theme ? "!bg-gray-900" : "bg-base-100"} p-4 pt-0`}>
             <div className='relative overflow-hidden transition duration-200 transform shadow-lg'>
                 <figure>
                     <img className='w-full h-80 md:h-64 xl:h-80' src={courseImage} alt="Shoes" />
@@ -22,7 +25,7 @@ const SingleCourse = ({ singleCourse }) => {
                 <h2 className="card-title">{courseTitle}</h2>
                 <p>{common_uses}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/${courseId}`}>Details</Link></button>
+                    <button className="btn btn-outline btn-accent rounded-none"><Link to={`/course/${_id}`}>Details</Link></button>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
+import PaymentSuccess from "../../Pages/CheckOut/PaymentSuccess";
 import CourseDetail from "../../Pages/CourseDetail/CourseDetail";
 import Courses from "../../Pages/Courses/Courses";
 import FAQ from "../../Pages/FAQ/FAQ";
@@ -35,16 +36,16 @@ export const routes = createBrowserRouter([
                 loader: ({ params }) => fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`)
             },
             {
-                path: "/course/checkout/:courseId/:course_price/:courseTitle",
+                path: "/course/checkout/:_id/:course_price/:courseTitle",
                 element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
+            },
+            {
+                path: "/payment/success",
+                element: <PrivateRoute> <PaymentSuccess /> </PrivateRoute>
             },
             {
                 path: "/faq",
                 element: <FAQ></FAQ>
-            },
-            {
-                path: "/blog",
-                element: <Blog></Blog>
             },
             {
                 path: "/login",

@@ -3,9 +3,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faG, faUser } from '@fortawesome/free-solid-svg-icons';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const UserProfile = () => {
+    const [tranSactionId, setTransactionId] = useState("");
+    // const [enrollment, setEnrollment] = useState({});
     const { user, logOut, theme } = useContext(AuthContext);
+
+
+    useEffect(() => {
+        const id = localStorage.getItem("tranSactionId");
+        setTransactionId(id)
+    }, []);
+
+    // useEffect(() => {
+    //     fetch(`https://cse-from-home-server.vercel.app/enrollInfo?tranSactionId=${tranSactionId}`)
+    //         .then(res => res.json())
+    //         .then(data => setEnrollment(data.data))
+    // }, [tranSactionId]);
 
     return (
         <div>
@@ -26,16 +42,13 @@ const UserProfile = () => {
                                 </p>
                             </div>
                             <hr className="mt-8" />
-                            <div className="flex p-4">
-                                <div className="w-1/2 text-center">
-                                    <span className="font-bold">1.8 k</span> Followers
-                                </div>
-                                <div className="w-0 border border-gray-300">
-
-                                </div>
-                                <div className="w-1/2 text-center">
-                                    <span className="font-bold">2.0 k</span> Following
-                                </div>
+                            <div className="p-4">
+                                {
+                                    tranSactionId &&
+                                    <div className="text-center font-bold">
+                                        <Link to={`/payment/success?transactionId=${tranSactionId}`} className="inline-block rounded-md bg-green-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400">Your Course</Link>
+                                    </div>
+                                }
                             </div>
                             <button className='btn btn-sm btn-outline btn-primary rounded-none w-[60%] mx-auto mb-4'>Update Profile</button>
                             <button onClick={logOut} className='btn btn-sm btn-outline btn-accent rounded-none w-[30%] mx-auto mb-4'>Log Out</button>
