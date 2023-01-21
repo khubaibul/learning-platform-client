@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 const UserProfile = () => {
     const [tranSactionId, setTransactionId] = useState("");
-    // const [enrollment, setEnrollment] = useState({});
     const { user, logOut, theme } = useContext(AuthContext);
 
 

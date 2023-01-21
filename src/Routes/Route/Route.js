@@ -17,7 +17,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 export const routes = createBrowserRouter([
     {
         path: "/",
-        element: <Main></Main>,
+        element: <Main />,
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {

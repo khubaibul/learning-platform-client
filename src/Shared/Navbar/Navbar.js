@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from "../../Assets/logo.jpg"
 import noUser from "../../Assets/user.png"
 import darkMode from "../../Assets/dark-mode.png";
@@ -12,6 +12,15 @@ import { useEffect } from 'react';
 const Navbar = () => {
     const [courses, setCourses] = useState([]);
     const { user, theme, setTheme } = useContext(AuthContext);
+
+    const navLinkStyle = ({ isActive }) => {
+        return {
+            borderBottom: isActive ? "4px solid #9D1B6F" : "",
+            color: isActive ? "#9D1B6F" : ""
+        }
+    }
+
+
     const handleToggle = (e) => {
         if (e.target.checked) {
             setTheme(true)
@@ -35,12 +44,12 @@ const Navbar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className={`${theme ? "bg-gray-900 text-gray-300" : "bg-base-100"} font-bold menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52`}>
-                        <li><Link to="/">Home</Link></li>
+                        <li><NavLink to="/" className="bg-transparent" style={navLinkStyle}>Home</NavLink></li>
                         <li tabIndex={0}>
-                            <Link to="/courses" className="justify-between">
+                            <NavLink to="/courses" className="justify-between bg-transparent" style={navLinkStyle}>
                                 Courses
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                            </Link>
+                            </NavLink>
                             <ul className="p-2 z-50">
 
 
@@ -56,8 +65,8 @@ const Navbar = () => {
                                 <li><Link to="/course/8" className='btn btn-sm rounded-none btn-accent text-base-200 my-1'>Kotlin</Link></li> */}
                             </ul>
                         </li>
-                        <li><Link to="/faq">FAQ</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
+                        <li><NavLink to="/faq" className="bg-transparent" style={navLinkStyle}>FAQ</NavLink></li>
+                        <li><NavLink to="/about" className="bg-transparent" style={navLinkStyle}>About Us</NavLink></li>
                         <div className="navbar-end lg:hidden">
                             <div className="form-control lg:mr-3">
                                 <label className="label cursor-pointer">
@@ -71,17 +80,17 @@ const Navbar = () => {
                             <div>
                                 {
                                     user ?
-                                        <Link to="/user" className="rounded-full">
+                                        <NavLink to="/user" className="rounded-full" style={navLinkStyle}>
                                             {
                                                 user.photoURL ? <div className="tooltip tooltip-right" data-tip={user.displayName}>
                                                     <img className='w-10 rounded-full p-1 bg-accent' src={user.photoURL} alt="User" />
                                                 </div>
                                                     : <img className='w-10' src={noUser} alt="User" />
                                             }
-                                        </Link>
+                                        </NavLink>
                                         : <div>
-                                            <Link to="/signup" className='btn btn-sm mb-2 rounded-none'>Sign Up</Link>
-                                            <Link to="/login" className='btn btn-sm mb-2 rounded-none'>Login</Link>
+                                            <NavLink to="/signup" className='btn btn-sm mb-2 rounded-none' style={navLinkStyle}>Sign Up</NavLink>
+                                            <NavLink to="/login" className='btn btn-sm mb-2 rounded-none' style={navLinkStyle}>Login</NavLink>
                                         </div>
                                 }
                             </div>
@@ -95,12 +104,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 font-bold">
-                    <li><Link to="/">Home</Link></li>
+                    <li><NavLink to="/" className="bg-transparent" style={navLinkStyle}>Home</NavLink></li>
                     <li tabIndex={0}>
-                        <Link to="/courses">
+                        <NavLink to="/courses" className="bg-transparent" style={navLinkStyle}>
                             Courses
                             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                        </Link>
+                        </NavLink>
                         <ul className="z-50">
                             <div className='grid grid-cols-2 gap-1'>
                                 {
@@ -109,8 +118,8 @@ const Navbar = () => {
                             </div>
                         </ul>
                     </li>
-                    <li><Link to="/faq">FAQ</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
+                    <li><NavLink to="/faq" className="bg-transparent" style={navLinkStyle}>FAQ</NavLink></li>
+                    <li><NavLink to="/about" className="bg-transparent" style={navLinkStyle}>About Us</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
@@ -126,7 +135,7 @@ const Navbar = () => {
                 <div className='hidden lg:block'>
                     {
                         user ?
-                            <Link to="/user" className="lg:block hidden">
+                            <NavLink to="/user" className="lg:block hidden bg-transparent" style={navLinkStyle}>
                                 {
                                     user.photoURL ? <div>
                                         <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
@@ -136,10 +145,10 @@ const Navbar = () => {
 
                                         : <img className='w-14' src={noUser} alt="User" />
                                 }
-                            </Link>
+                            </NavLink>
                             : <div>
-                                <Link to="/signup" className='btn btn-sm mr-2 rounded-none'>Sign Up</Link>
-                                <Link to="/login" className='btn btn-sm mr-2 rounded-none'>Login</Link>
+                                <NavLink to="/signup" className='btn btn-sm mr-2 rounded-none' style={navLinkStyle}>Sign Up</NavLink>
+                                <NavLink to="/login" className='btn btn-sm mr-2 rounded-none' style={navLinkStyle}>Login</NavLink>
                             </div>
                     }
                 </div>
