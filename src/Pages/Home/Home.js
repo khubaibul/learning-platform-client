@@ -18,7 +18,7 @@ const Home = () => {
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
+          <div className="max-w-md font-montserrat">
             <h1 className="mb-5 text-5xl font-bold">CSE FROM HOME</h1>
             <p className="mb-5">
               We Provide Valuable Programming Language And CSE Support To Our
@@ -34,7 +34,7 @@ const Home = () => {
       <>
         <div className="lg:mt-20 mt-8 lg:text-3xl">
           <h4
-            className={`text-center font-semibold ${
+            className={`text-center font-semibold font-montserrat ${
               theme && "text-slate-300"
             }`}
           >
@@ -49,7 +49,7 @@ const Home = () => {
       </>
       {/* Courses End */}
       <div className="flex justify-center my-10">
-        <button className="btn btn-outline btn-accent rounded-none">
+        <button className="btn btn-outline btn-accent rounded-none font-montserrat">
           <Link to="/courses">All Course</Link>
         </button>
       </div>

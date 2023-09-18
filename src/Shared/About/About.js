@@ -29,7 +29,7 @@ const About = () => {
                     viewBox="0 0 583 95"
                     className="absolute left-0 w-full block h-95-px -top-94-px"
                   ></svg>
-                  <h4 className="text-xl font-bold text-white">
+                  <h4 className="text-xl font-bold font-montserrat text-white">
                     CSE From Home.
                   </h4>
                   <p className="text-md font-light mt-2 text-white">
@@ -56,7 +56,7 @@ const About = () => {
                       >
                         <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
+                      <h6 className="text-lg mb-1 font-semibold font-montserrat">
                         Quality Course Content
                       </h6>
                       <p className="mb-4 text-blueGray-500">
@@ -74,7 +74,7 @@ const About = () => {
                       >
                         <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
+                      <h6 className="text-lg mb-1 font-semibold font-montserrat">
                         Support System
                       </h6>
                       <p className="mb-4 text-blueGray-500">
@@ -95,7 +95,7 @@ const About = () => {
                       >
                         <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
+                      <h6 className="text-lg mb-1 font-semibold font-montserrat">
                         Website Base Education System
                       </h6>
                       <p className="mb-4 text-blueGray-500">
@@ -113,7 +113,7 @@ const About = () => {
                       >
                         <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
                       </div>
-                      <h6 className="text-xl mb-1 font-semibold">
+                      <h6 className="text-lg mb-1 font-semibold font-montserrat">
                         Ready For Work
                       </h6>
                       <p className="mb-4 text-blueGray-500">

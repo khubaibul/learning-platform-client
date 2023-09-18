@@ -25,7 +25,7 @@ const HomeCourseCard = ({ course }) => {
       } shadow-xl lg:w-[60%] mx-auto rounded-none my-4`}
     >
       <div className="card-body border-b-4 border-red-600">
-        <h2 className="card-title">{courseTitle}</h2>
+        <h2 className="card-title font-montserrat">{courseTitle}</h2>
         <p>{common_uses}</p>
         <p>
           <FontAwesomeIcon className="mr-1" icon={faClock}></FontAwesomeIcon>
@@ -39,7 +39,7 @@ const HomeCourseCard = ({ course }) => {
           BDT {course_price}
         </p>
         <div className="card-actions justify-end">
-          <button className="btn btn-outline btn-accent rounded-none">
+          <button className="btn btn-outline btn-accent rounded-none font-montserrat">
             <Link to={`/course/${_id}`}>Get Course</Link>
           </button>
         </div>
