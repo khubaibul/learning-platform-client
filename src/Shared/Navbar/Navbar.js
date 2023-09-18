@@ -62,8 +62,8 @@ const Navbar = () => {
                             <div className="form-control lg:mr-3">
                                 <label className="label cursor-pointer">
                                     {
-                                        theme ? <img src={darkMode} className="label-text w-7 mr-1" alt='/mode'></img>
-                                            : <img src={lightMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                                        theme ? <img src={lightMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                                            : <img src={darkMode} className="label-text w-7 mr-1" alt='/mode'></img>
                                     }
                                     <input onChange={handleToggle} type="checkbox" className="toggle toggle-secondary" />
                                 </label>
@@ -88,7 +88,8 @@ const Navbar = () => {
                         </div>
                     </ul>
                 </div>
-                <div className='flex items-end ml-10 text-2xl font-bold'>
+                <div className='flex items-center gap-x-3 ml-10 text-2xl font-bold'>
+                    <img src={logo} className="w-12 rounded-full hidden lg:block md:block" alt="" />
                     <Link to="/" className="normal-case text-xl"><h2 className='lg:text-3xl text-sm'>CSE FROM HOME</h2></Link>
                 </div>
             </div>
@@ -116,8 +117,8 @@ const Navbar = () => {
                 <div className="form-control lg:mr-3 lg:block hidden">
                     <label className="label cursor-pointer">
                         {
-                            theme ? <img src={darkMode} className="label-text w-7 mr-1" alt='/mode'></img>
-                                : <img src={lightMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                            theme ? <img src={lightMode} className="label-text w-7 mr-1" alt='/mode'></img>
+                                : <img src={darkMode} className="label-text w-7 mr-1" alt='/mode'></img>
                         }
                         <input onChange={handleToggle} type="checkbox" className="toggle toggle-accent" />
                     </label>

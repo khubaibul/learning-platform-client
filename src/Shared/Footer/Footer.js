@@ -8,9 +8,9 @@ const Footer = () => {
     const { theme } = useContext(AuthContext);
     return (
         <footer className={` ${theme ? "bg-gray-800 text-gray-200" : "bg-gradient-to-r"}  from-gray-100 via-[#bce1ff] to-gray-100`}>
-            <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 flex flex-col justify-center items-center">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                    <div>
+                    <div className='flex flex-col items-center sm:items-center lg:items-start lg:flex-none'>
                         <img src={logo} className="mr-5 w-16 rounded-full" alt="logo" />
                         <p className="max-w-xs mt-4 text-lg font-bold text-gray-600">
                             CSE FROM HOME
@@ -48,7 +48,7 @@ const Footer = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="grid grid-cols-2 gap-8 lg:col-span-2 sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-4">
                         <div>
                             <p className="font-medium">
                                 Company

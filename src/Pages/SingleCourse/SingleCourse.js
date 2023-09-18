@@ -9,7 +9,7 @@ const SingleCourse = ({ singleCourse }) => {
     const { common_uses, courseImage, courseTitle, _id, course_description, course_duration, course_module, course_price } = singleCourse;
     const { theme } = useContext(AuthContext);
     return (
-        <div className={`card card-compact w-full rounded-none ${theme ? "!bg-gray-900" : "bg-base-100"} p-4 pt-0`}>
+        <div className={`card card-compact w-full rounded-none ${theme ? "!bg-gray-900 text-slate-300" : "bg-base-100"} p-4 pt-0`}>
             <div className='relative overflow-hidden transition duration-200 transform shadow-lg'>
                 <figure>
                     <img className='w-full h-80 md:h-64 xl:h-80' src={courseImage} alt="Shoes" />
