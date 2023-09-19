@@ -4,6 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import heroBg from "../../Assets/hero-bg.jpg";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import HomeCourseCard from "../HomeCourseCard/HomeCourseCard";
+import LandingPage from "./LandingPage";
 
 const Home = () => {
   const { data } = useLoaderData();
@@ -30,6 +31,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <LandingPage />
+
       {/* Courses Start */}
       <>
         <div className="lg:mt-20 mt-8 lg:text-3xl">
