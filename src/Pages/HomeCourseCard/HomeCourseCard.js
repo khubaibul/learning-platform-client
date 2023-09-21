@@ -18,34 +18,38 @@ const HomeCourseCard = ({ course }) => {
   } = course;
   return (
     <div
-      className={`card lg:card-side ${
+      className={`flex flex-row-reverse h-[250px] overflow-hidden ${
         theme
-          ? "!bg-gray-900 shadow-md shadow-accent text-slate-300"
+          ? "!bg-gray-900 shadow hover:shadow-accent text-slate-300"
           : "bg-base-100"
-      } shadow-xl lg:w-[60%] mx-auto rounded-none my-4`}
+      } shadow-xl hover:shadow-2xl mx-auto rounded-none`}
     >
-      <div className="card-body border-b-4 border-red-600">
-        <h2 className="card-title font-montserrat">{courseTitle}</h2>
-        <p>{common_uses}</p>
-        <p>
-          <FontAwesomeIcon className="mr-1" icon={faClock}></FontAwesomeIcon>
-          {course_duration}
-        </p>
-        <p>
-          <FontAwesomeIcon
-            className="mr-1"
-            icon={faMoneyBill1}
-          ></FontAwesomeIcon>
-          BDT {course_price}
-        </p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-outline btn-accent rounded-none font-montserrat">
+      <div className="border-b-4 border-accent w-[40%] px-4 py-1 flex flex-col justify-between">
+        <div>
+          <h2 className="card-title font-montserrat">{courseTitle}</h2>
+          <p className="text-sm text-justify">{common_uses.slice(0, 150)}...</p>
+        </div>
+        <div className="text-sm font-semibold font-montserrat">
+          <p>
+            <FontAwesomeIcon className="mr-1" icon={faClock}></FontAwesomeIcon>
+            {course_duration}
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className="mr-1"
+              icon={faMoneyBill1}
+            ></FontAwesomeIcon>
+            BDT {course_price}
+          </p>
+        </div>
+        <div className=" justify-end">
+          <button className="btn btn-sm btn-outline btn-accent rounded-none font-montserrat">
             <Link to={`/course/${_id}`}>Get Course</Link>
           </button>
         </div>
       </div>
-      <figure>
-        <img className="w-96 h-72" src={courseImage} alt="Course Img" />
+      <figure className="w-[60%]">
+        <img className="w-full h-full" src={courseImage} alt="Course Img" />
       </figure>
     </div>
   );

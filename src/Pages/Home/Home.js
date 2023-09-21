@@ -8,11 +8,10 @@ import LandingPage from "./LandingPage";
 
 const Home = () => {
   const { data } = useLoaderData();
-  console.log(data);
-  const homePageShownCourses = data.slice(0, 4);
+
   const { theme } = useContext(AuthContext);
   return (
-    <div>
+    <div className="mb-28">
       <div
         className="hero min-h-screen"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -36,17 +35,17 @@ const Home = () => {
 
       {/* Courses Start */}
       <>
-        <div className="lg:mt-20 mt-8 lg:text-3xl">
+        <div className="lg:mt-48 mt-8 lg:text-4xl">
           <h4
-            className={`text-center font-semibold font-montserrat ${
+            className={`text-center font-semibold font-montserrat mb-10 tracking-widest ${
               theme && "text-slate-300"
             }`}
           >
             Our Courses
           </h4>
         </div>
-        <div>
-          {homePageShownCourses?.map((course) => (
+        <div className="grid grid-cols-2 w-[80%] mx-auto gap-x-8 gap-y-12">
+          {data?.map((course) => (
             <HomeCourseCard key={course._id} course={course}></HomeCourseCard>
           ))}
         </div>
