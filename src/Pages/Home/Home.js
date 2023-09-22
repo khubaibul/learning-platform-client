@@ -5,6 +5,7 @@ import heroBg from "../../Assets/hero-bg.jpg";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import HomeCourseCard from "../HomeCourseCard/HomeCourseCard";
 import LandingPage from "./LandingPage";
+import OurTeam from "./OurTeam";
 
 const Home = () => {
   const { data } = useLoaderData();
@@ -56,6 +57,8 @@ const Home = () => {
           <Link to="/courses">All Course</Link>
         </button>
       </div>
+
+      <OurTeam />
     </div>
   );
 };

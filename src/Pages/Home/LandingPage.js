@@ -77,11 +77,16 @@ const LandingPage = () => {
                           </span>
                         </h2>
                         <p>
-                          More than{" "}
+                          We focus on{" "}
                           <span className="font-semibold font-montserrat text-accent">
-                            three thousands
+                            skills
                           </span>{" "}
-                          students learning from us with joy.
+                          more than certificate. So you can
+                          <span className="font-semibold font-montserrat text-accent">
+                            {" "}
+                            achieve
+                          </span>{" "}
+                          your desire skills.
                         </p>
                       </div>
                       <button className="font-montserrat btn btn-sm btn-accent btn-outline rounded-none">

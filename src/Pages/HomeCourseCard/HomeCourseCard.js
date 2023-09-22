@@ -20,7 +20,7 @@ const HomeCourseCard = ({ course }) => {
     <div
       className={`flex flex-row-reverse h-[250px] overflow-hidden ${
         theme
-          ? "!bg-gray-900 shadow hover:shadow-accent text-slate-300"
+          ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
           : "bg-base-100"
       } shadow-xl hover:shadow-2xl mx-auto rounded-none`}
     >
