@@ -6,6 +6,7 @@ import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import HomeCourseCard from "../HomeCourseCard/HomeCourseCard";
 import LandingPage from "./LandingPage";
 import OurTeam from "./OurTeam";
+import ContactUs from "./ContactUs";
 
 const Home = () => {
   const { data } = useLoaderData();
@@ -59,6 +60,8 @@ const Home = () => {
       </div>
 
       <OurTeam />
+
+      <ContactUs />
     </div>
   );
 };
