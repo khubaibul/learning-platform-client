@@ -182,7 +182,7 @@ const ContactUs = () => {
                       press@example.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      +1 234-567-89
+                      +880 1832 30 21 70
                     </p>
                   </div>
                 </div>
