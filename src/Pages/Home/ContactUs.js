@@ -148,7 +148,7 @@ const ContactUs = () => {
                       Student Support
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      sales@example.com
+                      csefromhome@studentsupport.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
                       +1 234-567-89
