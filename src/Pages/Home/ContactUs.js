@@ -9,10 +9,10 @@ const ContactUs = () => {
 
   const defaultProps = {
     center: {
-      lat: 22.335,
-      lng: 91.8325,
+      lat: 24.747149,
+      lng: 90.420273,
     },
-    zoom: 5,
+    zoom: 4,
   };
 
   return (
