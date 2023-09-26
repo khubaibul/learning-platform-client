@@ -208,12 +208,12 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="ml-6 grow">
-                    <p className="mb-2 font-bold dark:text-white">Bug report</p>
+                    <p className="mb-2 font-bold dark:text-white">Assignment Evaluate</p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      bugs@example.com
+                      csefromhome@assignment.com
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
-                      +1 234-567-89
+                      +880 175 15 48 930
                     </p>
                   </div>
                 </div>
