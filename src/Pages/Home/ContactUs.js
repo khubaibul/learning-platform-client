@@ -30,8 +30,8 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap">
-          <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md">
+        <div className="flex gap-x-4">
+          <div className="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md">
             <form>
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
@@ -99,8 +99,8 @@ const ContactUs = () => {
               </button>
             </form>
           </div>
-          <div className="w-full flex lg:w-7/12">
-            <div className="">
+          <div className="flex lg:w-7/12 gap-x-4">
+            <div className="md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                 <div className="flex items-start">
                   <div className="shrink-0">
@@ -122,7 +122,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="ml-6 grow">
-                    <p className="mb-2 font-bold dark:text-white">
+                    <p className="mb-2 font-bold font-montserrat">
                       Technical support
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
@@ -155,7 +155,7 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div className="ml-6 grow">
-                    <p className="mb-2 font-bold dark:text-white">
+                    <p className="mb-2 font-bold font-montserrat">
                       Assignment Evaluate
                     </p>
                     <p className="text-neutral-500 dark:text-neutral-200">
@@ -169,7 +169,10 @@ const ContactUs = () => {
               </div>
             </div>
 
-            <div className="w-full mx-auto rounded" style={{ height: "60vh" }}>
+            <div
+              className="w-full mx-auto md:px-3 lg:mb-0 lg:p-2 p-4 bg-white rounded-md"
+              style={{ height: "60vh" }}
+            >
               <GoogleMapReact
                 bootstrapURLKeys={{
                   key: "AIzaSyBtxjZlOvgBUYikrge54BE-RfbsJ--BbJ8",
