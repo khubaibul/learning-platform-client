@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import GoogleMapReact from "google-map-react";
+import education from "../../Assets/online-education.png";
 
 const ContactUs = () => {
   const { theme } = useContext(AuthContext);
@@ -101,10 +102,10 @@ const ContactUs = () => {
           </div>
           <div className="flex lg:w-7/12 gap-x-4">
             <div className="md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md">
-              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3">
                 <div className="flex items-start">
                   <div className="shrink-0">
-                    <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                    <div className="inline-block rounded-md bg-primary-100 text-primary">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -134,10 +135,10 @@ const ContactUs = () => {
                   </div>
                 </div>
               </div>
-              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
+              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3">
                 <div className="align-start flex">
                   <div className="shrink-0">
-                    <div className="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                    <div className="inline-block rounded-md bg-primary-100 text-primary">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -167,6 +168,26 @@ const ContactUs = () => {
                   </div>
                 </div>
               </div>
+              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3">
+                <div className="align-start flex">
+                  <div className="shrink-0">
+                    <div className="inline-block rounded-md bg-primary-100 text-primary">
+                      <img src={education} className="w-7 h-7" alt="" />
+                    </div>
+                  </div>
+                  <div className="ml-6 grow">
+                    <p className="mb-2 font-bold font-montserrat">
+                      Course Support
+                    </p>
+                    <p className="text-neutral-500 dark:text-neutral-200">
+                      course@gmail.com
+                    </p>
+                    <p className="text-neutral-500 dark:text-neutral-200">
+                      +880 175 15 48
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div
@@ -180,7 +201,11 @@ const ContactUs = () => {
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
               >
-                <AnyReactComponent lat={22.335} lng={91.8325} text="Shakib" />
+                <AnyReactComponent
+                  lat={22.335}
+                  lng={91.8325}
+                  text="Mymensingh City Area"
+                />
               </GoogleMapReact>
             </div>
           </div>
