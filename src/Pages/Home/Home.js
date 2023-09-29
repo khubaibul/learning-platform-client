@@ -54,7 +54,7 @@ const Home = () => {
       </>
       {/* Courses End */}
       <div className="flex justify-center my-10">
-        <button className="btn btn-outline btn-accent rounded-none font-montserrat">
+        <button className="btn btn-sm px-10 btn-outline btn-accent rounded-none font-montserrat">
           <Link to="/courses">All Course</Link>
         </button>
       </div>
