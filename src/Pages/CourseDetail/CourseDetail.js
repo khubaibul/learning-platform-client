@@ -83,7 +83,7 @@ const CourseDetail = () => {
           </button>
         </div>
         <div className="card-actions justify-center">
-          <button className="btn btn-outline btn-accent rounded-none font-montserrat">
+          <button className="btn btn-outline btn-accent rounded-none font-montserrat px-10">
             <Link to={`/course/checkout/${_id}/${course_price}/${courseTitle}`}>
               Get Premium Access
             </Link>
