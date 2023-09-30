@@ -69,18 +69,18 @@ const CourseDetail = () => {
           </div>
         </div>
         <div className="flex gap-x-2 my-3">
-          <button className="btn gap-2 rounded-none">
-            PRICE
-            <div className="badge badge-accent">BDT {course_price}</div>
-          </button>
-          <button className="btn gap-2 rounded-none">
-            DURATION
-            <div className="badge badge-accent">{course_duration}</div>
-          </button>
-          <button className="btn gap-2 rounded-none">
-            MODULE
-            <div className="badge badge-accent">{course_module}</div>
-          </button>
+          <div className="flex gap-x-2 text-sm bg-accent/50 px-3 py-0.5 font-semibold">
+            <p>PRICE:</p>
+            <p>BDT{course_price}</p>
+          </div>
+          <div className="flex gap-x-2 text-sm bg-accent/50 px-3 py-0.5 font-semibold">
+            <p>DURATION:</p>
+            <p>{course_duration}</p>
+          </div>
+          <div className="flex gap-x-2 text-sm bg-accent/50 px-3 py-0.5 font-semibold">
+            <p>MODULE:</p>
+            <p>{course_module}</p>
+          </div>
         </div>
         <div className="card-actions justify-center">
           <button className="btn btn-outline btn-accent rounded-none font-montserrat px-10">
