@@ -54,7 +54,7 @@ const SingleCourse = ({ singleCourse }) => {
         <h2 className="card-title font-montserrat">{courseTitle}</h2>
         <p>{common_uses}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-outline btn-accent rounded-none font-montserrat">
+          <button className="btn btn-sm px-10 btn-outline btn-accent rounded-none font-montserrat">
             <Link to={`/course/${_id}`}>Details</Link>
           </button>
         </div>

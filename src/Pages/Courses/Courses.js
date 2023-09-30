@@ -9,7 +9,7 @@ const Courses = () => {
   const { data: allCourses } = useLoaderData();
   const { theme } = useContext(AuthContext);
   return (
-    <div className="lg:px-20 mt-20">
+    <div className="lg:px-20 mt-20 mb-20">
       <h2
         className={`text-center text-3xl font-bold font-montserrat ${
           theme && "text-slate-300"
@@ -25,11 +25,7 @@ const Courses = () => {
                 to={`/course/${course._id}`}
                 className="mb-2 w-full btn btn-outline btn-accent rounded-none font-montserrat"
               >
-                <img
-                  className="w-5 mr-2"
-                  src={course.icon}
-                  alt=""
-                />
+                <img className="w-5 mr-2" src={course.icon} alt="" />
                 {course.courseTitle}
               </Link>
             </div>
@@ -45,11 +41,7 @@ const Courses = () => {
                   to={`/course/${course._id}`}
                   className="mb-2 w-full btn btn-outline btn-accent rounded-none font-montserrat"
                 >
-                  <img
-                    className="w-5 mr-2"
-                    src={course.icon}
-                    alt=""
-                  />
+                  <img className="w-5 mr-2" src={course.icon} alt="" />
                   {course.courseTitle}
                 </Link>
               </div>
