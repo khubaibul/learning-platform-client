@@ -195,7 +195,9 @@ const Navbar = () => {
             alt=""
           />
           <Link to="/" className="normal-case text-xl">
-            <h2 className="lg:text-3xl text-sm">CSE FROM HOME</h2>
+            <h2 className="lg:text-3xl text-sm font-montserrat">
+              CSE FROM HOME
+            </h2>
           </Link>
         </div>
       </div>
