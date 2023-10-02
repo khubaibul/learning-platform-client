@@ -218,7 +218,7 @@ const SignUp = () => {
           </div>
           <button
             disabled={!accepted}
-            className="bg-gradient-to-b from-red-500 to-red-600 border-2 border-yellow-400 hover:from-red-600 hover:to-red-500 font-medium font-montserrat p-2 md:p-4 text-white uppercase w-full"
+            className="bg-gradient-to-b from-red-500 to-red-600 border-2 border-yellow-400 hover:from-red-600 hover:to-red-500 font-medium font-montserrat p-2 md:p-4 text-yellow-400 uppercase w-full"
           >
             Sign Up
           </button>
