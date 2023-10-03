@@ -127,8 +127,19 @@ const SignUp = () => {
           theme ? "bg-slate-700" : "bg-white"
         } lg:w-5/12 md:6/12 w-10/12 shadow-3xl`}
       >
-        <div className={`bg-yellow-400 ${theme ? "bg-[#EF4444]" : "bg-yellow-400 border-red-500"} border-4 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full md:p-8`}>
-          <svg width="50" height="50" viewBox="0 0 24 24" fill={``}>
+        <div
+          className={`bg-yellow-400 ${
+            theme
+              ? "bg-[#EF4444] border-yellow-400"
+              : "bg-yellow-400 border-red-500"
+          } border-4 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full md:p-8`}
+        >
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill={`${theme ? "#FACC15" : "#EF4444"}`}
+          >
             <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
           </svg>
         </div>
