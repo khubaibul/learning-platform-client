@@ -128,7 +128,9 @@ const Login = () => {
           </div>
           <p className="text-right mb-1">
             <Link
-              className={`text-xs ${theme && "text-slate-300"}`}
+              className={`text-xs ${
+                theme ? "text-slate-300" : "text-yellow-400"
+              }`}
               to="/signup"
             >
               New Here?
