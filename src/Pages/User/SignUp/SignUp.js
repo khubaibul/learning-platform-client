@@ -207,15 +207,21 @@ const SignUp = () => {
               placeholder="Password"
             />
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center text-yellow-400">
             <div className="form-control">
-              <label className="label cursor-pointer">
+              <label className="label cursor-pointer flex justify-center gap-x-2">
                 <input
                   onClick={handleTermsAndConditions}
                   type="checkbox"
-                  className="checkbox border-yellow-400"
+                  className={`checkbox ${
+                    theme ? "border-slate-300" : "border-yellow-400"
+                  }`}
                 />
-                <span className={`label-text ${theme && "text-slate-300"}`}>
+                <span
+                  className={`label-text  ${
+                    theme ? "text-slate-300" : "text-yellow-400"
+                  }`}
+                >
                   Accept Terms & Conditions
                 </span>
               </label>
