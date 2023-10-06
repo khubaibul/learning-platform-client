@@ -135,7 +135,7 @@ const Login = () => {
               <span className="underline ml-1 text-base">Signup</span>
             </Link>
           </p>
-          <button className="bg-gradient-to-b from-red-500 to-red-600 border-2 border-yellow-400 hover:from-red-600 hover:to-red-500 font-medium font-montserrat p-2 md:p-4 text-yellow-400 uppercase w-full">
+          <button className="bg-gradient-to-b from-red-500 to-red-600 border-2 border-yellow-400 hover:from-red-600 hover:to-red-500 font-medium font-montserrat p-2 md:p-4 text-yellow-400 w-full">
             Login
           </button>
         </form>
