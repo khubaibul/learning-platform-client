@@ -143,13 +143,25 @@ const Login = () => {
         </form>
         <div className="flex justify-center gap-x-2 pb-5 -mt-14">
           <button onClick={handleSignInWithGoogle}>
-            <img className="w-7" src={googleLogo} alt="" />
+            <img
+              className="w-8 h-8 bg-yellow-200 rounded-full p-0.5"
+              src={googleLogo}
+              alt=""
+            />
           </button>
           <button onClick={handleSignInWithGitHub}>
-            <img className="w-7" src={gitHubLogo} alt="" />
+            <img
+              className=" bg-yellow-200 rounded-full p-0.5"
+              src={gitHubLogo}
+              alt=""
+            />
           </button>
           <button onClick={handleSignInWithFacebook}>
-            <img className="w-7" src={facebookLogo} alt="" />
+            <img
+              className=" bg-yellow-200 rounded-full p-0.5"
+              src={facebookLogo}
+              alt=""
+            />
           </button>
         </div>
       </div>
