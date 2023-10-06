@@ -213,7 +213,7 @@ const SignUp = () => {
                 <input
                   onClick={handleTermsAndConditions}
                   type="checkbox"
-                  className={`checkbox ${
+                  className={`checkbox border-2 ${
                     theme ? "border-slate-300" : "border-yellow-400"
                   }`}
                 />
