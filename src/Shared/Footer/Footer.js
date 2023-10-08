@@ -39,7 +39,7 @@ const Footer = () => {
               </Link>
               <Link
                 className="hover:opacity-75"
-                href
+                to="https://www.instagram.com/ki_shakib"
                 target="_blank"
                 rel="noreferrer"
               >
