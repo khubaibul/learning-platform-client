@@ -33,7 +33,7 @@ const ContactUs = () => {
 
         <div className="flex gap-x-4">
           <div
-            className={`mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 rounded-md shadow-xl hover:shadow-2xl ${
+            className={`mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 rounded-md ${
               theme
                 ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
                 : "bg-white"
@@ -107,7 +107,13 @@ const ContactUs = () => {
             </form>
           </div>
           <div className="flex lg:w-7/12 gap-x-4">
-            <div className="md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md">
+            <div
+              className={`md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md ${
+                theme
+                  ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
+                  : "bg-white"
+              }`}
+            >
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3">
                 <div className="flex items-start">
                   <div className="shrink-0">
@@ -197,7 +203,11 @@ const ContactUs = () => {
             </div>
 
             <div
-              className="w-full mx-auto md:px-3 lg:mb-0 lg:p-2 p-4 bg-white rounded-md"
+              className={`w-full mx-auto md:px-3 lg:mb-0 lg:p-2 p-4 rounded-md ${
+                theme
+                  ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
+                  : "bg-white"
+              }`}
               style={{ height: "60vh" }}
             >
               <GoogleMapReact
