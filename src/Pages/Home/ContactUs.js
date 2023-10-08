@@ -32,7 +32,13 @@ const ContactUs = () => {
         </div>
 
         <div className="flex gap-x-4">
-          <div className="mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md">
+          <div
+            className={`mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 rounded-md shadow-xl hover:shadow-2xl ${
+              theme
+                ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
+                : "bg-white"
+            }`}
+          >
             <form>
               <div className="relative mb-6" data-te-input-wrapper-init>
                 <input
