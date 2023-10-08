@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="flex mt-8 space-x-6 text-gray-600">
               <Link
                 className="hover:opacity-75"
-                href
+                to="/"
                 target="_blank"
                 rel="noreferrer"
               >
