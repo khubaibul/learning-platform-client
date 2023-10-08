@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/logo.jpg";
+import logo from "../../Assets/logo.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
 const Footer = () => {
@@ -15,10 +15,7 @@ const Footer = () => {
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 flex flex-col justify-center items-center">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="flex flex-col items-center sm:items-center lg:items-start lg:flex-none">
-            <img src={logo} className="mr-5 w-16 rounded-full" alt="logo" />
-            <p className="max-w-xs mt-4 text-lg font-bold text-gray-600 font-montserrat">
-              CSE FROM HOME
-            </p>
+            <img src={logo} className="mr-5 w-64" alt="logo" />
             <div className="flex mt-8 space-x-6 text-gray-600">
               <Link
                 className="hover:opacity-75"
