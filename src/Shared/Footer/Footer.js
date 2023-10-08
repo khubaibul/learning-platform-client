@@ -59,7 +59,7 @@ const Footer = () => {
               </Link>
               <Link
                 className="hover:opacity-75"
-                href
+                to="https://twitter.com/KI_Shakib2001"
                 target="_blank"
                 rel="noreferrer"
               >
