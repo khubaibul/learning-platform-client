@@ -75,7 +75,7 @@ const Footer = () => {
               </Link>
               <Link
                 className="hover:opacity-75"
-                href
+                to="https://github.com/KIShakib"
                 target="_blank"
                 rel="noreferrer"
               >
