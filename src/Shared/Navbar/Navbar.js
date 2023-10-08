@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../Assets/logo.jpg";
+import logo from "../../Assets/logo.png";
 import noUser from "../../Assets/user.png";
 import darkMode from "../../Assets/dark-mode.png";
 import lightMode from "../../Assets/light-mode.png";
@@ -188,18 +188,9 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
-        <div className="flex items-center gap-x-3 ml-10 text-2xl font-bold">
-          <img
-            src={logo}
-            className="w-12 rounded-full hidden lg:block md:block"
-            alt=""
-          />
-          <Link to="/" className="normal-case text-xl">
-            <h2 className="lg:text-3xl text-sm font-montserrat">
-              CSE FROM HOME
-            </h2>
-          </Link>
-        </div>
+        <Link to="/" className="">
+          <img src={logo} className="w-64 hidden lg:block md:block" alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 font-bold font-montserrat">
