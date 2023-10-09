@@ -62,7 +62,7 @@ const Navbar = () => {
             tabIndex={0}
             className={`${
               theme ? "bg-gray-900 text-gray-300" : "bg-base-100"
-            } font-bold font-montserrat menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52`}
+            } font-bold font-montserrat menu menu-compact dropdown-content mt-3 p-2 shadow w-52`}
           >
             <li className="rounded-none">
               <NavLink
