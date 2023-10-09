@@ -111,7 +111,7 @@ const OurTeam = () => {
             forward.
           </p>
         </div>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3">
           {ourTeam?.map((teamMember) => (
             <div>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
