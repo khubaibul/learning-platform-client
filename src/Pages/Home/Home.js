@@ -33,7 +33,7 @@ const Home = () => {
         </div>
       </div>
 
-      <LandingPage />
+      {/* <LandingPage /> */}
 
       {/* Courses Start */}
       <>
@@ -46,7 +46,7 @@ const Home = () => {
             Our Courses
           </h4>
         </div>
-        <div className="grid grid-cols-2 w-[80%] mx-auto gap-x-8 gap-y-12">
+        <div className="grid lg:grid-cols-2 w-[80%] mx-auto gap-x-8 gap-y-12">
           {data?.map((course) => (
             <HomeCourseCard key={course._id} course={course}></HomeCourseCard>
           ))}
