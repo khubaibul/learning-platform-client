@@ -112,7 +112,7 @@ const ContactUs = () => {
               </button>
             </form>
           </div>
-          <div className="flex lg:w-7/12 gap-x-4">
+          <div className="lg:flex block lg:w-7/12 gap-x-4">
             <div
               className={`md:px-3 lg:mb-0 lg:w-5/12 lg:p-4 bg-white rounded-md ${
                 theme
