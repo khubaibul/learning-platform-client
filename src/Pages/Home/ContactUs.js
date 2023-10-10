@@ -31,7 +31,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="lg:flex block gap-x-4">
+        <div className="lg:flex block gap-x-4 lg:px-0 px-4">
           <div
             className={`mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 p-4 rounded-md ${
               theme
