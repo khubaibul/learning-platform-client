@@ -303,7 +303,7 @@ const Navbar = () => {
               )}
             </NavLink>
           ) : (
-            <div>
+            <div className="flex">
               <NavLink
                 to="/signup"
                 className="btn btn-sm mr-2 rounded-none !rounded-none"
