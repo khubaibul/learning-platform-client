@@ -33,7 +33,7 @@ const ContactUs = () => {
 
         <div className="lg:flex block gap-x-4 lg:px-0 px-4">
           <div
-            className={`mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 p-4 rounded-md ${
+            className={`mb-12 shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 p-4 rounded-md hover:shadow-lg ${
               theme
                 ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
                 : "bg-white"
