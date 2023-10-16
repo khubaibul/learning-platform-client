@@ -114,7 +114,7 @@ const ContactUs = () => {
           </div>
           <div className="lg:flex block lg:w-7/12 gap-x-4">
             <div
-              className={`md:px-3 lg:mb-0 lg:w-5/12 p-4 lg:block flex flex-col justify-center items-center bg-white rounded-md ${
+              className={`md:px-3 lg:mb-0 lg:w-5/12 p-4 lg:block flex flex-col justify-center items-center bg-white rounded-md  hover:shadow-lg${
                 theme
                   ? "bg-gray-800 shadow hover:shadow-accent text-slate-300"
                   : "bg-white"
