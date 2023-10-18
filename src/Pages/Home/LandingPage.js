@@ -28,7 +28,7 @@ const LandingPage = () => {
                         loop={true}
                       />
                     </div>
-                    <div className="flex flex-col items-start h-full my-auto lg:gap-y-10 mb-8 lg:mb-0">
+                    <div className="flex flex-col items-start justify-between lg:h-[100%] my-auto lg:gap-y-10 mb-8 lg:mb-0">
                       <div
                         className={`flex flex-col gap-y-4 ${
                           theme ? "text-slate-300" : " text-black"
