@@ -13,17 +13,17 @@ const LandingPage = () => {
 
   return (
     <div className=" w-[80%] mx-auto">
-      <div className="container mt-40">
+      <div className="container mt-40 lg:block md:block hidden">
         <div className="row">
           <div className="col">
             <div className="main-timeline">
               {/* 1 */}
               <div className="timeline">
                 <div className="timeline-content">
-                  <div className="grid grid-cols-2 gap-x-20 pl-12">
+                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-12">
                     <div>
                       <Lottie
-                        className="w-[450px] h-[350px]"
+                        className="lg:w-[450px] lg:h-[350px] md:w-[350px] md:h-[250px]"
                         animationData={lottieFiles}
                         loop={true}
                       />

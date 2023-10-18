@@ -46,7 +46,7 @@ const Home = () => {
             Our Courses
           </h4>
         </div>
-        <div className="grid lg:grid-cols-2 lg:w-[80%] md:grid-cols-1 md:w-[90%] sm:grid-cols-1 grid-cols-1 w-full mx-auto gap-x-8 gap-y-12">
+        <div className="grid lg:grid-cols-2 lg:w-[80%] md:grid-cols-1 md:w-[90%] sm:grid-cols-1 grid-cols-1 w-full mx-auto gap-x-8 gap-y-12 px-4 lg:px-0 md:px-0">
           {data?.map((course) => (
             <HomeCourseCard key={course._id} course={course}></HomeCourseCard>
           ))}
