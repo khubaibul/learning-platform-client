@@ -12,6 +12,7 @@ const Home = () => {
   const { data } = useLoaderData();
 
   const { theme } = useContext(AuthContext);
+  
   return (
     <div className="mb-28">
       <div

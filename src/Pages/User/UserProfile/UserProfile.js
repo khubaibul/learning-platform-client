@@ -4,16 +4,18 @@ import { faG, faUser } from "@fortawesome/free-solid-svg-icons";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useState } from "react";
 
 const UserProfile = () => {
-  const [tranSactionId, setTransactionId] = useState("");
-  const { user, logOut, theme } = useContext(AuthContext);
+  const { user, logOut, theme, tranSactionId, setTransactionId } =
+    useContext(AuthContext);
 
   useEffect(() => {
     const id = localStorage.getItem("tranSactionId");
+    console.log(id, "fds");
     setTransactionId(id);
-  }, []);
+  }, [setTransactionId]);
+
+  console.log(tranSactionId, "From Userprofile");
 
   // useEffect(() => {
   //     fetch(`https://cse-from-home-server.vercel.app/enrollInfo?tranSactionId=${tranSactionId}`)

@@ -20,6 +20,8 @@ const Navbar = () => {
     };
   };
 
+  console.log(user);
+
   const handleToggle = (e) => {
     if (e.target.checked) {
       setTheme(true);
