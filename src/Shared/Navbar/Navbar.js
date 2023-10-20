@@ -11,6 +11,7 @@ import { useEffect } from "react";
 
 const Navbar = () => {
   const [courses, setCourses] = useState([]);
+  const [myCourses, setMyCourses] = useState([]);
   const { user, theme, setTheme } = useContext(AuthContext);
 
   const navLinkStyle = ({ isActive }) => {
@@ -19,8 +20,6 @@ const Navbar = () => {
       color: isActive ? "#9D1B6F" : "",
     };
   };
-
-  console.log(user);
 
   const handleToggle = (e) => {
     if (e.target.checked) {
@@ -35,6 +34,15 @@ const Navbar = () => {
       .then((res) => res.json())
       .then((data) => setCourses(data.data));
   }, []);
+
+  // console.log(user);
+  useEffect(() => {
+    fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
+      .then((res) => res.json())
+      .then((data) => setMyCourses(data));
+  }, [user?.email]);
+
+  const isPaid = myCourses?.find((course) => course?.paid);
 
   return (
     <div
@@ -190,8 +198,11 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
-        <Link to="/" className="">
+        <Link to="/" className="flex items-center">
           <img src={logo} className="lg:w-64 md:w-64" alt="" />
+          <h1 className="ml-2 italic font-bold bg-gradient-to-r from-green-600 via-accent to-green-400 inline-block text-transparent bg-clip-text">
+            {isPaid === undefined ? "" : "Prime"}
+          </h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

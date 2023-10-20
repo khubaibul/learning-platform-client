@@ -29,7 +29,6 @@ const PaymentSuccess = () => {
     }, [tranSactionId]);
 
 
-    console.log(enrollment);
     return (
         <div className="flex h-screen flex-col bg-yellow-400 items-center justify-center space-y-6 px-4 sm:flex-row sm:space-x-6 sm:space-y-0">
             <div className="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl font-montserrat">

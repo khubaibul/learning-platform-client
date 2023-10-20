@@ -4,24 +4,17 @@ import { faG, faUser } from "@fortawesome/free-solid-svg-icons";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useState } from "react";
 
 const UserProfile = () => {
-  const { user, logOut, theme, tranSactionId, setTransactionId } =
-    useContext(AuthContext);
+  const { user, logOut, theme } = useContext(AuthContext);
+  const [myCourses, setMyCourses] = useState([]);
 
   useEffect(() => {
-    const id = localStorage.getItem("tranSactionId");
-    console.log(id, "fds");
-    setTransactionId(id);
-  }, [setTransactionId]);
-
-  console.log(tranSactionId, "From Userprofile");
-
-  // useEffect(() => {
-  //     fetch(`https://cse-from-home-server.vercel.app/enrollInfo?tranSactionId=${tranSactionId}`)
-  //         .then(res => res.json())
-  //         .then(data => setEnrollment(data.data))
-  // }, [tranSactionId]);
+    fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
+      .then((res) => res.json())
+      .then((data) => setMyCourses(data));
+  }, [user?.email]);
 
   return (
     <div>
@@ -55,21 +48,38 @@ const UserProfile = () => {
               {user?.uid.toUpperCase()}
             </small>
             <hr className="mt-8" />
-            <div className="p-4">
-              {tranSactionId && (
-                <div className="text-center font-bold">
-                  <Link
-                    to={`/payment/success?transactionId=${tranSactionId}`}
-                    className="inline-block rounded-md bg-green-500 px-6 py-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400"
-                  >
-                    Your Course
-                  </Link>
-                </div>
-              )}
-            </div>
-            <button className="btn btn-sm btn-outline btn-primary rounded-none w-[60%] mx-auto mb-4 font-montserrat">
-              Update Profile
-            </button>
+            <h2 className="text-lg font-semibold font-montserrat text-center">
+              My Courses
+            </h2>
+            {myCourses.length > 0 ? (
+              <div className="flex flex-col gap-2 p-4">
+                {myCourses?.map((myCourse) => (
+                  <div className="border border-yellow-400 p-2 flex justify-between items-center">
+                    <h3 className="font-montserrat font-semibold">
+                      {myCourse?.courseName}
+                    </h3>
+                    <h3 className="text-xs">{myCourse?.transactionId}</h3>
+                    <button
+                      className={`font-semibold rounded-sm p-0.5 text-center hover:bg-opacity-80 active:bg-opacity-100 w-[30%] ${
+                        myCourse?.paid ? "bg-green-500" : "bg-red-500"
+                      }`}
+                    >
+                      {myCourse?.paid ? "Go To Class" : "Pay Now"}
+                    </button>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <h4 className="text-center py-5">
+                You haven't enrolled any course yet. <br /> Please enroll our{" "}
+                <Link
+                  to="/courses"
+                  className="text-blue-500 font-semibold italic"
+                >
+                  courses
+                </Link>
+              </h4>
+            )}
             <button
               onClick={logOut}
               className="btn btn-sm btn-outline btn-accent rounded-none w-[30%] mx-auto mb-4 font-montserrat"
