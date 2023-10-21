@@ -23,7 +23,7 @@ const LandingPage = () => {
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-12">
                     <div>
                       <Lottie
-                        className="lg:w-[450px] lg:h-[350px] md:w-[350px] md:h-[250px]"
+                        className="lg:w-[450px] lg:h-[350px] md:w-[550px] md:h-[250px]"
                         animationData={lottieFiles}
                         loop={true}
                       />
@@ -59,7 +59,7 @@ const LandingPage = () => {
               {/* 2 */}
               <div className="timeline">
                 <div className="timeline-content">
-                  <div className="grid grid-cols-2 gap-x-40 my-5">
+                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-12">
                     <div className="flex flex-col items-start justify-between h-[50%] my-auto">
                       <div
                         className={`flex flex-col gap-y-7 ${
