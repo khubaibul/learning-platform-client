@@ -105,8 +105,8 @@ const LandingPage = () => {
               </div>
               {/* 3 */}
               <div className="timeline">
-                <div className="timeline-content">
-                  <div className="grid grid-cols-2 gap-x-20 pl-12">
+                <div className="timeline-content md:my-10">
+                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-12 md:pb-5">
                     <div>
                       <Lottie
                         className="w-[450px] h-[350px]"
