@@ -144,7 +144,7 @@ const LandingPage = () => {
               {/* 4 */}
               <div className="timeline">
                 <div className="timeline-content">
-                  <div className="grid grid-cols-2 gap-x-20 my-5">
+                  <div className="grid my-5">
                     <div className="flex flex-col items-start justify-between h-[50%] my-auto">
                       <div
                         className={`flex flex-col gap-y-7 ${
