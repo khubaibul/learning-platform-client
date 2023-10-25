@@ -185,7 +185,7 @@ const LandingPage = () => {
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-16 my-5">
                     <div>
                       <img
-                        className="lg:w-[450px] lg:h-[350px] md:w-[350px] md:"
+                        className="lg:w-[450px] lg:h-[350px] md:w-[350px] md:h-[250px]"
                         src={students}
                         alt="Students"
                       />
