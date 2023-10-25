@@ -182,7 +182,7 @@ const LandingPage = () => {
               {/* 5 */}
               <div className="timeline">
                 <div className="timeline-content">
-                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-16 my-5">
+                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-20 pl-16 my-5 md:pb-10">
                     <div>
                       <img
                         className="lg:w-[450px] lg:h-[350px] md:w-[350px] md:h-[250px]"
