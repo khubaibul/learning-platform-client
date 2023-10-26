@@ -13,76 +13,61 @@ import UserProfile from "../../Pages/User/UserProfile/UserProfile";
 import About from "../../Shared/About/About";
 import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import MyClasses from "../../Pages/MyClasses/MyClasses";
 
 export const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <Main />,
-    errorElement: <ErrorPage></ErrorPage>,
-    children: [
-      {
+    {
         path: "/",
-        element: <Home></Home>,
-        loader: () => fetch("https://cse-from-home-server.vercel.app/courses"),
-      },
-      {
-        path: "/home",
-        element: <Home></Home>,
-        loader: () => fetch("https://cse-from-home-server.vercel.app/courses"),
-      },
-      {
-        path: "/courses",
-        element: <Courses></Courses>,
-        loader: () => fetch("https://cse-from-home-server.vercel.app/courses"),
-      },
-      {
-        path: "/course/:id",
-        element: <CourseDetail></CourseDetail>,
-        loader: ({ params }) =>
-          fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`),
-      },
-      {
-        path: "/course/checkout/:_id/:course_price/:courseTitle",
-        element: (
-          <PrivateRoute>
-            <CheckOut></CheckOut>
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/payment/success",
-        element: (
-          <PrivateRoute>
-            {" "}
-            <PaymentSuccess />{" "}
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/faq",
-        element: <FAQ></FAQ>,
-      },
-      {
-        path: "/login",
-        element: <Login></Login>,
-      },
-      {
-        path: "/signup",
-        element: <SignUp></SignUp>,
-      },
-      {
-        path: "/user",
-        element: <UserProfile></UserProfile>,
-      },
-      {
-        path: "/about",
-        element: <About></About>,
-      },
-      {
-        path: "/my-classes",
-        element: <MyClasses />,
-      },
-    ],
-  },
-]);
+        element: <Main />,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+                path: "/",
+                element: <Home></Home>,
+                loader: () => fetch("https://cse-from-home-server.vercel.app/courses")
+            },
+            {
+                path: "/home",
+                element: <Home></Home>,
+                loader: () => fetch("https://cse-from-home-server.vercel.app/courses")
+            },
+            {
+                path: "/courses",
+                element: <Courses></Courses>,
+                loader: () => fetch("https://cse-from-home-server.vercel.app/courses")
+            },
+            {
+                path: "/course/:id",
+                element: <CourseDetail></CourseDetail>,
+                loader: ({ params }) => fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`)
+            },
+            {
+                path: "/course/checkout/:_id/:course_price/:courseTitle",
+                element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
+            },
+            {
+                path: "/payment/success",
+                element: <PrivateRoute> <PaymentSuccess /> </PrivateRoute>
+            },
+            {
+                path: "/faq",
+                element: <FAQ></FAQ>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
+            },
+            {
+                path: "/signup",
+                element: <SignUp></SignUp>
+            },
+            {
+                path: "/user",
+                element: <UserProfile></UserProfile>
+            },
+            {
+                path: "/about",
+                element: <About></About>
+            },
+        ]
+    }
+])
