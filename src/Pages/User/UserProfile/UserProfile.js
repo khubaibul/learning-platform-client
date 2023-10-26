@@ -59,13 +59,21 @@ const UserProfile = () => {
                       {myCourse?.courseName}
                     </h3>
                     <h3 className="text-xs">{myCourse?.transactionId}</h3>
-                    <button
-                      className={`font-semibold rounded-sm p-0.5 text-center hover:bg-opacity-80 active:bg-opacity-100 w-[30%] ${
-                        myCourse?.paid ? "bg-green-500" : "bg-red-500"
-                      }`}
-                    >
-                      {myCourse?.paid ? "Go To Class" : "Pay Now"}
-                    </button>
+                    {myCourse?.paid === true ? (
+                      <Link
+                        to="/my-classes"
+                        className={`font-semibold rounded-sm p-0.5 text-center hover:bg-opacity-80 active:bg-opacity-100 w-[30%] bg-green-500`}
+                      >
+                        Go To Class
+                      </Link>
+                    ) : (
+                      <Link
+                        to="/"
+                        className={`font-semibold rounded-sm p-0.5 text-center hover:bg-opacity-80 active:bg-opacity-100 w-[30%] bg-red-300`}
+                      >
+                        Pay Now
+                      </Link>
+                    )}
                   </div>
                 ))}
               </div>
