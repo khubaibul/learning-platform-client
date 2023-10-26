@@ -68,6 +68,10 @@ export const routes = createBrowserRouter([
                 path: "/about",
                 element: <About></About>
             },
+            {
+                path: "/my-classes",
+                element: <div></div>
+            },
         ]
     }
 ])
