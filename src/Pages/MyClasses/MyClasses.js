@@ -11,7 +11,7 @@ const MyClasses = () => {
       .then((data) => setMyCourses(data));
   }, [user?.email]);
 
-  return <div></div>;
+  return <div>{myCourses?.length}</div>;
 };
 
 export default MyClasses;
