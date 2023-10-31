@@ -80,7 +80,7 @@ export const routes = createBrowserRouter([
         element: <About></About>,
       },
       {
-        path: "/my-classes",
+        path: "/my-class",
         element: <MyClasses />,
       },
     ],
