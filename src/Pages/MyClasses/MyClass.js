@@ -5,7 +5,15 @@ const MyClass = ({ course }) => {
     <div>
       <div>
         <div>
-          <video src="https://youtu.be/F9UC9DY-vIU?si=3AT2KwWHS4wcTn2V"></video>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
         <ul>
           <li>Class 1</li>
