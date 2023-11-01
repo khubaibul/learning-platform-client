@@ -3,6 +3,7 @@ import checked from "../../Assets/checked.png";
 import lock from "../../Assets/lock.png";
 
 const MyClass = ({ course }) => {
+  
   return (
     <div className="w-[80%] mx-auto">
       <h1 className="text-center mt-4 font-montserrat text-2xl font-bold tracking-wider">
@@ -11,8 +12,8 @@ const MyClass = ({ course }) => {
           Kotlin
         </span>
       </h1>
-      <div className="flex mt-10 gap-x-10">
-        <div>
+      <div className="flex my-10 gap-x-10">
+        <div className="shadow-lg shadow-accent">
           <iframe
             width="800"
             height="450"
@@ -25,7 +26,9 @@ const MyClass = ({ course }) => {
         </div>
         <div className="transition-all duration-1000 bg-accent w-full list-none p-2">
           <details className="outline rounded outline-slate-300 p-2 text-white">
-            <summary className="cursor-pointer text-lg">Kotlin</summary>
+            <summary className="cursor-pointer text-lg font-bold">
+              Kotlin
+            </summary>
             <div className="pl-4">
               <details>
                 <summary className="cursor-pointer">
