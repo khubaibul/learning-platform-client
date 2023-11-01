@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import checked from "../../Assets/checked.png";
 import lock from "../../Assets/lock.png";
 
 const MyClass = ({ course }) => {
-  
+  const [contentURL, setContentURL] = useState(
+    "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+  );
+
   return (
     <div className="w-[80%] mx-auto">
       <h1 className="text-center mt-4 font-montserrat text-2xl font-bold tracking-wider">
@@ -17,7 +20,7 @@ const MyClass = ({ course }) => {
           <iframe
             width="800"
             height="450"
-            src="https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+            src={contentURL}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
