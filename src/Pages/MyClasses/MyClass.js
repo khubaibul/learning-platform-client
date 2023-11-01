@@ -25,7 +25,7 @@ const MyClass = ({ course }) => {
         </div>
         <div className="transition-all duration-1000 bg-accent w-full list-none p-2">
           <details className="outline rounded outline-slate-300 p-2 text-white">
-            <summary className="cursor-pointer">Kotlin</summary>
+            <summary className="cursor-pointer text-lg">Kotlin</summary>
             <div className="pl-4">
               <details>
                 <summary className="cursor-pointer">
