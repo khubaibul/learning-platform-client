@@ -3,9 +3,13 @@ import lock from "../../Assets/lock.png";
 import check from "../../Assets/checked.png";
 
 const MyClass = ({ course }) => {
-  const [contentURL, setContentURL] = useState(
-    "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
-  );
+  const contentsURL = [
+    "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q",
+    "https://www.youtube.com/embed/5flXf8nuq60?si=h-O9mm1iykW-Jbwi",
+    "https://www.youtube.com/embed/TEXaoSC_8lQ?si=VQLJe3pFjnhLy53d",
+  ];
+
+  const [contentURL, setContentURL] = useState(contentsURL[0]);
 
   return (
     <div className="w-[80%] mx-auto">
@@ -16,8 +20,9 @@ const MyClass = ({ course }) => {
         </span>
       </h1>
       <div className="flex my-10 gap-x-10">
-        <div className="shadow-lg shadow-accent">
+        <div>
           <iframe
+            className="shadow-lg shadow-accent"
             width="800"
             height="450"
             src={contentURL}
@@ -39,12 +44,85 @@ const MyClass = ({ course }) => {
                 </summary>
                 <div className="pl-4">
                   <summary>
-                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                    <button
+                      onClick={() => setContentURL(contentsURL[0])}
+                      className="cursor-pointer flex items-center gap-x-0.5"
+                    >
                       <img className="w-5 h-5" src={check} alt="" />
                       <h4>Video1: Let's start with kotlin</h4>
                     </button>
                   </summary>
                   <summary>
+                    <button
+                      onClick={() => setContentURL(contentsURL[1])}
+                      className="cursor-pointer flex items-center gap-x-0.5"
+                    >
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video2: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                  <summary>
+                    <button
+                      onClick={() => setContentURL(contentsURL[2])}
+                      className="cursor-pointer flex items-center gap-x-0.5"
+                    >
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video3: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                </div>
+              </details>
+            </div>
+          </details>
+          <details className="outline rounded outline-slate-300 p-2 text-white">
+            <summary className="cursor-pointer text-lg font-bold">
+              Welcome TO Kotlin
+            </summary>
+            <div className="pl-4">
+              <details>
+                <summary className="cursor-pointer">
+                  Module1: Understanding of kotlin
+                </summary>
+                <div className="pl-4">
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                </div>
+              </details>
+            </div>
+          </details>
+          <details className="outline rounded outline-slate-300 p-2 text-white">
+            <summary className="cursor-pointer text-lg font-bold">
+              Welcome TO Kotlin
+            </summary>
+            <div className="pl-4">
+              <details>
+                <summary className="cursor-pointer">
+                  Module1: Understanding of kotlin
+                </summary>
+                <div className="pl-4">
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                  <summary>
                     <button className="cursor-pointer flex items-center gap-x-0.5">
                       <img className="w-5 h-5" src={lock} alt="" />
                       <h4>Video1: Let's start with kotlin</h4>
@@ -135,39 +213,7 @@ const MyClass = ({ course }) => {
                 </summary>
                 <div className="pl-4">
                   <summary>
-                  <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                  <summary>
                     <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                  <summary>
-                    <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                </div>
-              </details>
-            </div>
-          </details>
-          <details className="outline rounded outline-slate-300 p-2 text-white">
-            <summary className="cursor-pointer text-lg font-bold">
-              Welcome TO Kotlin
-            </summary>
-            <div className="pl-4">
-              <details>
-                <summary className="cursor-pointer">
-                  Module1: Understanding of kotlin
-                </summary>
-                <div className="pl-4">
-                  <summary>
-                  <button className="cursor-pointer flex items-center gap-x-0.5">
                       <img className="w-5 h-5" src={lock} alt="" />
                       <h4>Video1: Let's start with kotlin</h4>
                     </button>
@@ -199,38 +245,10 @@ const MyClass = ({ course }) => {
                 </summary>
                 <div className="pl-4">
                   <summary>
-                    <img className="w-5 h-5" src={lock} alt="" />
-                    <h4>Video1: Let's start with kotlin</h4>
-                  </summary>
-                  <summary>
                     <button className="cursor-pointer flex items-center gap-x-0.5">
                       <img className="w-5 h-5" src={lock} alt="" />
                       <h4>Video1: Let's start with kotlin</h4>
                     </button>
-                  </summary>
-                  <summary>
-                    <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                </div>
-              </details>
-            </div>
-          </details>
-          <details className="outline rounded outline-slate-300 p-2 text-white">
-            <summary className="cursor-pointer text-lg font-bold">
-              Welcome TO Kotlin
-            </summary>
-            <div className="pl-4">
-              <details>
-                <summary className="cursor-pointer">
-                  Module1: Understanding of kotlin
-                </summary>
-                <div className="pl-4">
-                  <summary>
-                    <img className="w-5 h-5" src={lock} alt="" />
-                    <h4>Video1: Let's start with kotlin</h4>
                   </summary>
                   <summary>
                     <button className="cursor-pointer flex items-center gap-x-0.5">
@@ -259,8 +277,10 @@ const MyClass = ({ course }) => {
                 </summary>
                 <div className="pl-4">
                   <summary>
-                    <img className="w-5 h-5" src={lock} alt="" />
-                    <h4>Video1: Let's start with kotlin</h4>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
                   </summary>
                   <summary>
                     <button className="cursor-pointer flex items-center gap-x-0.5">
@@ -289,8 +309,10 @@ const MyClass = ({ course }) => {
                 </summary>
                 <div className="pl-4">
                   <summary>
-                    <img className="w-5 h-5" src={lock} alt="" />
-                    <h4>Video1: Let's start with kotlin</h4>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
                   </summary>
                   <summary>
                     <button className="cursor-pointer flex items-center gap-x-0.5">
