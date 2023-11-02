@@ -31,11 +31,11 @@ const MyClass = ({ course }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div>
+          <div className="flex justify-between">
             <h2 className="font-montserrat text-lg tracking-wider">
               Video1: Let's start with kotlin
             </h2>
-            <div>
+            <div className="flex gap-x-5 text-lg font-montserrat">
               <button>Previous</button>
               <button>Next</button>
             </div>
