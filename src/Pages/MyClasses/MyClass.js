@@ -31,9 +31,17 @@ const MyClass = ({ course }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <h2>Video1: Let's start with kotlin</h2>
+          <div>
+            <h2 className="font-montserrat text-lg tracking-wider">
+              Video1: Let's start with kotlin
+            </h2>
+            <div>
+              <button>Previous</button>
+              <button>Next</button>
+            </div>
+          </div>
         </div>
-        <div className="transition-all duration-1000 bg-accent w-full list-none p-2 flex flex-col gap-y-2 rounded-md">
+        <div className="transition-all duration-1000 bg-accent w-full list-none p-2 flex flex-col gap-y-2 rounded-md h-fit">
           <details className="outline rounded outline-slate-300 p-2 text-white">
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
