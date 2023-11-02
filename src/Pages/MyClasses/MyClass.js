@@ -20,7 +20,7 @@ const MyClass = ({ course }) => {
         </span>
       </h1>
       <div className="flex mb-10 gap-x-10">
-        <div>
+        <div className="flex flex-col gap-y-4">
           <iframe
             className="shadow-lg shadow-accent"
             width="800"
@@ -31,6 +31,7 @@ const MyClass = ({ course }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+          <h2>Video1: Let's start with kotlin</h2>
         </div>
         <div className="transition-all duration-1000 bg-accent w-full list-none p-2 flex flex-col gap-y-2 rounded-md">
           <details className="outline rounded outline-slate-300 p-2 text-white">
