@@ -32,12 +32,12 @@ const MyClass = ({ course }) => {
             allowfullscreen
           ></iframe>
         </div>
-        <div className="transition-all duration-1000 bg-accent w-full list-none p-2 flex flex-col gap-y-2">
+        <div className="transition-all duration-1000 bg-accent w-full list-none p-2 flex flex-col gap-y-2 rounded-md">
           <details className="outline rounded outline-slate-300 p-2 text-white">
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -78,7 +78,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -110,7 +110,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -142,7 +142,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -174,7 +174,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -206,7 +206,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -238,7 +238,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -270,7 +270,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -302,7 +302,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div className="pl-4">
+            <div  className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
