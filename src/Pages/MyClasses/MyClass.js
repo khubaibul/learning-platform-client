@@ -20,7 +20,7 @@ const MyClass = ({ course }) => {
         </span>
       </h1>
       <div className="flex mb-10 gap-x-10">
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-8">
           <iframe
             className="shadow-lg shadow-accent"
             width="800"
@@ -32,12 +32,16 @@ const MyClass = ({ course }) => {
             allowfullscreen
           ></iframe>
           <div className="flex justify-between">
-            <h2 className="font-montserrat text-lg tracking-wider">
+            <h2 className="font-montserrat font-bold text-xl tracking-wider bg-gradient-to-r from-purple-800 via-accent to-purple-600 inline-block text-transparent bg-clip-text">
               Video1: Let's start with kotlin
             </h2>
             <div className="flex gap-x-5 text-lg font-montserrat">
-              <button>Previous</button>
-              <button>Next</button>
+              <button className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold">
+                Previous
+              </button>
+              <button className="bg-gradient-to-r from-purple-600 to-violet-500 px-4 py-0.5 rounded-md font-semibold text-gray-900">
+                Next
+              </button>
             </div>
           </div>
         </div>
