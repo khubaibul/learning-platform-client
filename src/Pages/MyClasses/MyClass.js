@@ -13,13 +13,13 @@ const MyClass = ({ course }) => {
 
   return (
     <div className="w-[80%] mx-auto">
-      <h1 className="text-center mt-4 font-montserrat text-2xl font-bold tracking-wider">
+      <h1 className="text-center mt-6 mb-4 font-montserrat text-2xl font-bold tracking-wider">
         CSE From Home -{" "}
         <span className="italic font-extrabold bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text">
           Kotlin
         </span>
       </h1>
-      <div className="flex my-10 gap-x-10">
+      <div className="flex mb-10 gap-x-10">
         <div>
           <iframe
             className="shadow-lg shadow-accent"
@@ -78,7 +78,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -110,7 +110,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -142,7 +142,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -174,7 +174,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -206,7 +206,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -238,7 +238,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -270,7 +270,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
@@ -302,7 +302,7 @@ const MyClass = ({ course }) => {
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
-            <div  className="bg-[#111827] p-2 rounded-lg">
+            <div className="bg-[#111827] p-2 rounded-lg">
               <details>
                 <summary className="cursor-pointer">
                   Module1: Understanding of kotlin
