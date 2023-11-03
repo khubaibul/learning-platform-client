@@ -11,6 +11,11 @@ const MyClass = ({ course }) => {
 
   const [contentURL, setContentURL] = useState(contentsURL[0]);
 
+  const nextContent = () => {
+    setContentURL(contentURL[0 + 1]);
+    console.log(contentURL);
+  };
+
   return (
     <div className="w-[80%] mx-auto">
       <h1 className="text-center mt-6 mb-4 font-montserrat text-2xl font-bold tracking-wider">
@@ -36,10 +41,16 @@ const MyClass = ({ course }) => {
               Video1: Let's start with kotlin
             </h2>
             <div className="flex gap-x-5 text-lg font-montserrat">
-              <button className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold">
+              <button
+                onClick={() => nextContent()}
+                className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold hover:uppercase"
+              >
                 Previous
               </button>
-              <button className="bg-gradient-to-r from-purple-600 to-violet-500 px-4 py-0.5 rounded-md font-semibold text-gray-900">
+              <button
+                onClick={() => nextContent()}
+                className="bg-gradient-to-r from-purple-600 to-violet-500 px-4 py-0.5 rounded-md font-semibold text-gray-900"
+              >
                 Next
               </button>
             </div>
