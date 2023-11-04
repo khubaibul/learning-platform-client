@@ -26,8 +26,8 @@
     "milestoneName": "Welcome to Kotlin",
     "module": 1,
     "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "videoTitle": "#3 Kotlin Tutorial | IntelliJ | Android Studio 3",
+    "video": "https://www.youtube.com/embed/glX5Yx63_Vs?si=U7UeD7yGgmjxPoIr"
   },
   {
     "_id": "6542b93395824d450189030c",
@@ -36,8 +36,8 @@
     "milestoneName": "Welcome to Kotlin",
     "module": 1,
     "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "videoTitle": "#4 Kotlin Tutorial | Class | Object",
+    "video": "https://www.youtube.com/embed/NpveMP5869U?si=Bw90bld3LDE5pD4i"
   },
   {
     "_id": "6542b93397fdaf720a0edb8b",
@@ -45,49 +45,49 @@
     "milestone": 1,
     "milestoneName": "Welcome to Kotlin",
     "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "moduleName": "Kotlin Variable",
+    "videoTitle": "#5 Kotlin Tutorial | Var Val",
+    "video": "https://www.youtube.com/embed/4YF_DUMQqFA?si=W5F0tP-0hwz6CmNT"
   },
   {
     "_id": "6542b933af187fab5bd15339",
     "course_name": "kotlin",
     "milestone": 1,
     "milestoneName": "Welcome to Kotlin",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "module": 2,
+    "moduleName": "Kotlin || Java",
+    "videoTitle": "#6 Kotlin Tutorial | Kotlin Java together",
+    "video": "https://www.youtube.com/embed/e-gZc-mZqE8?si=ohdzz46GxD8i9GkW"
   },
   {
     "_id": "6542b933a5b75ce80547ea12",
     "course_name": "kotlin",
     "milestone": 1,
     "milestoneName": "Welcome to Kotlin",
-    "module": 1,
+    "module": 2,
     "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "videoTitle": "#7 Kotlin Tutorial | Convert Java Kotlin",
+    "video": "https://www.youtube.com/embed/YuRjPUxvcek?si=GXfAZAZS-0eOtOUE"
   },
   {
     "_id": "6542b9332f58db390f77d721",
     "course_name": "kotlin",
     "milestone": 1,
     "milestoneName": "Welcome to Kotlin",
-    "module": 1,
+    "module": 2,
     "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "videoTitle": "#8 Kotlin Tutorial | Decompile Bytecode",
+    "video": "https://www.youtube.com/embed/8TW9zbgQnKc?si=2KTcJAab0Glj2ul7"
   },
   {
     "_id": "6542b933bf3c65b79511449b",
     "course_name": "kotlin",
     "milestone": 1,
     "milestoneName": "Welcome to Kotlin",
-    "module": 1,
+    "module": 2,
     "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "videoTitle": "#9 Kotlin Tutorial | Operators",
+    "video": "https://www.youtube.com/embed/q_XZWtP6KQg?si=wQCk3vUNkk6oVSMF"
   },
   {
     "_id": "6542b933a8a76676acf7ddc3",
@@ -96,8 +96,8 @@
     "milestoneName": "Welcome to Kotlin",
     "module": 1,
     "moduleName": "Lets start with Kotlin",
-    "videoTitle": "What is kotlin?",
-    "video": "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q"
+    "videoTitle": "#10 Kotlin Tutorial | String Template",
+    "video": "https://www.youtube.com/embed/9XmGh4WgfSg?si=DEfhjzySKzV65Wg2"
   },
   {
     "_id": "6542b9338224ca1e89ff7bc1",
