@@ -20,7 +20,11 @@ const MyClass = ({ course }) => {
 
   return (
     <div className="w-[80%] mx-auto">
-      <h1 className="text-center mt-6 mb-4 font-montserrat text-2xl font-bold tracking-wider">
+      <h1
+        className={`text-center mt-6 mb-4 font-montserrat text-2xl font-bold tracking-wider ${
+          theme ? "text-slate-300" : " text-gray-900"
+        }`}
+      >
         CSE From Home -{" "}
         <span className="italic font-extrabold bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text">
           Kotlin
