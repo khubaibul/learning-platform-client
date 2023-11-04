@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import lock from "../../Assets/lock.png";
 import check from "../../Assets/checked.png";
+import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
 const MyClass = ({ course }) => {
+  const { user, logOut, theme } = useContext(AuthContext);
   const contentsURL = [
     "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q",
     "https://www.youtube.com/embed/5flXf8nuq60?si=h-O9mm1iykW-Jbwi",
@@ -49,7 +51,7 @@ const MyClass = ({ course }) => {
               </button>
               <button
                 onClick={() => nextContent()}
-                className="bg-gradient-to-r hover:bg-gradient-to-l from-purple-600 hover:from-purple-800 to-violet-500 hover:to-violet-900 px-4 py-0.5 rounded-md font-semibold text-gray-900"
+                className="bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
               >
                 Next
               </button>
