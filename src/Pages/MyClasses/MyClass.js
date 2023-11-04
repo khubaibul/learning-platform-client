@@ -27,7 +27,7 @@ const MyClass = ({ course }) => {
       <div className="flex mb-10 gap-x-10">
         <div className="flex flex-col gap-y-8">
           <iframe
-            className="shadow-lg shadow-accent"
+            className="shadow-lg shadow-violet-200 rounded-md"
             width="800"
             height="450"
             src={contentURL}
@@ -56,7 +56,7 @@ const MyClass = ({ course }) => {
             </div>
           </div>
         </div>
-        <div className="transition-all duration-1000 bg-accent w-full list-none p-2 flex flex-col gap-y-2 rounded-md h-fit">
+        <div className="transition-all duration-1000 bg-gradient-to-r from-purple-900 to-violet-800 w-full list-none p-2 flex flex-col gap-y-2 rounded-md h-fit">
           <details className="outline rounded outline-slate-300 p-2 text-white">
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
