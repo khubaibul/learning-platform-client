@@ -42,3 +42,8 @@
     linear-gradient(to right, darkblue, darkorchid) border-box;
   border: 2.5px solid transparent;
 }
+
+.module-border-wrap:hover {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to left, darkblue, darkorchid) border-box;
+}
