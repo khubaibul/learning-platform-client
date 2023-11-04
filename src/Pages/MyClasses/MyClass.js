@@ -49,7 +49,7 @@ const MyClass = ({ course }) => {
               </button>
               <button
                 onClick={() => nextContent()}
-                className="bg-gradient-to-r hover:bg-gradient-to-l from-purple-600 to-violet-500 px-4 py-0.5 rounded-md font-semibold text-gray-900"
+                className="bg-gradient-to-r hover:bg-gradient-to-l from-purple-600 hover:from-purple-800 to-violet-500 hover:to-violet-900 px-4 py-0.5 rounded-md font-semibold text-gray-900"
               >
                 Next
               </button>
