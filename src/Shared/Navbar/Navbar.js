@@ -44,6 +44,8 @@ const Navbar = () => {
 
   const isPaid = myCourses?.find((course) => course?.paid);
 
+  console.log(isPaid);
+
   return (
     <div
       className={`navbar ${
@@ -131,6 +133,17 @@ const Navbar = () => {
                 About Us
               </NavLink>
             </li>
+            {isPaid !== undefined && (
+              <li>
+                <NavLink
+                  to="/about"
+                  className="bg-transparent !rounded-none"
+                  style={navLinkStyle}
+                >
+                  My Classes
+                </NavLink>
+              </li>
+            )}
             <div className="navbar-end lg:hidden">
               <div className="form-control lg:mr-3">
                 <label className="label cursor-pointer">
@@ -266,6 +279,17 @@ const Navbar = () => {
               About Us
             </NavLink>
           </li>
+          {isPaid !== undefined && (
+            <li>
+              <NavLink
+                to="/about"
+                className="bg-transparent !rounded-none"
+                style={navLinkStyle}
+              >
+                My Classes
+              </NavLink>
+            </li>
+          )}
         </ul>
       </div>
       <div className="navbar-end">
