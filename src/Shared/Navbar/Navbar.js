@@ -282,7 +282,7 @@ const Navbar = () => {
           {isPaid !== undefined && (
             <li>
               <NavLink
-                to="/about"
+                to="/my-class"
                 className="bg-transparent !rounded-none"
                 style={navLinkStyle}
               >
