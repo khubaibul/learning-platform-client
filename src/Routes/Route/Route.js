@@ -81,7 +81,7 @@ export const routes = createBrowserRouter([
         element: <About></About>,
       },
       {
-        path: "/my-class",
+        path: "/dashboard",
         element: <MyClass />,
       },
     ],
