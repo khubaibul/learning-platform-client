@@ -13,8 +13,7 @@ import UserProfile from "../../Pages/User/UserProfile/UserProfile";
 import About from "../../Shared/About/About";
 import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import MyClasses from "../../Pages/MyClasses/MyClasses";
-import MyClass from "../../Pages/MyClasses/MyClass";
+import Dashboard from "../../Pages/MyClasses/Dashboard";
 
 export const routes = createBrowserRouter([
   {
@@ -82,7 +81,11 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <MyClass />,
+        element: (
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        ),
       },
     ],
   },

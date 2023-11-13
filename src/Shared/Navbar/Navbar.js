@@ -136,7 +136,7 @@ const Navbar = () => {
             {isPaid !== undefined && (
               <li>
                 <NavLink
-                  to="/about"
+                  to="/dashboard"
                   className="bg-transparent !rounded-none"
                   style={navLinkStyle}
                 >
@@ -282,7 +282,7 @@ const Navbar = () => {
           {isPaid !== undefined && (
             <li>
               <NavLink
-                to="/my-class"
+                to="/dashboard"
                 className="bg-transparent !rounded-none"
                 style={navLinkStyle}
               >

@@ -3,7 +3,7 @@ import lock from "../../Assets/lock.png";
 import check from "../../Assets/checked.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
-const MyClass = ({ course }) => {
+const MyClass = () => {
   const { user, logOut, theme } = useContext(AuthContext);
   const contentsURL = [
     "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q",
