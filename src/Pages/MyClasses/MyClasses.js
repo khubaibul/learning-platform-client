@@ -12,13 +12,11 @@ const MyClasses = () => {
       .then((data) => setMyClass(data));
   }, [user?.email]);
 
-
   return (
     <div>
-      {/* {
-        myClass?.map(course => <MyClass/>)
-    } */}
-      <p>My Class Dummy</p>
+      {myClass?.map((course) => (
+        <div></div>
+      ))}
     </div>
   );
 };
