@@ -34,10 +34,6 @@ const UserProfile = () => {
               src={user.photoURL}
               alt=""
             />
-            <lord-icon
-              src="https://cdn.lordicon.com/yypubrzc.json"
-              trigger="hover"
-            ></lord-icon>
             <div className="text-center mt-2 text-2xl font-medium font-montserrat">
               {user?.displayName}
             </div>
