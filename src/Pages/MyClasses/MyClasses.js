@@ -18,9 +18,16 @@ const MyClasses = () => {
       <div className="col-span-4">
         {myClasses?.map((myClass) => (
           <>
-            <div className="bg-gradient-to-l from-[#1B0B30] to-[#100530] p-4 rounded-lg flex ">
-              <img src={kotlin} alt="" />
-              <h1>Complete {myClass?.courseName} Course By CSE FROM HOME</h1>
+            <div className="bg-gradient-to-l from-[#1B0B30] to-[#100530] p-8 rounded-lg flex gap-x-8">
+              <img className="h-56 w-96" src={kotlin} alt="" />
+              <div>
+                <h1 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text text-2xl font-montserrat font-bold">
+                  Complete {myClass?.courseName} Course By CSE FROM HOME
+                </h1>
+                <div class="p-0.5 text-center text-xs font-medium leading-none text-primary-100 w-full bg-gradient-to-r from-purple-800 via-accent to-purple-400 rounded-full text-white">
+                  100%
+                </div>
+              </div>
             </div>
           </>
         ))}
