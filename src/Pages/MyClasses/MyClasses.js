@@ -15,7 +15,7 @@ const MyClasses = () => {
 
   return (
     <div className="grid grid-cols-5 gap-x-5">
-      <div className="col-span-4">
+      <div className="col-span-4 flex flex-col gap-y-4">
         {myClasses?.map((myClass) => (
           <div className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 p-[3px] rounded-lg">
             <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg flex gap-x-8">
