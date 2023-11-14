@@ -15,15 +15,17 @@ const MyClasses = () => {
 
   return (
     <div className="grid grid-cols-5 gap-x-5">
-      <div className="col-span-3">
+      <div className="col-span-4">
         {myClasses?.map((myClass) => (
-          <div className="bg-gradient-to-l from-[#1B0B30] to-[#100530] p-4">
-            <img src={kotlin} alt="" />
-            <h1>Complete {myClass?.courseName} Course By CSE FROM HOME</h1>
-          </div>
+          <>
+            <div className="bg-gradient-to-l from-[#1B0B30] to-[#100530] p-4 rounded-lg flex ">
+              <img src={kotlin} alt="" />
+              <h1>Complete {myClass?.courseName} Course By CSE FROM HOME</h1>
+            </div>
+          </>
         ))}
       </div>
-      <div className="col-span-2">
+      <div className="col-span-1">
         <h4>Your Performance</h4>
       </div>
     </div>

@@ -6,9 +6,9 @@ const Dashboard = () => {
   const { user, theme } = useContext(AuthContext);
   console.log(user);
   return (
-    <div>
+    <div className="w-[80%] mx-auto">
       <h1
-        className={`text-center mt-6 mb-4 font-montserrat text-2xl font-bold tracking-wider ${
+        className={`text-center mt-10 mb-4 font-montserrat text-2xl font-bold tracking-wider ${
           theme ? "text-slate-300" : " text-gray-900"
         }`}
       >
