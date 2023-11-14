@@ -17,8 +17,8 @@ const MyClasses = () => {
     <div className="grid grid-cols-5 gap-x-5">
       <div className="col-span-4">
         {myClasses?.map((myClass) => (
-          <>
-            <div className="bg-gradient-to-l from-[#1B0B30] to-[#100530] p-8 rounded-lg flex gap-x-8">
+          <div className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 p-[3px] rounded-lg">
+            <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg flex gap-x-8">
               <img className="h-56 w-96 rounded-md" src={kotlin} alt="" />
               <div className="flex flex-col gap-y-8 justify-center">
                 <h1 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text text-2xl font-montserrat font-bold">
@@ -45,11 +45,15 @@ const MyClasses = () => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
-      <div className="col-span-1">
-        <h4>Your Performance</h4>
+      <div>
+        <div className="col-span-1 bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg">
+          <h4 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text font-montserrat font-bold">
+            Your Performance
+          </h4>
+        </div>
       </div>
     </div>
   );
