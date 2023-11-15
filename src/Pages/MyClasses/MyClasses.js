@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import kotlin from "../../Assets/kotlin.png";
+import { Link } from "react-router-dom";
 
 const MyClasses = () => {
   const { user, theme } = useContext(AuthContext);
@@ -28,14 +29,15 @@ const MyClasses = () => {
                   100%
                 </div>
                 <div className="flex gap-x-5 text-lg font-montserrat">
-                  <button
+                  <Link
+                    to={`/myclass/${}`}
                     // onClick={() => nextContent()}
                     className="bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
                   >
                     <span className="bg-gradient-to-r from-white to-sky-400 inline-block text-transparent bg-clip-text font-montserrat">
                       Continue Course
                     </span>
-                  </button>
+                  </Link>
                   <button
                     // onClick={() => nextContent()}
                     className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold"
