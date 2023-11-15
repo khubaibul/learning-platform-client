@@ -43,6 +43,12 @@ export const routes = createBrowserRouter([
           fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`),
       },
       {
+        path: "/course/:id",
+        element: <CourseDetail></CourseDetail>,
+        loader: ({ params }) =>
+          fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`),
+      },
+      {
         path: "/course/checkout/:_id/:course_price/:courseTitle",
         element: (
           <PrivateRoute>
