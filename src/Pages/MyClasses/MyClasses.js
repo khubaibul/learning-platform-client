@@ -25,7 +25,11 @@ const MyClasses = () => {
               <img className="h-56 w-96 rounded-md" src={kotlin} alt="" />
               <div className="flex flex-col gap-y-8 justify-center">
                 <h1 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text text-2xl font-montserrat font-bold">
-                  Complete {myClass?.courseName} Course By CSE FROM HOME
+                  Complete
+                  <span className="text-[#EAAAFF] italic font-bold mx-1.5">
+                    {myClass?.courseName}
+                  </span>
+                  Course By CSE FROM HOME
                 </h1>
                 <div class="p-1 text-center text-sm font-montserrat font-medium leading-none text-primary-100 w-full bg-gradient-to-r from-purple-800 via-accent to-purple-400 rounded-full text-white">
                   100%
