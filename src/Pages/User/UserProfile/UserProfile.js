@@ -78,7 +78,11 @@ const UserProfile = () => {
                 ))}
               </div>
             ) : (
-              <h4 className={theme ? "text-center py-5" : "text-center py-5"}>
+              <h4
+                className={
+                  theme ? "text-center py-5 text-[#EAAAFF]" : "text-center py-5"
+                }
+              >
                 You haven't enrolled any course yet. <br /> Please enroll our{" "}
                 <Link
                   to="/courses"
@@ -98,7 +102,13 @@ const UserProfile = () => {
         </div>
       ) : (
         <div>
-          <h2 className="my-56 text-center text-xl ">
+          <h2
+            className={`${
+              theme
+                ? "text-center text-[#EAAAFF] my-56 text-xl"
+                : "text-center my-56 text-xl"
+            }`}
+          >
             Your Are Not Logged In. Please
             <Link to="/login" className="underline-offset-4 underline">
               {" "}
