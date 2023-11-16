@@ -18,6 +18,31 @@ const Dashboard = () => {
         </span>
         , Ready For Your Next Lesson?
       </h1>
+
+      <div className="grid grid-cols-5 gap-x-5 mb-10">
+        <div className="col-span-4 bg-gradient-to-r from-purple-800 via-accent to-purple-400 p-[3px] rounded-lg">
+          <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg h-full">
+            p
+          </div>
+        </div>
+        <div className="col-span-1 bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] py-8 px-2 rounded-lg flex flex-col justify-center items-center gap-4 border-violet-800 border-4">
+          <h4 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text font-montserrat font-bold text-xl">
+            Your Performance
+          </h4>
+          <div
+            className="radial-progress  text-accent font-montserrat font-semibold"
+            style={{
+              "--value": "90",
+              "--size": "10rem",
+              "--thickness": "1.5rem",
+            }}
+            role="progressbar"
+          >
+            90%
+          </div>
+        </div>
+      </div>
+
       <MyClasses />
     </div>
   );

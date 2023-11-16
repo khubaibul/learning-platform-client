@@ -61,7 +61,7 @@ const UserProfile = () => {
                     <h3 className="text-xs">{myCourse?.transactionId}</h3>
                     {myCourse?.paid === true ? (
                       <Link
-                        to="/my-class"
+                        to={`/myClass/${myCourse?.courseName}`}
                         className={`font-semibold rounded-sm p-0.5 text-center hover:bg-opacity-80 active:bg-opacity-100 w-[30%] bg-green-500`}
                       >
                         Go To Class
