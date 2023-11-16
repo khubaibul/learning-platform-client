@@ -30,9 +30,9 @@ const MyClasses = () => {
                 </div>
                 <div className="flex gap-x-5 text-lg font-montserrat">
                   <Link
-                    to={`/myclass/${myClass?.courseName}`}
+                    to={`/myClass/${myClass?.courseName}`}
                     // onClick={() => nextContent()}
-                    className="bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
+                    className="flex justify-center items-center bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
                   >
                     <span className="bg-gradient-to-r from-white to-sky-400 inline-block text-transparent bg-clip-text font-montserrat">
                       Continue Course

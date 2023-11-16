@@ -14,6 +14,7 @@ import About from "../../Shared/About/About";
 import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Dashboard from "../../Pages/MyClasses/Dashboard";
+import MyClass from "../../Pages/MyClasses/MyClass";
 
 export const routes = createBrowserRouter([
   {
@@ -35,12 +36,6 @@ export const routes = createBrowserRouter([
         path: "/courses",
         element: <Courses></Courses>,
         loader: () => fetch("https://cse-from-home-server.vercel.app/courses"),
-      },
-      {
-        path: "/course/:id",
-        element: <CourseDetail></CourseDetail>,
-        loader: ({ params }) =>
-          fetch(`https://cse-from-home-server.vercel.app/course/${params.id}`),
       },
       {
         path: "/course/:id",
@@ -92,6 +87,10 @@ export const routes = createBrowserRouter([
             <Dashboard />
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/myClass/:courseName",
+        element: <MyClass />,
       },
     ],
   },

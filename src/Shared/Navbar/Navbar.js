@@ -22,9 +22,9 @@ const Navbar = () => {
   };
 
   const handleToggle = (e) => {
-    if (e.target.checked) {
+    if (!e.target.checked) {
       setTheme(false);
-    } else if (!e.target.checked) {
+    } else if (e.target.checked) {
       setTheme(true);
     }
   };
@@ -35,7 +35,7 @@ const Navbar = () => {
       .then((data) => setCourses(data.data));
   }, []);
 
-  // console.log(user);
+  console.log(theme);
   useEffect(() => {
     fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
       .then((res) => res.json())
@@ -43,8 +43,6 @@ const Navbar = () => {
   }, [user?.email]);
 
   const isPaid = myCourses?.find((course) => course?.paid);
-
-  console.log(isPaid);
 
   return (
     <div
@@ -149,21 +147,22 @@ const Navbar = () => {
                 <label className="label cursor-pointer">
                   {theme ? (
                     <img
-                      src={lightMode}
+                      src={darkMode}
                       className="label-text w-7 mr-1"
                       alt="/mode"
                     ></img>
                   ) : (
                     <img
-                      src={darkMode}
+                      src={lightMode}
                       className="label-text w-7 mr-1"
                       alt="/mode"
                     ></img>
                   )}
                   <input
                     onChange={handleToggle}
+                    defaultChecked
                     type="checkbox"
-                    className="toggle toggle-secondary"
+                    className="toggle toggle-accent"
                   />
                 </label>
               </div>
@@ -297,19 +296,20 @@ const Navbar = () => {
           <label className="label cursor-pointer">
             {theme ? (
               <img
-                src={lightMode}
+                src={darkMode}
                 className="label-text w-7 mr-1"
                 alt="/mode"
               ></img>
             ) : (
               <img
-                src={darkMode}
+                src={lightMode}
                 className="label-text w-7 mr-1"
                 alt="/mode"
               ></img>
             )}
             <input
               onChange={handleToggle}
+              defaultChecked
               type="checkbox"
               className="toggle toggle-accent"
             />

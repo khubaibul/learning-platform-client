@@ -15,7 +15,9 @@ const MyClass = () => {
 
   const nextContent = () => {
     setContentURL(contentURL[0 + 1]);
-    console.log(contentURL);
+  };
+  const previewsContent = () => {
+    setContentURL(contentURL[0 - 1]);
   };
 
   return (
@@ -48,13 +50,13 @@ const MyClass = () => {
             </h2>
             <div className="flex gap-x-5 text-lg font-montserrat">
               <button
-                onClick={() => nextContent()}
+                // onClick={() => previewsContent()}
                 className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold"
               >
                 Previous
               </button>
               <button
-                onClick={() => nextContent()}
+                // onClick={() => nextContent()}
                 className="bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
               >
                 Next
