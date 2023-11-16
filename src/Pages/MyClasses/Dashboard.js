@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import MyClasses from "./MyClasses";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import courseBrandImage from "../../Assets/course_banner.jpg";
+import quote from "../../Assets/quote.png";
 
 const Dashboard = () => {
   const { user, theme } = useContext(AuthContext);
@@ -33,16 +34,13 @@ const Dashboard = () => {
                 <h1 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text italic text-xl font-montserrat font-bold">
                   "Unlock the future, writing one line of code."
                 </h1>
+                <div className="flex items-center gap-x-1">
+                  <img className="w-5 h-5" src={quote} alt="" />
+                  <span className="text-purple-800">Khubaibul Islam</span>
+                </div>
               </div>
-              {/* <div class="p-1 text-center text-sm font-montserrat font-medium leading-none text-primary-100 w-full bg-gradient-to-r from-purple-800 via-accent to-purple-400 rounded-full text-white">
-                100%
-              </div> */}
               <div className="flex gap-x-5 text-lg font-montserrat">
-                <button
-                  // to={`/myClass/${myClass?.courseName}`}
-                  // onClick={() => nextContent()}
-                  className="flex justify-center items-center bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
-                >
+                <button className="flex justify-center items-center bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900">
                   <span className="bg-gradient-to-r from-white to-sky-400 inline-block text-transparent bg-clip-text font-montserrat">
                     Course Instructions
                   </span>
