@@ -78,7 +78,7 @@ const UserProfile = () => {
                 ))}
               </div>
             ) : (
-              <h4 className="text-center py-5">
+              <h4 className={theme ? "text-center py-5" : "text-center py-5"}>
                 You haven't enrolled any course yet. <br /> Please enroll our{" "}
                 <Link
                   to="/courses"
