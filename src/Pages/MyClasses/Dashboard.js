@@ -6,7 +6,6 @@ import quote from "../../Assets/quote.png";
 
 const Dashboard = () => {
   const { user, theme } = useContext(AuthContext);
-  console.log(user);
   return (
     <div className="w-[80%] mx-auto mb-28">
       <h1

@@ -36,7 +36,6 @@ const Navbar = () => {
       .then((data) => setCourses(data.data));
   }, []);
 
-  console.log(theme);
   useEffect(() => {
     fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
       .then((res) => res.json())

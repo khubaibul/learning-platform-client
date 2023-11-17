@@ -1,10 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import lock from "../../Assets/lock.png";
 import check from "../../Assets/checked.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
+import { useParams } from "react-router-dom";
 
 const MyClass = () => {
+  const [classes, setMyClasses] = useState([]);
   const { user, logOut, theme } = useContext(AuthContext);
+  const { courseName } = useParams();
   const contentsURL = [
     "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q",
     "https://www.youtube.com/embed/5flXf8nuq60?si=h-O9mm1iykW-Jbwi",
@@ -20,6 +23,14 @@ const MyClass = () => {
     setContentURL(contentURL[0 - 1]);
   };
 
+  useEffect(() => {
+    fetch(`https://cse-from-home-server.vercel.app/classes/Kotlin`)
+      .then((res) => res.json())
+      .then((data) => setMyClasses(data.data.classes));
+  }, [courseName]);
+
+  console.log(classes);
+
   return (
     <div className="w-[80%] mx-auto">
       <h1
@@ -29,7 +40,7 @@ const MyClass = () => {
       >
         CSE From Home -{" "}
         <span className="italic font-extrabold bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text">
-          Kotlin
+          {courseName}
         </span>
       </h1>
       <div className="flex mb-10 gap-x-10">
