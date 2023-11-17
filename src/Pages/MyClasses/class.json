@@ -29,55 +29,57 @@
 
   {
     "milestone": 1,
-    "milestoneName": "",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
+    "milestoneName": "What is Kotlin?",
+    "module": 2,
+    "moduleName": "Variables & Data Types in Kotlin",
     "video": 1,
+    "videoTitle": "Variables & Data Types in Kotlin Tutorial | var & val | CheezyCode #4",
+    "videoSource": "https://www.youtube.com/embed/bq-6IJ5-klk?si=d4VPXPd7P0GLv8LW"
+  },
+  {
+    "milestone": 1,
+    "milestoneName": "What is Kotlin?",
+    "module": 2,
+    "moduleName": "Variables & Data Types in Kotlin",
+    "video": 2,
+    "videoTitle": "Kotlin Operators Tutorial | Arithmetic & Relational Operators Kotlin | CheezyCode #5",
+    "videoSource": "https://www.youtube.com/embed/iPdVy8sAzX8?si=i6UAHhKE2xMHpTDZ"
+  },
+  {
+    "milestone": 1,
+    "milestoneName": "What is Kotlin?",
+    "module": 2,
+    "moduleName": "Variables & Data Types in Kotlin",
+    "video": 3,
+    "videoTitle": "Kotlin Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+    "videoSource": "https://www.youtube.com/embed/n8fcjc9QU1M?si=XhqnKbAxIgBJ4rvz"
+  },
+
+
+  {
+    "milestone": 1,
+    "milestoneName": "What is Kotlin?",
+    "module": 3,
+    "moduleName": "Statement and Expression",
+    "video": 1,
+    "videoTitle": "Kotlin If Else Statement and Expression Tutorial | CheezyCode #7",
+    "videoSource": "https://www.youtube.com/embed/S6QHTZNbE7E?si=SQ1S4nEftgO01oKS"
+  },
+  {
+    "milestone": 1,
+    "milestoneName": "What is Kotlin?",
+    "module": 3,
+    "moduleName": "Statement and Expression",
+    "video": 2,
     "videoTitle": "",
     "videoSource": ""
   },
   {
     "milestone": 1,
-    "milestoneName": "",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "video": 1,
-    "videoTitle": "",
-    "videoSource": ""
-  },
-  {
-    "milestone": 1,
-    "milestoneName": "",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "video": 1,
-    "videoTitle": "",
-    "videoSource": ""
-  },
-  {
-    "milestone": 1,
-    "milestoneName": "",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "video": 1,
-    "videoTitle": "",
-    "videoSource": ""
-  },
-  {
-    "milestone": 1,
-    "milestoneName": "",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "video": 1,
-    "videoTitle": "",
-    "videoSource": ""
-  },
-  {
-    "milestone": 1,
-    "milestoneName": "",
-    "module": 1,
-    "moduleName": "Lets start with Kotlin",
-    "video": 1,
+    "milestoneName": "What is Kotlin?",
+    "module": 3,
+    "moduleName": "Statement and Expression",
+    "video": 3,
     "videoTitle": "",
     "videoSource": ""
   },
