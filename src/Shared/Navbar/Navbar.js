@@ -5,6 +5,7 @@ import logo from "../../Assets/logo.png";
 import noUser from "../../Assets/user.png";
 import darkMode from "../../Assets/dark-mode.png";
 import lightMode from "../../Assets/light-mode.png";
+import logo_for_dark_mode from "../../Assets/logo-for-dark-mode.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -211,7 +212,11 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="flex items-center">
-          <img src={logo} className="lg:w-64 md:w-64" alt="" />
+          <img
+            src={theme ? logo_for_dark_mode : logo}
+            className="lg:w-64 md:w-64"
+            alt=""
+          />
           <h1 className="ml-2 italic font-bold bg-gradient-to-r from-green-600 via-accent to-green-400 inline-block text-transparent bg-clip-text">
             {isPaid === undefined ? "" : "Premium"}
           </h1>
