@@ -55,7 +55,6 @@
     "videoSource": "https://www.youtube.com/embed/n8fcjc9QU1M?si=XhqnKbAxIgBJ4rvz"
   },
 
-
   {
     "milestone": 1,
     "milestoneName": "What is Kotlin?",
@@ -71,8 +70,8 @@
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 2,
-    "videoTitle": "",
-    "videoSource": ""
+    "videoTitle": "Kotlin When Statement & Expression | Ranges in Kotlin Tutorial | CheezyCode #8",
+    "videoSource": "https://www.youtube.com/embed/izzJqv9cfJg?si=dtqMiF_V9yjoOY01"
   },
   {
     "milestone": 1,
@@ -80,9 +79,10 @@
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 3,
-    "videoTitle": "",
-    "videoSource": ""
+    "videoTitle": "Kotlin While & Do-While Loops Tutorial | CheezyCode #9",
+    "videoSource": "https://www.youtube.com/embed/xmYXGZPouek?si=-wutWpT7Iudvurp2"
   },
+
   {
     "milestone": 1,
     "milestoneName": "",
