@@ -88,7 +88,7 @@
 
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 1,
@@ -97,7 +97,7 @@
   },
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 2,
@@ -106,7 +106,7 @@
   },
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 3,
@@ -116,7 +116,7 @@
 
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 1,
@@ -125,7 +125,7 @@
   },
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 2,
@@ -134,7 +134,7 @@
   },
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 3,
@@ -144,7 +144,7 @@
 
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 1,
@@ -153,7 +153,7 @@
   },
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 2,
@@ -162,7 +162,7 @@
   },
   {
     "milestone": 2,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Build your first step using Kotlin",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 3,
@@ -176,7 +176,7 @@
 
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 1,
@@ -185,7 +185,7 @@
   },
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 2,
@@ -194,7 +194,7 @@
   },
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 3,
@@ -204,7 +204,7 @@
 
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 1,
@@ -213,7 +213,7 @@
   },
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 2,
@@ -222,7 +222,7 @@
   },
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 3,
@@ -232,7 +232,7 @@
 
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 1,
@@ -241,7 +241,7 @@
   },
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 2,
@@ -250,7 +250,7 @@
   },
   {
     "milestone": 3,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Function and it's usage",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 3,
@@ -265,7 +265,7 @@
 
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 1,
@@ -274,7 +274,7 @@
   },
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 2,
@@ -283,7 +283,7 @@
   },
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 1,
     "moduleName": "Introduction To Kotlin",
     "video": 3,
@@ -293,7 +293,7 @@
 
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 1,
@@ -302,7 +302,7 @@
   },
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 2,
@@ -311,7 +311,7 @@
   },
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 2,
     "moduleName": "Variables & Data Types in Kotlin",
     "video": 3,
@@ -321,7 +321,7 @@
 
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 1,
@@ -330,7 +330,7 @@
   },
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 2,
@@ -339,7 +339,7 @@
   },
   {
     "milestone": 4,
-    "milestoneName": "What is Kotlin?",
+    "milestoneName": "Kotlin Obj",
     "module": 3,
     "moduleName": "Statement and Expression",
     "video": 3,
