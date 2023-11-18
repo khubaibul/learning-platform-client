@@ -13,7 +13,14 @@ const LandingPage = () => {
 
   return (
     <div className=" w-[80%] mx-auto">
-      <div className="container mt-40 lg:block md:block hidden">
+      <h4
+        className={`text-center font-semibold font-publicSans text-4xl tracking-widest mt-16 ${
+          theme && "text-slate-300"
+        }`}
+      >
+        The Difference
+      </h4>
+      <div className="container mt-10 lg:block md:block hidden">
         <div className="row">
           <div className="col">
             <div className="main-timeline">
