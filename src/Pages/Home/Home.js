@@ -20,16 +20,10 @@ const Home = () => {
         className="hero-section"
         // style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <video
-          className="bg-video"
-          src={bgVideo}
-          autoplay
-          muted
-          loop
-        >
-          {/* <source src={bgVideo} type="video/mp4" /> */}
-          {/* <div className="hero-overlay bg-opacity-60"></div> */}
-          {/* <div className="hero-content text-center text-neutral-content">
+        <video className="bg-video" src={bgVideo} autoplay muted loop />
+        {/* <source src={bgVideo} type="video/mp4" /> */}
+        {/* <div className="hero-overlay bg-opacity-60"></div> */}
+        {/* <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md font-montserrat">
               <h1 className="mb-5 text-5xl font-bold">CSE FROM HOME</h1>
               <p className="mb-5">
@@ -41,7 +35,6 @@ const Home = () => {
               </button>
             </div>
           </div> */}
-        </video>
       </div>
 
       <LandingPage />
