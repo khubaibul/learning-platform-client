@@ -24,7 +24,7 @@ const FAQ = () => {
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div className="w-full lg:w-1/2 px-4 py-2">
               <details className="mb-4">
-                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4">
+                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   How can we get the course access?
                 </summary>
                 <span>
@@ -44,7 +44,7 @@ const FAQ = () => {
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4">
+                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   Is this course access lifetime?
                 </summary>
 
@@ -53,7 +53,7 @@ const FAQ = () => {
             </div>
             <div className="w-full lg:w-1/2 px-4 py-2">
               <details className="mb-4">
-                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4">
+                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   Is there any discount now?
                 </summary>
 
@@ -63,7 +63,7 @@ const FAQ = () => {
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4">
+                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   How will the course work?
                 </summary>
                 <span className="px-4 py-2">
@@ -71,7 +71,7 @@ const FAQ = () => {
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4">
+                <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   I need to speak directly. How can I get in touch?
                 </summary>
 
