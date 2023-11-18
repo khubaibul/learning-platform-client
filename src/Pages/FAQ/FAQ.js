@@ -27,7 +27,7 @@ const FAQ = () => {
                 <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   How can we get the course access?
                 </summary>
-                <span className={theme && "text-slate-300"}>
+                <span className={theme && "text-slate-300 pl-2"}>
                   By purchasing premium you can get access to our course. For
                   getting access you have to visit our website. Then pay the
                   amount for your desired course. After your successful payment,
@@ -38,7 +38,7 @@ const FAQ = () => {
                 <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
                   How does this course's support work?
                 </summary>
-                <span>
+                <span className={theme && "text-slate-300 pl-2"}>
                   Well. We provide support to our students with their problems.
                   Our instructors are always open for support.
                 </span>
@@ -48,7 +48,9 @@ const FAQ = () => {
                   Is this course access lifetime?
                 </summary>
 
-                <span>Yes. Our content access is life time.</span>
+                <span className={theme && "text-slate-300 pl-2"}>
+                  Yes. Our content access is life time.
+                </span>
               </details>
             </div>
             <div className="w-full lg:w-1/2 px-4 py-2">
@@ -57,7 +59,7 @@ const FAQ = () => {
                   Is there any discount now?
                 </summary>
 
-                <span className="px-4 py-2">
+                <span className={theme && "text-slate-300 pl-2"}>
                   No. If is there will be available any discount, we will give
                   the update on our website. So keep your eye open.
                 </span>
@@ -66,7 +68,7 @@ const FAQ = () => {
                 <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   How will the course work?
                 </summary>
-                <span className="px-4 py-2">
+                <span className={theme && "text-slate-300 pl-2"}>
                   The course will be based on module releases and daily tasks.
                 </span>
               </details>
@@ -75,7 +77,7 @@ const FAQ = () => {
                   I need to speak directly. How can I get in touch?
                 </summary>
 
-                <span className="px-4 py-2">
+                <span className={theme && "text-slate-300 pl-2"}>
                   You can mail us on web.cse-from-home@gmail.com. Or you can
                   contact via phone (+0019844654). If you want to visit us
                   physically, feel free to come Lalkuthi Pak Darbar Sharif,
