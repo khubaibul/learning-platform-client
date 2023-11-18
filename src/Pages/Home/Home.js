@@ -55,15 +55,21 @@ const Home = () => {
       <div className="hero-main-section w-[100%]">
         <video className="bg-video" src={bgVideo} autoPlay muted loop />
         <div className="hero-content">
-          <div className="mt-16">
-            <h1 className="font-publicSans text-7xl text-white text-center">
+          <div className="lg:mt-16 md:mt-10 mt-6">
+            <h1 className="font-publicSans lg:text-7xl md:text-3xl text-2xl text-white text-center">
               Learn new skills. Prove your potential.
             </h1>
-            <div className="grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 lg:w-[90%] mx-auto gap-2 mt-20">
+            <div className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-3 lg:w-[90%] mx-auto gap-2 mt-20 place-items-center">
               {skillCards?.map((skillCard) => (
-                <div className="bg-slate-300 p-4 w-36 h-48 flex flex-col justify-center items-center gap-y-2 text-center rounded hover:cursor-pointer hover:outline outline-4 outline-pink-700 transition-all">
-                  <img src={skillCard?.image} className="w-16" alt="" />
-                  <h3 className="font-publicSans">{skillCard?.name}</h3>
+                <div className="bg-slate-300 hover:bg-pink-50 p-4 lg:w-36 md:w-28 w-20 lg:h-48 md:h-40 h-28 flex flex-col justify-center items-center gap-y-2 text-center rounded hover:cursor-pointer hover:outline outline-4 outline-pink-700 transition-all">
+                  <img
+                    src={skillCard?.image}
+                    className="lg:w-16 md:w-12 w-10"
+                    alt=""
+                  />
+                  <h3 className="font-publicSans lg:text-base md:text-sm text-xs">
+                    {skillCard?.name}
+                  </h3>
                 </div>
               ))}
             </div>
