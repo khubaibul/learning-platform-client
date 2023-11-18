@@ -12,9 +12,9 @@ const LandingPage = () => {
   const { theme } = useContext(AuthContext);
 
   return (
-    <div className=" w-[80%] mx-auto">
+    <div className=" w-[80%] mx-auto pt-10">
       <h4
-        className={`font-semibold font-publicSans mb-10 tracking-widest pl-4 lg:pl-0 md-pl-0 ${
+        className={`font-semibold font-publicSans text-4xl tracking-widest pl-4 lg:pl-2 md-pl-0 ${
           theme && "text-slate-300"
         }`}
       >

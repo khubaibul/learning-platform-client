@@ -19,16 +19,14 @@ const ContactUs = () => {
   return (
     <div className="container my-24 mx-auto md:px-6 lg:w-[90%]">
       <section className="mb-32">
-        <div className="flex justify-center">
-          <div className="text-center md:max-w-xl lg:max-w-3xl">
-            <h4
-              className={`text-center font-semibold lg:text-4xl font-montserrat mb-10 tracking-widest ${
-                theme && "text-slate-300"
-              }`}
-            >
-              Contact Us
-            </h4>
-          </div>
+        <div className="">
+          <h4
+            className={`font-semibold font-publicSans text-3xl tracking-widest pl-4 lg:pl-2 md-pl-0 pb-4 ${
+              theme && "text-slate-300"
+            }`}
+          >
+            Why we different
+          </h4>
         </div>
 
         <div className="lg:flex block gap-x-4 lg:px-0 px-4">
