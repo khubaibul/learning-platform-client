@@ -55,11 +55,11 @@ const Home = () => {
       <div className="hero-main-section w-[100%]">
         <video className="bg-video" src={bgVideo} autoPlay muted loop />
         <div className="hero-content">
-          <div className="mt-10">
+          <div className="mt-16">
             <h1 className="font-publicSans text-7xl text-white text-center">
               Learn new skills. Prove your potential.
             </h1>
-            <div className="flex justify-center gap-3 mt-20">
+            <div className="grid lg:grid-cols-7 md:grid-cols-3 grid-cols-2 lg:w-[90%] mx-auto gap-2 mt-20">
               {skillCards?.map((skillCard) => (
                 <div className="bg-slate-300 p-4 w-36 h-48 flex flex-col justify-center items-center gap-y-2 text-center rounded hover:cursor-pointer hover:outline outline-4 outline-pink-700 transition-all">
                   <img src={skillCard?.image} className="w-16" alt="" />
