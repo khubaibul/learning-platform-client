@@ -47,3 +47,7 @@
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to left, darkblue, darkorchid) border-box;
 }
+
+.hero-section {
+clear: both;
+}

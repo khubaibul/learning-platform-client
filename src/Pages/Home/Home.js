@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import heroBg from "../../Assets/hero-bg.jpg";
+import bgVideo from "../../Assets/Coding Hack Video.mp4";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import HomeCourseCard from "../HomeCourseCard/HomeCourseCard";
 import LandingPage from "./LandingPage";
@@ -12,26 +13,35 @@ const Home = () => {
   const { data } = useLoaderData();
 
   const { theme } = useContext(AuthContext);
-  
+
   return (
     <div className="mb-28">
       <div
-        className="hero min-h-screen"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="hero-section"
+        // style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md font-montserrat">
-            <h1 className="mb-5 text-5xl font-bold">CSE FROM HOME</h1>
-            <p className="mb-5">
-              We Provide Valuable Programming Language And CSE Support To Our
-              Students.
-            </p>
-            <button className="btn btn-outline btn-accent rounded-none">
-              <Link to="/courses">Enroll Our Courses</Link>
-            </button>
-          </div>
-        </div>
+        <video
+          className="bg-video"
+          src={bgVideo}
+          autoplay
+          muted
+          loop
+        >
+          {/* <source src={bgVideo} type="video/mp4" /> */}
+          {/* <div className="hero-overlay bg-opacity-60"></div> */}
+          {/* <div className="hero-content text-center text-neutral-content">
+            <div className="max-w-md font-montserrat">
+              <h1 className="mb-5 text-5xl font-bold">CSE FROM HOME</h1>
+              <p className="mb-5">
+                We Provide Valuable Programming Language And CSE Support To Our
+                Students.
+              </p>
+              <button className="btn btn-outline btn-accent rounded-none">
+                <Link to="/courses">Enroll Our Courses</Link>
+              </button>
+            </div>
+          </div> */}
+        </video>
       </div>
 
       <LandingPage />
