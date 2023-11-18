@@ -75,9 +75,9 @@ const Home = () => {
 
       {/* Courses Start */}
       <>
-        <div className="lg:mt-48 mt-8 lg:text-4xl">
+        <div className="lg:mt-48 mt-8 lg:text-4xl lg:w-[80%] md:w-[90%] mx-auto">
           <h4
-            className={`text-center font-semibold font-montserrat mb-10 tracking-widest ${
+            className={`font-semibold font-publicSans mb-10 tracking-widest pl-4 lg:pl-0 md-pl-0 ${
               theme && "text-slate-300"
             }`}
           >

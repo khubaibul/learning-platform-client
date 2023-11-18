@@ -14,11 +14,11 @@ const LandingPage = () => {
   return (
     <div className=" w-[80%] mx-auto">
       <h4
-        className={`text-center font-semibold font-publicSans text-4xl tracking-widest mt-16 ${
+        className={`font-semibold font-publicSans mb-10 tracking-widest pl-4 lg:pl-0 md-pl-0 ${
           theme && "text-slate-300"
         }`}
       >
-        The Difference
+        Why we different
       </h4>
       <div className="container mt-10 lg:block md:block hidden">
         <div className="row">
