@@ -16,25 +16,15 @@ const Home = () => {
 
   return (
     <div className="mb-28">
-      <div
-        className="hero-section"
-        // style={{ backgroundImage: `url(${heroBg})` }}
-      >
-        <video className="bg-video" src={bgVideo} autoplay muted loop />
-        {/* <source src={bgVideo} type="video/mp4" /> */}
-        {/* <div className="hero-overlay bg-opacity-60"></div> */}
-        {/* <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-md font-montserrat">
-              <h1 className="mb-5 text-5xl font-bold">CSE FROM HOME</h1>
-              <p className="mb-5">
-                We Provide Valuable Programming Language And CSE Support To Our
-                Students.
-              </p>
-              <button className="btn btn-outline btn-accent rounded-none">
-                <Link to="/courses">Enroll Our Courses</Link>
-              </button>
-            </div>
-          </div> */}
+      <div className="hero-main-section w-[100%]">
+        <video className="bg-video" src={bgVideo} autoPlay muted loop />
+        <div className="hero-content">
+          <div>
+            <h1 className="font-publicSans text-7xl text-white text-center">
+              Learn new skills. Prove your potential.
+            </h1>
+          </div>
+        </div>
       </div>
 
       <LandingPage />

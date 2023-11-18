@@ -48,13 +48,23 @@
     linear-gradient(to left, darkblue, darkorchid) border-box;
 }
 
-.hero-section {
+.hero-main-section {
   width: 100%;
   height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.hero-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
