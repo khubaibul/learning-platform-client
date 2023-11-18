@@ -27,7 +27,7 @@ const FAQ = () => {
                 <summary className="font-semibold font-montserrat  bg-gray-200 rounded-md py-2 px-4 cursor-pointer">
                   How can we get the course access?
                 </summary>
-                <span>
+                <span className={theme && "text-slate-300"}>
                   By purchasing premium you can get access to our course. For
                   getting access you have to visit our website. Then pay the
                   amount for your desired course. After your successful payment,
