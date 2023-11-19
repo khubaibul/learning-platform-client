@@ -1,6 +1,10 @@
 ## CSE FROM HOME
 
-### Live Site :  https://cse-from-home-app.web.app/
+### Live Site : https://cse-from-home-app.web.app
+
+### Front End Code : https://github.com/khubaibul/learning-platform-client
+
+### Back End Code : https://github.com/khubaibul/learning-platform-server
 
 ### CSE From Home Web Applications Feature
 
@@ -20,7 +24,8 @@
 - Express
 - Node js
 - Tailwind (As CSS Framework)
-- DaisyUI (As Tailwind Library
+- DaisyUI (As Tailwind Library)
 - FontAwesome + FlatIcons (As Icon Package)
 - React-To-PDF (As PDF Downloader)
 - React Router Dom (For SPA)
+- Animated Video In Hero Section
