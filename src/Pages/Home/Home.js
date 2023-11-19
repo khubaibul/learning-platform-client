@@ -54,7 +54,7 @@ const Home = () => {
     <div className="mb-28">
       <div className="hero-main-section w-[100%]">
         <video className="bg-video" src={bgVideo} autoPlay muted loop />
-        <div className="hero-content">
+        <div className="hero-content-section">
           <div className="lg:mt-16 md:mt-10 mt-6">
             <h1 className="font-publicSans lg:text-7xl md:text-3xl text-2xl text-white text-center">
               Learn new skills. Prove your potential.

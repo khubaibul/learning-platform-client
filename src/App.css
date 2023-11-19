@@ -63,7 +63,7 @@ video {
   height: 90vh;
   object-fit: cover;
 }
-.hero-content {
+.hero-content-section {
   position: absolute;
   width: 100%;
   top: 0;
