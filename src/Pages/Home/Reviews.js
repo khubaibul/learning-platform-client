@@ -14,7 +14,7 @@ const Reviews = () => {
         Learners Love CSE From Home
       </h4>
       <div className="flex gap-x-8">
-        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col">
+        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
             <h4 className="font-publicSans text-lg">
               "CSE From Home helped me gain on-the-job confidence, build a
@@ -25,40 +25,44 @@ const Reviews = () => {
           <div className="flex items-center gap-x-2">
             <img src={user} className="w-6" alt="User" />
             <div className="flex flex-col">
-              <h2>Mahmoud, Android Developer</h2>
-              <h3>CSE From Home Graduate</h3>
+              <h2 className="font-publicSans font-semibold">
+                Mahmoud, Android Developer
+              </h2>
+              <h3 className="text-sm">CSE From Home Graduate</h3>
             </div>
           </div>
         </div>
-        <div className="bg-slate-300">
+        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
-            <h4>
-              "CSE From Home helped me gain on-the-job confidence, build a
-              portfolio, and earn a microcredential to share with prospective
-              employers."
+            <h4 className="font-publicSans text-lg">
+              "I started with the basics, completed a Nanodegree program, and
+              gained so much experience. I'm now in a new Android job!"
             </h4>
           </div>
           <div className="flex items-center gap-x-2">
             <img src={user} className="w-6" alt="User" />
             <div className="flex flex-col">
-              <h2>Mahmoud, Android Developer</h2>
-              <h3>CSE From Home Graduate</h3>
+              <h2 className="font-publicSans font-semibold">
+                Den, Web Developer
+              </h2>
+              <h3 className="text-sm">CSE From Home Graduate</h3>
             </div>
           </div>
         </div>
-        <div className="bg-slate-300">
+        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
-            <h4>
-              "CSE From Home helped me gain on-the-job confidence, build a
-              portfolio, and earn a microcredential to share with prospective
-              employers."
+            <h4 className="font-publicSans text-lg">
+              "Udacity gave me the tools to advance my career--I am now
+              spearheading a machine learning research team at my company."
             </h4>
           </div>
           <div className="flex items-center gap-x-2">
             <img src={user} className="w-6" alt="User" />
             <div className="flex flex-col">
-              <h2>Mahmoud, Android Developer</h2>
-              <h3>CSE From Home Graduate</h3>
+              <h2 className="font-publicSans font-semibold">
+                Matthew, Machine Learning
+              </h2>
+              <h3 className="text-sm">CSE From Home Graduate</h3>
             </div>
           </div>
         </div>
