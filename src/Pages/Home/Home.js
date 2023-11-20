@@ -12,8 +12,8 @@ import bgVideo from "../../Assets/Coding Hack Video.mp4";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import HomeCourseCard from "../HomeCourseCard/HomeCourseCard";
 import LandingPage from "./LandingPage";
-import OurTeam from "./OurTeam";
 import ContactUs from "./ContactUs";
+import Reviews from "./Reviews";
 
 const Home = () => {
   const { data } = useLoaderData();
@@ -102,7 +102,7 @@ const Home = () => {
           <Link to="/courses">All Course</Link>
         </button>
       </div>
-
+      <Reviews />
       <ContactUs />
     </div>
   );
