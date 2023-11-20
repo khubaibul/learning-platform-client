@@ -5,7 +5,7 @@ import user from "../../Assets/user.png";
 const Reviews = () => {
   const { theme } = useContext(AuthContext);
   return (
-    <div className="my-24 mx-auto md:px-6 lg:w-[90%]">
+    <div className="my-24 mx-auto md:px-6 lg:w-[70%]">
       <h4
         className={`font-publicSans text-2xl tracking-widest pl-4 lg:pl-2 md-pl-0 pb-4 ${
           theme && "text-slate-300"
@@ -13,16 +13,54 @@ const Reviews = () => {
       >
         Learners Love CSE From Home
       </h4>
-      <div>
-        <div>
-          <h4>
-            "CSE From Home helped me gain on-the-job confidence, build a
-            portfolio, and earn a microcredential to share with prospective
-            employers."
-          </h4>
+      <div className="flex gap-x-8">
+        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col">
+          <div>
+            <h4 className="font-publicSans text-lg">
+              "CSE From Home helped me gain on-the-job confidence, build a
+              portfolio, and earn a microcredential to share with prospective
+              employers."
+            </h4>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <img src={user} className="w-6" alt="User" />
+            <div className="flex flex-col">
+              <h2>Mahmoud, Android Developer</h2>
+              <h3>CSE From Home Graduate</h3>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src={user} alt="" />
+        <div className="bg-slate-300">
+          <div>
+            <h4>
+              "CSE From Home helped me gain on-the-job confidence, build a
+              portfolio, and earn a microcredential to share with prospective
+              employers."
+            </h4>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <img src={user} className="w-6" alt="User" />
+            <div className="flex flex-col">
+              <h2>Mahmoud, Android Developer</h2>
+              <h3>CSE From Home Graduate</h3>
+            </div>
+          </div>
+        </div>
+        <div className="bg-slate-300">
+          <div>
+            <h4>
+              "CSE From Home helped me gain on-the-job confidence, build a
+              portfolio, and earn a microcredential to share with prospective
+              employers."
+            </h4>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <img src={user} className="w-6" alt="User" />
+            <div className="flex flex-col">
+              <h2>Mahmoud, Android Developer</h2>
+              <h3>CSE From Home Graduate</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
