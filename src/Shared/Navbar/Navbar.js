@@ -131,6 +131,15 @@ const Navbar = () => {
                 About Us
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/team"
+                className="bg-transparent !rounded-none"
+                style={navLinkStyle}
+              >
+                Our Team
+              </NavLink>
+            </li>
             {isPaid !== undefined && (
               <li>
                 <NavLink
@@ -280,6 +289,15 @@ const Navbar = () => {
               style={navLinkStyle}
             >
               About Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/team"
+              className="bg-transparent !rounded-none"
+              style={navLinkStyle}
+            >
+              Our Team
             </NavLink>
           </li>
           {isPaid !== undefined && (

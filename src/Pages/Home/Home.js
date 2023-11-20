@@ -103,8 +103,6 @@ const Home = () => {
         </button>
       </div>
 
-      <OurTeam />
-
       <ContactUs />
     </div>
   );

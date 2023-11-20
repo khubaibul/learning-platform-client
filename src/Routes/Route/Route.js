@@ -15,6 +15,7 @@ import ErrorPage from "../../Shared/ErrorPage/ErrorPage";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Dashboard from "../../Pages/MyClasses/Dashboard";
 import MyClass from "../../Pages/MyClasses/MyClass";
+import OurTeam from "../../Pages/Home/OurTeam";
 
 export const routes = createBrowserRouter([
   {
@@ -79,6 +80,10 @@ export const routes = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/team",
+        element: <OurTeam />,
       },
       {
         path: "/dashboard",
