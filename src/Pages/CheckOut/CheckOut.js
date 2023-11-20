@@ -75,12 +75,12 @@ const CheckOut = () => {
                 className="input rounded-none input-primary w-full focus:border-0 border-none text-black font-semibold"
               />
             </div>
-            <button class="group relative font-semibold font-montserrat h-10 w-48 mt-4 overflow-hidden bg-white shadow">
+            <button class="group relative font-semibold font-montserrat h-10 w-48 mt-4 overflow-hidden bg-white shadow cursor-pointer">
               <div class="absolute inset-0 w-3 bg-accent transition-all duration-[500ms] ease-out group-hover:w-full"></div>
               <input
                 type="submit"
                 value="Process To Payment"
-                className="rounded-none relative text-black group-hover:text-white ml-2"
+                className="rounded-none relative text-black group-hover:text-white ml-2 cursor-pointer"
               />
             </button>
           </form>

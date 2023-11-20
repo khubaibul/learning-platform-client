@@ -25,7 +25,7 @@ const ContactUs = () => {
               theme && "text-slate-300"
             }`}
           >
-            Why we different
+            Contact Us
           </h4>
         </div>
 

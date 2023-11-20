@@ -16,6 +16,7 @@ const UserProfile = () => {
       .then((data) => setMyCourses(data));
   }, [user?.email]);
 
+
   return (
     <div>
       {user ? (

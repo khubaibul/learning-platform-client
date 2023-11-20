@@ -59,7 +59,7 @@ const Home = () => {
             <h1 className="font-publicSans lg:text-7xl md:text-3xl text-2xl text-white text-center">
               Learn new skills. Prove your potential.
             </h1>
-            <div className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-3 lg:w-[90%] mx-auto gap-2 mt-20 place-items-center">
+            <div className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-3 lg:w-[75%] md:w-[55%] sm:w-[50%] w-[90%] mx-auto gap-2 mt-20 place-items-center">
               {skillCards?.map((skillCard) => (
                 <div className="bg-slate-300 hover:bg-pink-50 p-4 lg:w-36 md:w-28 w-20 lg:h-48 md:h-40 h-28 flex flex-col justify-center items-center gap-y-2 text-center rounded hover:cursor-pointer hover:outline outline-4 outline-pink-700 transition-all">
                   <img
