@@ -57,7 +57,7 @@ const Home = () => {
         <div className="hero-content-section">
           <div className="lg:mt-16 md:mt-10 mt-6">
             <h1 className="font-publicSans lg:text-7xl md:text-3xl text-2xl text-white text-center">
-              Learn new skills. Prove your potential.
+              Learn new skills. Prove your <br /> potential.
             </h1>
             <div className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-3 lg:w-[75%] md:w-[55%] sm:w-[50%] w-[90%] mx-auto gap-2 mt-20 place-items-center">
               {skillCards?.map((skillCard) => (
