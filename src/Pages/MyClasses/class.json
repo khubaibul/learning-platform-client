@@ -380,8 +380,8 @@
         ]
       },
       {
-        "milestone": 1,
-        "milestoneName": "What is Kotlin?",
+        "milestone": 8,
+        "milestoneName": "Kotlin Generics",
         "module": [
           {
             "module1": {
