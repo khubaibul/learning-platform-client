@@ -230,8 +230,8 @@
         ]
       },
       {
-        "milestone": 1,
-        "milestoneName": "What is Kotlin?",
+        "milestone": 4,
+        "milestoneName": "Kotlin Object",
         "module": [
           {
             "module1": {
