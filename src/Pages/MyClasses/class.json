@@ -155,8 +155,8 @@
         ]
       },
       {
-        "milestone": 1,
-        "milestoneName": "What is Kotlin?",
+        "milestone": 3,
+        "milestoneName": "Kotlin Function and it's usage",
         "module": [
           {
             "module1": {
