@@ -230,8 +230,8 @@
         ]
       },
       {
-        "milestone": 4,
-        "milestoneName": "Kotlin Object",
+        "milestone": 6,
+        "milestoneName": "All Loops in Kotlin",
         "module": [
           {
             "module1": {
