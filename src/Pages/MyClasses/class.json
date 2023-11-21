@@ -80,8 +80,8 @@
         ]
       },
       {
-        "milestone": 1,
-        "milestoneName": "What is Kotlin?",
+        "milestone": 2,
+        "milestoneName": "Build your first step using Kotlin",
         "module": [
           {
             "module1": {
