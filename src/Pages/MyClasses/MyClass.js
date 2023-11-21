@@ -24,9 +24,9 @@ const MyClass = () => {
   };
 
   useEffect(() => {
-    fetch(`https://cse-from-home-server.vercel.app/classes/Kotlin`)
+    fetch(`class.json`)
       .then((res) => res.json())
-      .then((data) => setMyClasses(data.data.classes));
+      .then((data) => setMyClasses());
   }, [courseName]);
 
   console.log(classes);
