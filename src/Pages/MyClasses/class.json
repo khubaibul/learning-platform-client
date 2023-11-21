@@ -305,8 +305,8 @@
         ]
       },
       {
-        "milestone": 5,
-        "milestoneName": "OOP in Kotlin",
+        "milestone": 7,
+        "milestoneName": "Logic in Kotlin",
         "module": [
           {
             "module1": {
