@@ -7,57 +7,108 @@
       {
         "milestone": 1,
         "milestoneName": "What is Kotlin?",
-        "module": 1,
-        "moduleName": "Introduction To Kotlin",
-        "video": 1,
-        "videoTitle": "What is Kotlin? Introduction To Kotlin Tutorial | CheezyCode #1",
-        "videoSource": "https://www.youtube.com/embed/vhfzN69ALpY?si=0_Fh-OJNNaHt0upY"
+        "module": [
+          {
+            "module1": {
+              "module": 1,
+              "moduleName": "Introduction To Kotlin",
+              "video": [
+                {
+                  "video": 1,
+                  "videoTitle": "What is Kotlin? Introduction To Kotlin Tutorial | CheezyCode #1",
+                  "videoSource": "https://www.youtube.com/embed/vhfzN69ALpY?si=0_Fh-OJNNaHt0upY"
+                },
+                {
+                  "video": 2,
+                  "videoTitle": "Kotlin - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                  "videoSource": "https://www.youtube.com/embed/1RuNijeB_yc?si=RCxRwVanH2yYax9p"
+                },
+                {
+                  "video": 3,
+                  "videoTitle": "Kotlin - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                  "videoSource": "https://www.youtube.com/embed/IdeqQE_POXo?si=hV29p0Z4VYwccu7g"
+                }
+              ]
+            }
+          },
+          {
+            "module2": {
+              "module": 2,
+              "moduleName": "Variables & Data Types in Kotlin",
+              "video": [
+                {
+                  "video": 1,
+                  "videoTitle": "Variables & Data Types in Kotlin Tutorial | var & val | CheezyCode #4",
+                  "videoSource": "https://www.youtube.com/embed/bq-6IJ5-klk?si=d4VPXPd7P0GLv8LW"
+                },
+                {
+                  "video": 2,
+                  "videoTitle": "Kotlin Operators Tutorial | Arithmetic & Relational Operators Kotlin | CheezyCode #5",
+                  "videoSource": "https://www.youtube.com/embed/iPdVy8sAzX8?si=i6UAHhKE2xMHpTDZ"
+                },
+                {
+                  "video": 3,
+                  "videoTitle": "Kotlin Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                  "videoSource": "https://www.youtube.com/embed/n8fcjc9QU1M?si=XhqnKbAxIgBJ4rvz"
+                }
+              ]
+            }
+          },
+          {
+            "module2": {
+              "module": 2,
+              "moduleName": "Variables & Data Types in Kotlin",
+              "video": [
+                {
+                  "video": 1,
+                  "videoTitle": "Variables & Data Types in Kotlin Tutorial | var & val | CheezyCode #4",
+                  "videoSource": "https://www.youtube.com/embed/bq-6IJ5-klk?si=d4VPXPd7P0GLv8LW"
+                },
+                {
+                  "video": 2,
+                  "videoTitle": "Kotlin Operators Tutorial | Arithmetic & Relational Operators Kotlin | CheezyCode #5",
+                  "videoSource": "https://www.youtube.com/embed/iPdVy8sAzX8?si=i6UAHhKE2xMHpTDZ"
+                },
+                {
+                  "video": 3,
+                  "videoTitle": "Kotlin Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                  "videoSource": "https://www.youtube.com/embed/n8fcjc9QU1M?si=XhqnKbAxIgBJ4rvz"
+                }
+              ]
+            }
+          },
+        ]
       },
       {
         "milestone": 1,
         "milestoneName": "What is Kotlin?",
         "module": 1,
-        "moduleName": "Introduction To Kotlin",
-        "video": 2,
-        "videoTitle": "Kotlin - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
-        "videoSource": "https://www.youtube.com/embed/1RuNijeB_yc?si=RCxRwVanH2yYax9p"
+        "moduleName": "Introduction To Kotlin"
       },
       {
         "milestone": 1,
         "milestoneName": "What is Kotlin?",
         "module": 1,
-        "moduleName": "Introduction To Kotlin",
-        "video": 3,
-        "videoTitle": "Kotlin - Hello World Program | Compilation & ByteCode | CheezyCode #3",
-        "videoSource": "https://www.youtube.com/embed/IdeqQE_POXo?si=hV29p0Z4VYwccu7g"
+        "moduleName": "Introduction To Kotlin"
       },
 
       {
         "milestone": 1,
         "milestoneName": "What is Kotlin?",
         "module": 2,
-        "moduleName": "Variables & Data Types in Kotlin",
-        "video": 1,
-        "videoTitle": "Variables & Data Types in Kotlin Tutorial | var & val | CheezyCode #4",
-        "videoSource": "https://www.youtube.com/embed/bq-6IJ5-klk?si=d4VPXPd7P0GLv8LW"
+        "moduleName": "Variables & Data Types in Kotlin"
       },
       {
         "milestone": 1,
         "milestoneName": "What is Kotlin?",
         "module": 2,
-        "moduleName": "Variables & Data Types in Kotlin",
-        "video": 2,
-        "videoTitle": "Kotlin Operators Tutorial | Arithmetic & Relational Operators Kotlin | CheezyCode #5",
-        "videoSource": "https://www.youtube.com/embed/iPdVy8sAzX8?si=i6UAHhKE2xMHpTDZ"
+        "moduleName": "Variables & Data Types in Kotlin"
       },
       {
         "milestone": 1,
         "milestoneName": "What is Kotlin?",
         "module": 2,
-        "moduleName": "Variables & Data Types in Kotlin",
-        "video": 3,
-        "videoTitle": "Kotlin Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
-        "videoSource": "https://www.youtube.com/embed/n8fcjc9QU1M?si=XhqnKbAxIgBJ4rvz"
+        "moduleName": "Variables & Data Types in Kotlin"
       },
 
       {
