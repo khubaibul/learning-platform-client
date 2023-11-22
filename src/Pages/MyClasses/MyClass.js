@@ -15,7 +15,9 @@ const MyClass = () => {
   ];
   // const [classVideo, setClassVideo] = useState("");
 
-  const [contentURL, setContentURL] = useState("");
+  const [contentURL, setContentURL] = useState(
+    "https://www.youtube.com/embed/vhfzN69ALpY?si=0_Fh-OJNNaHt0upY"
+  );
 
   const nextContent = () => {
     setContentURL(contentURL[0 + 1]);
@@ -30,7 +32,6 @@ const MyClass = () => {
       .then((data) => setMyClasses(data?.data));
   }, [courseName]);
 
-  console.log(classes.milestone);
 
   return (
     <div className="w-[80%] mx-auto">
