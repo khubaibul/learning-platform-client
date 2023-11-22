@@ -87,7 +87,7 @@ const MyClass = () => {
                     <summary className="cursor-pointer">
                       {singleModule?.moduleName}
                     </summary>
-                    <div className="pl-4">
+                    <div className="pl-4 flex flex-col gap-2">
                       {/* {singleModule?.forEach((singleVideo) => (
                         <summary>
                           <button
@@ -99,7 +99,7 @@ const MyClass = () => {
                           </button>
                         </summary>
                       ))} */}
-                      <summary>
+                      <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
                           onClick={() => setContentURL(contentsURL[1])}
                           className="cursor-pointer flex items-center justify-center gap-x-0.5"
@@ -110,7 +110,7 @@ const MyClass = () => {
                           </h4>
                         </button>
                       </summary>
-                      <summary>
+                      <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
                           onClick={() => setContentURL(contentsURL[1])}
                           className="cursor-pointer flex items-center gap-x-0.5"
@@ -121,7 +121,7 @@ const MyClass = () => {
                           </h4>
                         </button>
                       </summary>
-                      <summary>
+                      <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
                           onClick={() => setContentURL(contentsURL[1])}
                           className="cursor-pointer flex items-center gap-x-0.5"
