@@ -13,8 +13,9 @@ const MyClass = () => {
     "https://www.youtube.com/embed/5flXf8nuq60?si=h-O9mm1iykW-Jbwi",
     "https://www.youtube.com/embed/TEXaoSC_8lQ?si=VQLJe3pFjnhLy53d",
   ];
+  // const [classVideo, setClassVideo] = useState("");
 
-  const [contentURL, setContentURL] = useState(contentsURL[0]);
+  const [contentURL, setContentURL] = useState("");
 
   const nextContent = () => {
     setContentURL(contentURL[0 + 1]);
@@ -101,7 +102,9 @@ const MyClass = () => {
                       ))} */}
                       <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
-                          onClick={() => setContentURL(contentsURL[1])}
+                          onClick={() =>
+                            setContentURL(singleModule?.video[0].videoSource)
+                          }
                           className="cursor-pointer flex items-center justify-center gap-x-0.5"
                         >
                           <img className="w-4 h-4" src={lock} alt="" />
