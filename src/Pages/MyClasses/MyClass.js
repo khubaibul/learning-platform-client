@@ -102,19 +102,34 @@ const MyClass = () => {
                       <summary>
                         <button
                           onClick={() => setContentURL(contentsURL[1])}
-                          className="cursor-pointer flex items-center gap-x-0.5"
+                          className="cursor-pointer flex items-center justify-center gap-x-0.5"
                         >
-                          <img className="w-5 h-5" src={lock} alt="" />
-                          <h4>{singleModule?.video[0].videoTitle}</h4>
+                          <img className="w-4 h-4" src={lock} alt="" />
+                          <h4 className="text-xs">
+                            {singleModule?.video[0].videoTitle}
+                          </h4>
                         </button>
                       </summary>
                       <summary>
                         <button
-                          onClick={() => setContentURL(contentsURL[2])}
+                          onClick={() => setContentURL(contentsURL[1])}
                           className="cursor-pointer flex items-center gap-x-0.5"
                         >
-                          <img className="w-5 h-5" src={lock} alt="" />
-                          <h4>{singleModule?.video[1].videoTitle}</h4>
+                          <img className="w-4 h-4" src={lock} alt="" />
+                          <h4 className="text-xs">
+                            {singleModule?.video[1].videoTitle}
+                          </h4>
+                        </button>
+                      </summary>
+                      <summary>
+                        <button
+                          onClick={() => setContentURL(contentsURL[1])}
+                          className="cursor-pointer flex items-center gap-x-0.5"
+                        >
+                          <img className="w-4 h-4" src={lock} alt="" />
+                          <h4 className="text-xs">
+                            {singleModule?.video[2].videoTitle}
+                          </h4>
                         </button>
                       </summary>
                     </div>
