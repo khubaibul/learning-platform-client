@@ -6,18 +6,14 @@ import { useParams } from "react-router-dom";
 
 const MyClass = () => {
   const [classes, setMyClasses] = useState([]);
-  const { user, logOut, theme } = useContext(AuthContext);
-  const { courseName } = useParams();
-  const contentsURL = [
-    "https://www.youtube.com/embed/F9UC9DY-vIU?si=2V3IKmgh_ZbkiW1Q",
-    "https://www.youtube.com/embed/5flXf8nuq60?si=h-O9mm1iykW-Jbwi",
-    "https://www.youtube.com/embed/TEXaoSC_8lQ?si=VQLJe3pFjnhLy53d",
-  ];
-  // const [classVideo, setClassVideo] = useState("");
-
   const [contentURL, setContentURL] = useState(
     "https://www.youtube.com/embed/vhfzN69ALpY?si=0_Fh-OJNNaHt0upY"
   );
+  const [contentTitle, setContentTitle] = useState(
+    "What is Kotlin? Introduction To Kotlin Tutorial | CheezyCode #1"
+  );
+  const { user, logOut, theme } = useContext(AuthContext);
+  const { courseName } = useParams();
 
   const nextContent = () => {
     setContentURL(contentURL[0 + 1]);
@@ -31,7 +27,6 @@ const MyClass = () => {
       .then((res) => res.json())
       .then((data) => setMyClasses(data?.data));
   }, [courseName]);
-
 
   return (
     <div className="w-[80%] mx-auto">
@@ -59,7 +54,7 @@ const MyClass = () => {
           ></iframe>
           <div className="flex justify-between">
             <h2 className="font-montserrat font-bold text-xl tracking-wider bg-gradient-to-r from-purple-800 via-accent to-purple-600 inline-block text-transparent bg-clip-text">
-              Video1: Let's start with kotlin
+              {contentTitle}
             </h2>
             <div className="flex gap-x-5 text-lg font-montserrat">
               <button
@@ -103,9 +98,10 @@ const MyClass = () => {
                       ))} */}
                       <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
-                          onClick={() =>
-                            setContentURL(singleModule?.video[0].videoSource)
-                          }
+                          onClick={() => {
+                            setContentURL(singleModule?.video[0].videoSource);
+                            setContentTitle(singleModule?.video[0].videoTitle);
+                          }}
                           className="cursor-pointer flex items-center justify-center gap-x-0.5"
                         >
                           <img className="w-4 h-4" src={lock} alt="" />
@@ -116,9 +112,10 @@ const MyClass = () => {
                       </summary>
                       <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
-                          onClick={() =>
-                            setContentURL(singleModule?.video[1].videoSource)
-                          }
+                          onClick={() => {
+                            setContentURL(singleModule?.video[1].videoSource);
+                            setContentTitle(singleModule?.video[1].videoTitle);
+                          }}
                           className="cursor-pointer flex items-center gap-x-0.5"
                         >
                           <img className="w-4 h-4" src={lock} alt="" />
@@ -129,9 +126,10 @@ const MyClass = () => {
                       </summary>
                       <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
-                          onClick={() =>
-                            setContentURL(singleModule?.video[2].videoSource)
-                          }
+                          onClick={() => {
+                            setContentURL(singleModule?.video[2].videoSource);
+                            setContentTitle(singleModule?.video[2].videoTitle);
+                          }}
                           className="cursor-pointer flex items-center gap-x-0.5"
                         >
                           <img className="w-4 h-4" src={lock} alt="" />
