@@ -59,13 +59,13 @@ const MyClass = () => {
             <div className="flex gap-x-5 text-lg font-montserrat">
               <button
                 // onClick={() => previewsContent()}
-                className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold"
+                className="module-border-wrap px-4 py-0.5 rounded-md text-violet-800 font-semibold w-28 h-10"
               >
                 Previous
               </button>
               <button
                 // onClick={() => nextContent()}
-                className="bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
+                className="bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900 w-28 h-10"
               >
                 Next
               </button>
