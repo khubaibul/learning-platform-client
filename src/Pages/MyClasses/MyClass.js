@@ -26,10 +26,10 @@ const MyClass = () => {
   useEffect(() => {
     fetch(`https://cse-from-home-server.vercel.app/classes/Kotlin`)
       .then((res) => res.json())
-      .then((data) => setMyClasses(data));
+      .then((data) => setMyClasses(data?.data));
   }, [courseName]);
 
-  console.log(classes);
+  console.log(classes.milestone);
 
   return (
     <div className="w-[80%] mx-auto">
@@ -76,80 +76,55 @@ const MyClass = () => {
           </div>
         </div>
         <div className="transition-all duration-1000 bg-gradient-to-r from-purple-900 to-violet-800 w-full list-none p-2 flex flex-col gap-y-2 rounded-md h-fit">
-          <details className="outline rounded outline-slate-300 p-2 text-white">
-            <summary className="cursor-pointer text-lg font-bold">
-              Welcome TO Kotlin
-            </summary>
-            <div className="bg-[#111827] p-2 rounded-lg">
-              <details>
-                <summary className="cursor-pointer">
-                  Module1: Understanding of kotlin
-                </summary>
-                <div className="pl-4">
-                  <summary>
-                    <button
-                      onClick={() => setContentURL(contentsURL[0])}
-                      className="cursor-pointer flex items-center gap-x-0.5"
-                    >
-                      <img className="w-5 h-5" src={check} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                  <summary>
-                    <button
-                      onClick={() => setContentURL(contentsURL[1])}
-                      className="cursor-pointer flex items-center gap-x-0.5"
-                    >
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video2: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                  <summary>
-                    <button
-                      onClick={() => setContentURL(contentsURL[2])}
-                      className="cursor-pointer flex items-center gap-x-0.5"
-                    >
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video3: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                </div>
-              </details>
-            </div>
-          </details>
-          <details className="outline rounded outline-slate-300 p-2 text-white">
-            <summary className="cursor-pointer text-lg font-bold">
-              Welcome TO Kotlin
-            </summary>
-            <div className="bg-[#111827] p-2 rounded-lg">
-              <details>
-                <summary className="cursor-pointer">
-                  Module1: Understanding of kotlin
-                </summary>
-                <div className="pl-4">
-                  <summary>
-                    <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                  <summary>
-                    <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                  <summary>
-                    <button className="cursor-pointer flex items-center gap-x-0.5">
-                      <img className="w-5 h-5" src={lock} alt="" />
-                      <h4>Video1: Let's start with kotlin</h4>
-                    </button>
-                  </summary>
-                </div>
-              </details>
-            </div>
-          </details>
-          <details className="outline rounded outline-slate-300 p-2 text-white">
+          {classes?.milestone?.map((milestone) => (
+            <details className="outline rounded outline-slate-300 p-2 text-white">
+              <summary className="cursor-pointer text-lg font-bold tracking-wide">
+                {milestone?.milestoneName}
+              </summary>
+              <div className="bg-[#111827] p-2 rounded-lg">
+                {milestone?.module?.map((singleModule) => (
+                  <details>
+                    <summary className="cursor-pointer">
+                      {singleModule?.moduleName}
+                    </summary>
+                    <div className="pl-4">
+                      {/* {singleModule?.forEach((singleVideo) => (
+                        <summary>
+                          <button
+                            onClick={() => setContentURL(contentsURL[0])}
+                            className="cursor-pointer flex items-center gap-x-0.5"
+                          >
+                            <img className="w-5 h-5" src={check} alt="" />
+                            <h4>{singleVideo?.videoTitle}</h4>
+                          </button>
+                        </summary>
+                      ))} */}
+                      <summary>
+                        <button
+                          onClick={() => setContentURL(contentsURL[1])}
+                          className="cursor-pointer flex items-center gap-x-0.5"
+                        >
+                          <img className="w-5 h-5" src={lock} alt="" />
+                          <h4>{singleModule?.video[0].videoTitle}</h4>
+                        </button>
+                      </summary>
+                      <summary>
+                        <button
+                          onClick={() => setContentURL(contentsURL[2])}
+                          className="cursor-pointer flex items-center gap-x-0.5"
+                        >
+                          <img className="w-5 h-5" src={lock} alt="" />
+                          <h4></h4>
+                        </button>
+                      </summary>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </details>
+          ))}
+
+          {/* <details className="outline rounded outline-slate-300 p-2 text-white">
             <summary className="cursor-pointer text-lg font-bold">
               Welcome TO Kotlin
             </summary>
@@ -373,6 +348,38 @@ const MyClass = () => {
               </details>
             </div>
           </details>
+          <details className="outline rounded outline-slate-300 p-2 text-white">
+            <summary className="cursor-pointer text-lg font-bold">
+              Welcome TO Kotlin
+            </summary>
+            <div className="bg-[#111827] p-2 rounded-lg">
+              <details>
+                <summary className="cursor-pointer">
+                  Module1: Understanding of kotlin
+                </summary>
+                <div className="pl-4">
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                  <summary>
+                    <button className="cursor-pointer flex items-center gap-x-0.5">
+                      <img className="w-5 h-5" src={lock} alt="" />
+                      <h4>Video1: Let's start with kotlin</h4>
+                    </button>
+                  </summary>
+                </div>
+              </details>
+            </div>
+          </details> */}
         </div>
       </div>
     </div>
