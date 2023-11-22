@@ -114,7 +114,7 @@ const MyClass = () => {
                           className="cursor-pointer flex items-center gap-x-0.5"
                         >
                           <img className="w-5 h-5" src={lock} alt="" />
-                          <h4></h4>
+                          <h4>{singleModule?.video[1].videoTitle}</h4>
                         </button>
                       </summary>
                     </div>
