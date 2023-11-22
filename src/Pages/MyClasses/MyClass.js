@@ -128,7 +128,9 @@ const MyClass = () => {
                       </summary>
                       <summary className="border-2 p-1 rounded-md border-violet-700">
                         <button
-                          onClick={() => setContentURL(contentsURL[1])}
+                          onClick={() =>
+                            setContentURL(singleModule?.video[2].videoSource)
+                          }
                           className="cursor-pointer flex items-center gap-x-0.5"
                         >
                           <img className="w-4 h-4" src={lock} alt="" />
