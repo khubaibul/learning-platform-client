@@ -76,7 +76,7 @@ const Navbar = () => {
           >
             <li className="rounded-none">
               <NavLink
-                to="/home"
+                to="/"
                 className="bg-transparent !rounded-none"
                 style={navLinkStyle}
               >
