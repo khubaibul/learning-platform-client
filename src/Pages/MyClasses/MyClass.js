@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import lock from "../../Assets/lock.png";
-import check from "../../Assets/checked.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import { useParams } from "react-router-dom";
 
