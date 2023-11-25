@@ -13,7 +13,7 @@ const Reviews = () => {
       >
         Learners Love CSE From Home
       </h4>
-      <div className="flex gap-x-8">
+      <div className="lg:flex md:flex gap-x-8">
         <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
             <h4 className="font-publicSans text-lg">
