@@ -5,7 +5,7 @@ import user from "../../Assets/user.png";
 const Reviews = () => {
   const { theme } = useContext(AuthContext);
   return (
-    <div className="my-28 mx-auto md:px-6 lg:w-[70%]">
+    <div className="my-28 mx-auto md:px-6 px-6 lg:w-[70%]">
       <h4
         className={`font-publicSans text-2xl tracking-widest pl-4 lg:pl-2 md-pl-0 pb-4 ${
           theme && "text-slate-300"
@@ -13,7 +13,7 @@ const Reviews = () => {
       >
         Learners Love CSE From Home
       </h4>
-      <div className="lg:flex md:flex gap-x-8">
+      <div className="flex flex-col lg:flex-row md:flex-row gap-8">
         <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
             <h4 className="font-publicSans text-lg">
