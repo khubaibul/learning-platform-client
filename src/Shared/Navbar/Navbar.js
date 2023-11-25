@@ -234,7 +234,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal p-0 font-bold font-montserrat">
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className="bg-transparent !rounded-none"
               style={navLinkStyle}
             >
