@@ -18,7 +18,7 @@ const Reviews = () => {
           <div>
             <h4 className="font-publicSans text-lg">
               "CSE From Home helped me gain on-the-job confidence, build a
-              portfolio, and earn a microcredential to share with prospective
+              portfolio, and earn a micro-credential to share with prospective
               employers."
             </h4>
           </div>
@@ -35,7 +35,7 @@ const Reviews = () => {
         <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
             <h4 className="font-publicSans text-lg">
-              "I started with the basics, completed a Nanodegree program, and
+              "I started with the basics, completed a Nano-degree program, and
               gained so much experience. I'm now in a new Android job!"
             </h4>
           </div>
@@ -52,7 +52,7 @@ const Reviews = () => {
         <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
           <div>
             <h4 className="font-publicSans text-lg">
-              "Udacity gave me the tools to advance my career--I am now
+              "CSE From Home gave me the tools to advance my career--I am now
               spearheading a machine learning research team at my company."
             </h4>
           </div>
