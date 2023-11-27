@@ -152,14 +152,14 @@ const Login = () => {
             </button>
             <button onClick={handleSignInWithGitHub}>
               <img
-                className="w-8 h-8 bg-[] rounded-full p-0.5"
+                className="w-8 h-8 bg-[#A12350] rounded-full p-0.5"
                 src={gitHubLogo}
                 alt=""
               />
             </button>
             <button onClick={handleSignInWithFacebook}>
               <img
-                className="w-8 h-8 bg-yellow-200 rounded-full p-0.5"
+                className="w-8 h-8 bg-[] rounded-full p-0.5"
                 src={facebookLogo}
                 alt=""
               />
