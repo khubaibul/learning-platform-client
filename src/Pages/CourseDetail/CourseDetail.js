@@ -23,7 +23,7 @@ const CourseDetail = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
-      className="bg-cover bg-no-repeat "
+      className="bg-cover bg-no-repeat py-10"
     >
       <div className="card lg:w-[40%] mx-auto bg-base-100 shadow-xl image-full rounded-none">
         <figure>
