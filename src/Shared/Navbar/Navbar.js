@@ -358,13 +358,6 @@ const Navbar = () => {
           ) : (
             <div className="flex">
               <NavLink
-                to="/signup"
-                className="btn btn-sm mr-2 rounded-none !rounded-none"
-                style={navLinkStyle}
-              >
-                Sign Up
-              </NavLink>
-              <NavLink
                 to="/login"
                 className="btn btn-sm mr-2 rounded-none !rounded-none"
                 style={navLinkStyle}
