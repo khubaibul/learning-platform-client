@@ -73,3 +73,7 @@ video {
   /* background-color: transparent; */
   background: #000;
 }
+.footer-bg-transparent {
+  background: transparent;
+  backdrop-filter: blur(2px);
+}

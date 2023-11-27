@@ -3,17 +3,19 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
+import bg from "../../Assets/footer-png.png";
 
 const Footer = () => {
   const { theme } = useContext(AuthContext);
   return (
     <footer
-      className={` ${
+      style={{ backgroundImage: `url(${bg})` }}
+      className={`bg-cover bg-no-repeat ${
         theme ? "bg-gray-800 text-gray-200" : "bg-gradient-to-r"
       }  from-gray-100 via-[#bce1ff] to-gray-100`}
     >
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 flex flex-col justify-center items-center">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 footer-bg-transparent p-2 rounded-lg">
           <div className="flex flex-col items-center sm:items-center lg:items-start lg:flex-none">
             <img src={logo} className="mr-5 w-64" alt="logo" />
             <div className="flex mt-8 space-x-6 text-gray-600">
@@ -118,7 +120,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 lg:col-span-2 sm:grid-cols-4 lg:grid-cols-4 md:grid-cols-4">
             <div>
               <p className="font-semibold font-montserrat">Company</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <nav className="flex flex-col mt-4 space-y-2 text-sm text-slate-300">
                 <Link to="/about" className="hover:opacity-75" href>
                   {" "}
                   About{" "}
@@ -139,7 +141,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold font-montserrat">Services</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <nav className="flex flex-col mt-4 space-y-2 text-sm text-slate-300">
                 <Link className="hover:opacity-75" href>
                   {" "}
                   Education{" "}
@@ -164,7 +166,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold font-montserrat">Helpful Links</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <nav className="flex flex-col mt-4 space-y-2 text-sm text-slate-300">
                 <Link className="hover:opacity-75" href>
                   {" "}
                   Contact{" "}
@@ -181,7 +183,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="font-semibold font-montserrat">Legal</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+              <nav className="flex flex-col mt-4 space-y-2 text-sm text-slate-300">
                 <Link className="hover:opacity-75" href>
                   {" "}
                   Privacy Policy{" "}
