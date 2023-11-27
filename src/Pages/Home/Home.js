@@ -80,7 +80,7 @@ const Home = () => {
       <LandingPage />
 
       {/* Courses Start */}
-      {/* <>
+      <>
         <div className="lg:mt-48 mt-8 lg:text-4xl lg:w-[80%] md:w-[90%] mx-auto">
           <h4
             className={`font-semibold font-publicSans mb-10 tracking-widest pl-4 lg:pl-0 md-pl-0 ${
@@ -95,7 +95,7 @@ const Home = () => {
             <HomeCourseCard key={course._id} course={course}></HomeCourseCard>
           ))}
         </div>
-      </> */}
+      </>
       {/* Courses End */}
       <div className="flex justify-center my-10">
         <button className="btn btn-sm px-10 btn-outline btn-accent rounded-none font-montserrat">

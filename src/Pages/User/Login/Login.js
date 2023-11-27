@@ -145,14 +145,14 @@ const Login = () => {
           <div className="flex justify-center gap-x-2 pb-5">
             <button onClick={handleSignInWithGoogle}>
               <img
-                className="w-8 h-8 bg-yellow-200 rounded-full p-0.5"
+                className="w-8 h-8 bg-[#362298] rounded-full p-0.5"
                 src={googleLogo}
                 alt=""
               />
             </button>
             <button onClick={handleSignInWithGitHub}>
               <img
-                className="w-8 h-8 bg-yellow-200 rounded-full p-0.5"
+                className="w-8 h-8 bg-[] rounded-full p-0.5"
                 src={gitHubLogo}
                 alt=""
               />
