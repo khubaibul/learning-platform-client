@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import user from "../../Assets/user.png";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const Reviews = () => {
   const { theme } = useContext(AuthContext);
@@ -13,59 +14,63 @@ const Reviews = () => {
       >
         Learners Love CSE From Home
       </h4>
-      <div className="flex flex-col lg:flex-row md:flex-row gap-8">
-        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
-          <div>
-            <h4 className="font-publicSans text-lg">
-              "CSE From Home helped me gain on-the-job confidence, build a
-              portfolio, and earn a micro-credential to share with prospective
-              employers."
-            </h4>
+      <div className="flex items-center gap-x-2">
+        <FaArrowAltCircleLeft className=" text-slate-300 text-4xl" />
+        <div className="flex flex-col lg:flex-row md:flex-row gap-8">
+          <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
+            <div>
+              <h4 className="font-publicSans text-lg">
+                "CSE From Home helped me gain on-the-job confidence, build a
+                portfolio, and earn a micro-credential to share with prospective
+                employers."
+              </h4>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <img src={user} className="w-6" alt="User" />
+              <div className="flex flex-col">
+                <h2 className="font-publicSans font-semibold">
+                  Mahmoud, Android Developer
+                </h2>
+                <h3 className="text-sm">CSE From Home Graduate</h3>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-x-2">
-            <img src={user} className="w-6" alt="User" />
-            <div className="flex flex-col">
-              <h2 className="font-publicSans font-semibold">
-                Mahmoud, Android Developer
-              </h2>
-              <h3 className="text-sm">CSE From Home Graduate</h3>
+          <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
+            <div>
+              <h4 className="font-publicSans text-lg">
+                "I started with the basics, completed a Nano-degree program, and
+                gained so much experience. I'm now in a new Android job!"
+              </h4>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <img src={user} className="w-6" alt="User" />
+              <div className="flex flex-col">
+                <h2 className="font-publicSans font-semibold">
+                  Den, Web Developer
+                </h2>
+                <h3 className="text-sm">CSE From Home Graduate</h3>
+              </div>
+            </div>
+          </div>
+          <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
+            <div>
+              <h4 className="font-publicSans text-lg">
+                "CSE From Home gave me the tools to advance my career--I am now
+                spearheading a machine learning research team at my company."
+              </h4>
+            </div>
+            <div className="flex items-center gap-x-2">
+              <img src={user} className="w-6" alt="User" />
+              <div className="flex flex-col">
+                <h2 className="font-publicSans font-semibold">
+                  Matthew, Machine Learning
+                </h2>
+                <h3 className="text-sm">CSE From Home Graduate</h3>
+              </div>
             </div>
           </div>
         </div>
-        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
-          <div>
-            <h4 className="font-publicSans text-lg">
-              "I started with the basics, completed a Nano-degree program, and
-              gained so much experience. I'm now in a new Android job!"
-            </h4>
-          </div>
-          <div className="flex items-center gap-x-2">
-            <img src={user} className="w-6" alt="User" />
-            <div className="flex flex-col">
-              <h2 className="font-publicSans font-semibold">
-                Den, Web Developer
-              </h2>
-              <h3 className="text-sm">CSE From Home Graduate</h3>
-            </div>
-          </div>
-        </div>
-        <div className="bg-slate-300 p-8 rounded-br-[80px] flex flex-col gap-y-4">
-          <div>
-            <h4 className="font-publicSans text-lg">
-              "CSE From Home gave me the tools to advance my career--I am now
-              spearheading a machine learning research team at my company."
-            </h4>
-          </div>
-          <div className="flex items-center gap-x-2">
-            <img src={user} className="w-6" alt="User" />
-            <div className="flex flex-col">
-              <h2 className="font-publicSans font-semibold">
-                Matthew, Machine Learning
-              </h2>
-              <h3 className="text-sm">CSE From Home Graduate</h3>
-            </div>
-          </div>
-        </div>
+        <FaArrowAltCircleRight className=" text-slate-300 text-4xl" />
       </div>
     </div>
   );

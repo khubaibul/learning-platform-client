@@ -82,22 +82,18 @@ const Login = () => {
     if (user) {
       navigate(from);
     }
-  }, [user]);
+  }, [user, from, navigate]);
 
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
       className={`bg-cover bg-no-repeat ${
         theme ? "bg-gray-900" : "bg-yellow-400"
-      }  h-screen overflow-hidden flex items-center`}
+      } py-32 overflow-hidden flex items-center`}
     >
       <div className="ml-40 w-[35%]">
         <div
-          className={`relative ${
-            theme
-              ? "bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298]"
-              : "bg-red-500"
-          }  shadow-3xl`}
+          className={`relative bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md`}
         >
           <div className="bg-yellow-400 border-4 border-red-500 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#EF4444">
@@ -142,7 +138,7 @@ const Login = () => {
                 <span className="underline ml-1 text-base">Signup</span>
               </Link>
             </p>
-            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-2 md:p-4 text-yellow-400 w-full rounded transition-all duration-300">
+            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-yellow-400 w-full rounded transition-all duration-300">
               Login
             </button>
           </form>
