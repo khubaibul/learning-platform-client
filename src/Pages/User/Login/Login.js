@@ -94,7 +94,9 @@ const Login = () => {
       <div className="ml-40 w-[35%]">
         <div
           className={`relative ${
-            theme ? "bg-slate-700" : "bg-red-500"
+            theme
+              ? "bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298]"
+              : "bg-red-500"
           }  shadow-3xl`}
         >
           <div className="bg-yellow-400 border-4 border-red-500 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
@@ -140,11 +142,11 @@ const Login = () => {
                 <span className="underline ml-1 text-base">Signup</span>
               </Link>
             </p>
-            <button className="bg-gradient-to-b from-red-500 to-red-600 border-2 border-yellow-400 hover:from-red-600 hover:to-red-500 font-medium font-montserrat p-2 md:p-4 text-yellow-400 w-full">
+            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-2 md:p-4 text-yellow-400 w-full rounded transition-all duration-300">
               Login
             </button>
           </form>
-          <div className="flex justify-center gap-x-2 pb-5 -mt-14">
+          <div className="flex justify-center gap-x-2 pb-5">
             <button onClick={handleSignInWithGoogle}>
               <img
                 className="w-8 h-8 bg-yellow-200 rounded-full p-0.5"
