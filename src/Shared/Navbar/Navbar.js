@@ -199,13 +199,7 @@ const Navbar = () => {
                   </NavLink>
                 ) : (
                   <div>
-                    <NavLink
-                      to="/signup"
-                      className="btn btn-sm mb-2 !rounded-none"
-                      style={navLinkStyle}
-                    >
-                      Sign Up
-                    </NavLink>
+                    
                     <NavLink
                       to="/login"
                       className="btn btn-sm mb-2 !rounded-none"
