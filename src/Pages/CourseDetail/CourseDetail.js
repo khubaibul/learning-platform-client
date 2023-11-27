@@ -21,11 +21,11 @@ const CourseDetail = () => {
   } = courseDetail;
 
   return (
-    <div 
-    style={{ backgroundImage: `url(${bg})` }} 
-    className=""
+    <div
+      style={{ backgroundImage: `url(${bg})` }}
+      className="bg-cover bg-no-repeat "
     >
-      <div className="card lg:w-[40%] my-10 mx-auto bg-base-100 shadow-xl image-full rounded-none">
+      <div className="card lg:w-[40%] mx-auto bg-base-100 shadow-xl image-full rounded-none">
         <figure>
           <img src={courseImage} alt="Course Card Img" />
         </figure>
