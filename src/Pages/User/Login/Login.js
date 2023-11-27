@@ -159,7 +159,7 @@ const Login = () => {
             </button>
             <button onClick={handleSignInWithFacebook}>
               <img
-                className="w-8 h-8 bg-[] rounded-full p-0.5"
+                className="w-8 h-8 bg-[#A22350] rounded-full p-0.5"
                 src={facebookLogo}
                 alt=""
               />
