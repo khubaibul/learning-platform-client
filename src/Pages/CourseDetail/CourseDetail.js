@@ -91,7 +91,7 @@ const CourseDetail = () => {
             </div>
           </div>
           <div className="card-actions justify-center">
-            <button className="btn btn-outline btn-accent rounded-none font-montserrat px-10">
+            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-[#f25189] w-1/2 rounded">
               <Link
                 to={`/course/checkout/${_id}/${course_price}/${courseTitle}`}
               >
