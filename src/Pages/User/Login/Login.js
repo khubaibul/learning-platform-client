@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import googleLogo from "../../../Assets/google.png";
 import gitHubLogo from "../../../Assets/github.png";
 import facebookLogo from "../../../Assets/facebook.png";
+import bg from "../../../Assets/website-bg-another.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
@@ -85,7 +86,8 @@ const Login = () => {
 
   return (
     <div
-      className={`${
+      style={{ backgroundImage: `url(${bg})` }}
+      className={`bg-cover bg-no-repeat ${
         theme ? "bg-gray-900" : "bg-yellow-400"
       }  h-screen overflow-hidden flex items-center justify-center`}
     >

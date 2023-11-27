@@ -68,3 +68,8 @@ video {
   width: 100%;
   top: 0;
 }
+
+.navbar-for-lg {
+  /* background-color: transparent; */
+  background: #000;
+}

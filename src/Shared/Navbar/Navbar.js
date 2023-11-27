@@ -46,8 +46,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar ${
-        theme && "bg-gray-800 text-gray-300"
+      className={`navbar bg-transparent${
+        theme && " text-gray-300"
       } bg-base-100 shadow-lg lg:px-20`}
     >
       <div className="navbar-start pb-4 !w-full">
@@ -199,7 +199,6 @@ const Navbar = () => {
                   </NavLink>
                 ) : (
                   <div>
-                    
                     <NavLink
                       to="/login"
                       className="btn btn-sm mb-2 !rounded-none"
