@@ -89,9 +89,9 @@ const Login = () => {
       style={{ backgroundImage: `url(${bg})` }}
       className={`bg-cover bg-no-repeat bg-center ${
         theme ? "bg-gray-900" : "bg-yellow-400"
-      } py-32 overflow-hidden flex items-center lg:justify-start justify-center`}
+      } py-32 overflow-hidden flex items-center lg:justify-start md:justify-start justify-center`}
     >
-      <div className="lg:ml-40 lg:w-[35%]">
+      <div className="lg:ml-40 md:ml-20 lg:w-[35%] md:w-[45%]">
         <div
           className={`relative bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md`}
         >
@@ -110,7 +110,7 @@ const Login = () => {
                 id="username"
                 name="email"
                 required="required"
-                className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
+                className="lg:bg-gray-200 pl-12 lg:py-4 md:py-2 md:bg-red-700 focus:outline-none w-full"
                 placeholder="Username/Email"
               />
             </div>
