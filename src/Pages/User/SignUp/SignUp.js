@@ -4,6 +4,7 @@ import photo from "../../../Assets/photo.png";
 import googleLogo from "../../../Assets/google.png";
 import gitHubLogo from "../../../Assets/github.png";
 import facebookLogo from "../../../Assets/facebook.png";
+import bg from "../../../Assets/website-bg-another.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
