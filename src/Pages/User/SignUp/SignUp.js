@@ -135,7 +135,7 @@ const SignUp = () => {
           </div>
           <form
             onSubmit={handleSignUp}
-            className="lg:p-14 p-4 pt-10 flex flex-col gap-y-4 lg:gap-y-0 md:gap-y-2"
+            className="lg:p-14 lg:pb-6 p-4 pt-10 flex flex-col gap-y-4 lg:gap-y-0 md:gap-y-2"
           >
             <div className="flex items-center text-lg mb-6 md:mb-8">
               <svg className="absolute ml-3" width="24" viewBox="0 0 24 24">
@@ -233,7 +233,7 @@ const SignUp = () => {
               Sign Up
             </button>
           </form>
-          <div className="flex justify-center gap-x-2 pb-2">
+          <div className="flex justify-center gap-x-2 pb-4">
             <button onClick={handleSignInWithGoogle}>
               <img
                 className="w-8 h-8 bg-[#362298] rounded-full p-0.5"
