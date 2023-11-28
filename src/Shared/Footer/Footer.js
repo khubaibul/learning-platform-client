@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer
       style={{ backgroundImage: `url(${bg})` }}
-      className={`bg-cover bg-no-repeat ${
+      className={`bg-cover bg-center bg-no-repeat ${
         theme ? "bg-gray-800 text-gray-200" : "bg-gradient-to-r"
       }  from-gray-100 via-[#bce1ff] to-gray-100`}
     >
