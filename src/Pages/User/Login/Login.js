@@ -87,7 +87,7 @@ const Login = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
-      className={`bg-cover bg-no-repeat ${
+      className={`bg-cover bg-no-repeat bg-center ${
         theme ? "bg-gray-900" : "bg-yellow-400"
       } py-32 overflow-hidden flex items-center`}
     >
