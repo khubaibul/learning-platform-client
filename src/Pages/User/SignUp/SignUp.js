@@ -126,9 +126,7 @@ const SignUp = () => {
     >
       <div className="lg:ml-40 md:ml-20 lg:w-[35%] md:w-[45%]">
         <div
-          className={`${
-            theme ? "bg-slate-700" : "bg-white"
-          } lg:w-5/12 md:6/12 w-10/12 shadow-3xl`}
+          className={`relative bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md`}
         >
           <div
             className={`bg-yellow-400 ${
