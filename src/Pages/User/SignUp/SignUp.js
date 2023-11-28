@@ -236,21 +236,21 @@ const SignUp = () => {
           <div className="flex justify-center gap-x-2 pb-2">
             <button onClick={handleSignInWithGoogle}>
               <img
-                className="w-7 hover:animate-pulse"
+                className="w-8 h-8 bg-[#362298] rounded-full p-0.5"
                 src={googleLogo}
                 alt=""
               />
             </button>
             <button onClick={handleSignInWithGitHub}>
               <img
-                className="w-7 hover:animate-pulse"
+                className="w-8 h-8 bg-[#A12350] rounded-full p-0.5"
                 src={gitHubLogo}
                 alt=""
               />
             </button>
             <button onClick={handleSignInWithFacebook}>
               <img
-                className="w-7 hover:animate-pulse"
+                className="w-8 h-8 bg-[#A22350] rounded-full p-0.5"
                 src={facebookLogo}
                 alt=""
               />
