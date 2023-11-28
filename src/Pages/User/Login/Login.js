@@ -123,7 +123,7 @@ const Login = () => {
                 name="password"
                 required="required"
                 id="password"
-                className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
+                className="bg-gray-200 pl-12 lg:py-4 md:py-2 focus:outline-none w-full rounded"
                 placeholder="Password"
               />
             </div>
