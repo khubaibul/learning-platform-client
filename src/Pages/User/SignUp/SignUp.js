@@ -128,13 +128,7 @@ const SignUp = () => {
         <div
           className={`relative bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md`}
         >
-          <div
-            className={`bg-yellow-400 ${
-              theme
-                ? "bg-[#EF4444] border-yellow-400"
-                : "bg-yellow-400 border-red-500"
-            } border-4 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full md:p-8`}
-          >
+          <div className="bg-yellow-400 border-4 border-red-500 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
             <svg
               width="50"
               height="50"
