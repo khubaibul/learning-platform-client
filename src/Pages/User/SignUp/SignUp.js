@@ -122,7 +122,7 @@ const SignUp = () => {
       style={{ backgroundImage: `url(${bg})` }}
       className={`bg-cover bg-no-repeat bg-center ${
         theme ? "bg-gray-900" : "bg-yellow-400"
-      } h-screen overflow-hidden flex items-center justify-center pt-14`}
+      }py-32 overflow-hidden flex items-center lg:justify-start md:justify-start justify-center`}
     >
       <div
         className={`${
