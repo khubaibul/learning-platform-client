@@ -129,12 +129,7 @@ const SignUp = () => {
           className={`relative bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md`}
         >
           <div className="bg-yellow-400 border-4 border-red-500 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="#EF4444"
-            >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#EF4444">
               <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
             </svg>
           </div>
@@ -168,7 +163,7 @@ const SignUp = () => {
                 name="photoURL"
                 required="required"
                 id="photoURL"
-                className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
+                className="bg-gray-200 pl-12 lg:py-4 md:py-2 focus:outline-none w-full rounded"
                 placeholder="Photo URL"
               />
             </div>
@@ -185,7 +180,7 @@ const SignUp = () => {
                 name="email"
                 required="required"
                 id="email"
-                className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
+                className="bg-gray-200 pl-12 lg:py-4 md:py-2 focus:outline-none w-full rounded"
                 placeholder="Email"
               />
             </div>
@@ -198,7 +193,7 @@ const SignUp = () => {
                 id="password"
                 name="password"
                 required="required"
-                className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
+                className="bg-gray-200 pl-12 lg:py-4 md:py-2 focus:outline-none w-full rounded"
                 placeholder="Password"
               />
             </div>
@@ -233,12 +228,12 @@ const SignUp = () => {
             </div>
             <button
               disabled={!accepted}
-              className="bg-gradient-to-b from-red-500 to-red-600 border-2 border-yellow-400 hover:from-red-600 hover:to-red-500 font-medium font-montserrat p-2 md:p-4 text-yellow-400 w-full"
+              className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300"
             >
               Sign Up
             </button>
           </form>
-          <div className="flex justify-center gap-x-2 pb-5 -mt-14">
+          <div className="flex justify-center gap-x-2 pb-2">
             <button onClick={handleSignInWithGoogle}>
               <img
                 className="w-7 hover:animate-pulse"
