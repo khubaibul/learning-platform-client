@@ -110,7 +110,7 @@ const Login = () => {
                 id="username"
                 name="email"
                 required="required"
-                className="lg:bg-gray-200 pl-12 lg:py-4 md:py-2 md:bg-red-700 focus:outline-none w-full"
+                className="bg-gray-200 pl-12 lg:py-4 md:py-2 focus:outline-none w-full rounded"
                 placeholder="Username/Email"
               />
             </div>
