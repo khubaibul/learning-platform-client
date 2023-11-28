@@ -197,30 +197,21 @@ const SignUp = () => {
                 placeholder="Password"
               />
             </div>
-            <div className="flex justify-between items-center text-yellow-400">
+            <div className="flex justify-between items-center">
               <div className="form-control">
                 <label className="label cursor-pointer flex justify-center gap-x-2">
                   <input
                     onClick={handleTermsAndConditions}
                     type="checkbox"
-                    className={`checkbox border-2 ${
-                      theme ? "border-slate-300" : "border-yellow-400"
-                    }`}
+                    className={`checkbox border-2 border-[#f25189]`}
                   />
-                  <span
-                    className={`label-text  ${
-                      theme ? "text-slate-300" : "text-yellow-400"
-                    }`}
-                  >
+                  <span className={`label-text text-[#f25189]`}>
                     Accept Terms & Conditions
                   </span>
                 </label>
               </div>
               <p className="text-right mb-1">
-                <Link
-                  className={`text-xs ${theme && "text-slate-300"}`}
-                  to="/login"
-                >
+                <Link className={`text-xs text-[#f25189]`} to="/login">
                   Already have an account?
                   <span className="underline ml-1 text-base">Login</span>
                 </Link>
@@ -228,7 +219,7 @@ const SignUp = () => {
             </div>
             <button
               disabled={!accepted}
-              className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300"
+              className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-publicSans tracking-widest lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300"
             >
               Sign Up
             </button>
