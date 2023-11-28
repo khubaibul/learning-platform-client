@@ -130,8 +130,8 @@ const SignUp = () => {
         >
           <div className="bg-yellow-400 border-4 border-red-500 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
             <svg
-              width="50"
-              height="50"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill={`${theme ? "#FACC15" : "#EF4444"}`}
             >
