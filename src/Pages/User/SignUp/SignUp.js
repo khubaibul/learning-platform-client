@@ -119,6 +119,7 @@ const SignUp = () => {
 
   return (
     <div
+      style={{ backgroundImage: `url(${bg})` }}
       className={`${
         theme ? "bg-gray-900" : "bg-yellow-400"
       } h-screen overflow-hidden flex items-center justify-center pt-14`}
