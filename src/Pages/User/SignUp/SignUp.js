@@ -115,7 +115,7 @@ const SignUp = () => {
     if (user) {
       navigate(from);
     }
-  }, [user]);
+  }, [user, from, navigate]);
 
   return (
     <div
