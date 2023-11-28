@@ -120,15 +120,13 @@ const SignUp = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
-      className={`bg-cover bg-no-repeat bg-center ${
-        theme ? "bg-gray-900" : "bg-yellow-400"
-      } pt-16 pb-14 overflow-hidden flex items-center lg:justify-start md:justify-start justify-center`}
+      className={`bg-cover bg-no-repeat bg-center font-publicSans pt-16 pb-14 overflow-hidden flex items-center lg:justify-start md:justify-start justify-center`}
     >
       <div className="lg:ml-40 md:ml-20 lg:w-[35%] md:w-[45%]">
         <div
           className={`relative bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md`}
         >
-          <div className="bg-yellow-400 border-4 border-red-500 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
+          <div className="bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] border-4 border-red-600 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-5">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="#EF4444">
               <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
             </svg>
