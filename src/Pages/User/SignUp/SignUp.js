@@ -140,7 +140,7 @@ const SignUp = () => {
           </div>
           <form
             onSubmit={handleSignUp}
-            className={`md:p-24 ${theme ? "bg-slate-800" : "bg-red-500"}`}
+            className="lg:p-14 p-4 pt-10 flex flex-col gap-y-4 lg:gap-y-0 md:gap-y-2"
           >
             <div className="flex items-center text-lg mb-6 md:mb-8">
               <svg className="absolute ml-3" width="24" viewBox="0 0 24 24">
