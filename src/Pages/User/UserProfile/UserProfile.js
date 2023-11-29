@@ -100,8 +100,8 @@ const UserProfile = () => {
         //     </button>
         //   </div>
         // </div>
-        <div className="flex">
-          <div className="bg-[#0D0D21]">
+        <div className="grid grid-cols-5">
+          <div className="bg-[#0D0D21] col-span-1">
             <p>Sidebar</p>
           </div>
           <div className="bg-[#0D0D21]">
