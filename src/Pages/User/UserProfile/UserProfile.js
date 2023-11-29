@@ -100,11 +100,11 @@ const UserProfile = () => {
         //     </button>
         //   </div>
         // </div>
-        <div className="grid grid-cols-5">
+        <div className="grid grid-cols-5 gap-x-10 lg:w-[90%] mx-auto">
           <div className="bg-[#0D0D21] col-span-1">
             <p>Sidebar</p>
           </div>
-          <div className="bg-[#0D0D21]">
+          <div className="bg-[#0D0D21] col-span-4">
             <h1>Section</h1>
           </div>
         </div>
