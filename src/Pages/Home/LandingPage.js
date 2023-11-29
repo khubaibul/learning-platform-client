@@ -141,7 +141,7 @@ const LandingPage = () => {
                           </span>
                         </p>
                       </div>
-                      <button className="">
+                      <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-accent font-medium  font-publicSans tracking-widest py-2 px-8 text-[#f25189] rounded transition-all duration-300">
                         Meet With Support Team
                       </button>
                     </div>
