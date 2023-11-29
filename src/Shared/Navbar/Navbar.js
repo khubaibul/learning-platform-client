@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar bg-transparent${
+      className={`navbar bg-transparent ${
         theme && " text-gray-300"
       } bg-base-100 shadow-lg lg:px-20`}
     >
@@ -72,7 +72,7 @@ const Navbar = () => {
             tabIndex={0}
             className={`${
               theme ? "bg-gray-900 text-gray-300" : "bg-base-100"
-            } font-bold font-montserrat menu menu-compact dropdown-content mt-3 p-2 shadow w-52`}
+            } font-bold font-publicSans menu menu-compact dropdown-content mt-3 p-2 shadow w-52`}
           >
             <li className="rounded-none">
               <NavLink
@@ -105,7 +105,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to={`/course/${course._id}`}
-                      className="btn btn-sm rounded-none btn-accent text-base-200 my-1 font-montserrat"
+                      className="btn btn-sm rounded-none btn-accent text-base-200 my-1 font-publicSans"
                     >
                       {course.courseTitle}
                     </Link>
@@ -224,7 +224,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal p-0 font-bold font-montserrat">
+        <ul className="menu menu-horizontal p-0 font-bold font-publicSans">
           <li>
             <NavLink
               to="/home"
