@@ -38,7 +38,7 @@ const UserProfile = () => {
               {user?.displayName}
             </div>
             {user.email && (
-              <div className="text-center mt-2 font-light text-sm flex justify-center items-center">
+              <div className="text-center mt-2 font-light text-sm flex justify-center items-center gap-x-2">
                 <FontAwesomeIcon icon={faG}></FontAwesomeIcon>
                 {user?.email}
               </div>
