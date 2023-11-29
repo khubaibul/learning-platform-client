@@ -172,7 +172,7 @@ const LandingPage = () => {
                           students learning from us with joy.
                         </p>
                       </div>
-                      <button className="font-montserrat btn btn-sm btn-accent btn-outline rounded-none">
+                      <button className="">
                         Get Support
                       </button>
                     </div>
