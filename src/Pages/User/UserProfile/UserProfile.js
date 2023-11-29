@@ -16,7 +16,6 @@ const UserProfile = () => {
       .then((data) => setMyCourses(data));
   }, [user?.email]);
 
-
   return (
     <div>
       {user ? (
@@ -39,7 +38,7 @@ const UserProfile = () => {
               {user?.displayName}
             </div>
             {user.email && (
-              <div className="text-center mt-2 font-light text-sm">
+              <div className="text-center mt-2 font-light text-sm flex justify-center items-center">
                 <FontAwesomeIcon icon={faG}></FontAwesomeIcon>
                 {user?.email}
               </div>
