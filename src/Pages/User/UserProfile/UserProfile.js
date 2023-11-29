@@ -106,10 +106,12 @@ const UserProfile = () => {
               <span>i</span>
               <img src={user?.photoURL} alt="" />
             </div>
-            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300">
-              Application
-            </button>
-            <div className="flex flex-col">
+            <div className="flex justify-center">
+              <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
+                Application
+              </button>
+            </div>
+            <div className="flex flex-col font-publicSans font-semibold">
               <NavLink>My Profile</NavLink>
               <NavLink>Additional Info</NavLink>
               <NavLink>Address</NavLink>
