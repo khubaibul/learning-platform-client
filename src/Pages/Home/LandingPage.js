@@ -56,7 +56,7 @@ const LandingPage = () => {
                           follow.
                         </p>
                       </div>
-                      <button className="font-montserrat btn btn-sm btn-accent btn-outline rounded-none">
+                      <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-accent font-medium  font-publicSans tracking-widest py-2 px-8 text-[#f25189] rounded transition-all duration-300">
                         Browse Our Paths
                       </button>
                     </div>
