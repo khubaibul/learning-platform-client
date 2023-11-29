@@ -100,8 +100,8 @@ const UserProfile = () => {
         //     </button>
         //   </div>
         // </div>
-        <div>
-          <div>
+        <div className="flex">
+          <div >
             <p>Sidebar</p>
           </div>
           <div>
