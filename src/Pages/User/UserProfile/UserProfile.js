@@ -35,7 +35,7 @@ const UserProfile = () => {
               src={user.photoURL}
               alt=""
             />
-            <div className="text-center mt-2 text-2xl font-medium font-montserrat">
+            <div className="text-center mt-2 text-2xl font-medium font-publicSans">
               {user?.displayName}
             </div>
             {user.email && (
