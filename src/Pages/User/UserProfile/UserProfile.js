@@ -101,9 +101,9 @@ const UserProfile = () => {
         //   </div>
         // </div>
         <div className="grid grid-cols-7 gap-x-10 lg:w-[85%] mx-auto h-screen py-10">
-          <div className="bg-[#0D0D21] col-span-2 rounded-md">
-            <div>
-              <span>i</span>
+          <div className="bg-[#0D0D21] col-span-2 rounded-md p-6">
+            <div className="text-end">
+              <span className="">i</span>
               <img src={user?.photoURL} alt="" />
             </div>
             <div className="flex justify-center">
@@ -111,19 +111,43 @@ const UserProfile = () => {
                 Application
               </button>
             </div>
-            <div className="flex flex-col font-publicSans font-semibold">
-              <NavLink>My Profile</NavLink>
-              <NavLink>Additional Info</NavLink>
-              <NavLink>Address</NavLink>
-              <NavLink>Education</NavLink>
-              <NavLink>My Profile</NavLink>
-              <NavLink>Additional Info</NavLink>
-              <NavLink>Address</NavLink>
-              <NavLink>Education</NavLink>
-              <NavLink>My Profile</NavLink>
-              <NavLink>Additional Info</NavLink>
-              <NavLink>Address</NavLink>
-              <NavLink>Education</NavLink>
+            <div className="flex flex-col font-publicSans font-semibold text-slate-300">
+              <NavLink className="bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                My Profile
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Additional Info
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Address
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Education
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                My Profile
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Additional Info
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Address
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Education
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                My Profile
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Additional Info
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Address
+              </NavLink>
+              <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
+                Education
+              </NavLink>
             </div>
           </div>
           <div className="bg-[#0D0D21] col-span-5 rounded-md">
