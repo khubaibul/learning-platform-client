@@ -101,10 +101,10 @@ const UserProfile = () => {
         //   </div>
         // </div>
         <div className="flex">
-          <div >
+          <div className="bg-[#0D0D21]">
             <p>Sidebar</p>
           </div>
-          <div>
+          <div className="bg-[#0D0D21]">
             <h1>Section</h1>
           </div>
         </div>
