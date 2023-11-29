@@ -121,7 +121,7 @@ const LandingPage = () => {
                         loop={true}
                       />
                     </div>
-                    <div className="flex flex-col items-start justify-between h-[50%] my-auto">
+                    <div className="flex flex-col items-start justify-between h-[50%] my-auto lg:gap-y-10 gap-y-0">
                       <div
                         className={`flex flex-col gap-y-7 ${
                           theme ? "text-slate-300" : " text-black"
@@ -141,7 +141,7 @@ const LandingPage = () => {
                           </span>
                         </p>
                       </div>
-                      <button className="font-montserrat btn btn-sm btn-accent btn-outline rounded-none">
+                      <button className="">
                         Meet With Support Team
                       </button>
                     </div>
