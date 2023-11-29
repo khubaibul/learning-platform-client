@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faG, faUser } from "@fortawesome/free-solid-svg-icons";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -102,7 +102,27 @@ const UserProfile = () => {
         // </div>
         <div className="grid grid-cols-7 gap-x-10 lg:w-[85%] mx-auto h-screen py-10">
           <div className="bg-[#0D0D21] col-span-2 rounded-md">
-            <p>Sidebar</p>
+            <div>
+              <span>i</span>
+              <img src={user?.photoURL} alt="" />
+            </div>
+            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300">
+              Application
+            </button>
+            <div className="flex flex-col">
+              <NavLink>My Profile</NavLink>
+              <NavLink>Additional Info</NavLink>
+              <NavLink>Address</NavLink>
+              <NavLink>Education</NavLink>
+              <NavLink>My Profile</NavLink>
+              <NavLink>Additional Info</NavLink>
+              <NavLink>Address</NavLink>
+              <NavLink>Education</NavLink>
+              <NavLink>My Profile</NavLink>
+              <NavLink>Additional Info</NavLink>
+              <NavLink>Address</NavLink>
+              <NavLink>Education</NavLink>
+            </div>
           </div>
           <div className="bg-[#0D0D21] col-span-5 rounded-md">
             <h1>Section</h1>
