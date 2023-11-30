@@ -22,7 +22,11 @@ const MyClasses = () => {
         {myClasses?.map((myClass) => (
           <div className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 p-[3px] rounded-lg">
             <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg flex gap-x-8">
-              <img className="h-56 w-96 rounded-md" src={kotlin} alt="" />
+              <img
+                className="h-56 w-96 rounded-md"
+                src={`https://res.cloudinary.com/dou96vwyp/image/upload/v1678266207/${myClass?.courseName.toLowerCase()}.png`}
+                alt=""
+              />
               <div className="flex flex-col gap-y-8 justify-center">
                 <h1 className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text text-2xl font-montserrat font-bold">
                   Complete

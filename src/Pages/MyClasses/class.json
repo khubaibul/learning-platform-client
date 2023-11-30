@@ -2,7 +2,7 @@
   {
     "courseID": "csefh1",
     "courseName": "Kotlin",
-    "courseImage": "https://res.cloudinary.com/dou96vwyp/image/upload/v1700250981/kotlin_erbz68.png",
+    "courseImage": "https://res.cloudinary.com/dou96vwyp/image/upload/v1700250981/kotlin.png",
     "milestone": [
       {
         "milestone": 1,
@@ -630,7 +630,7 @@
   {
     "courseID": "csefh2",
     "courseName": "PHP",
-    "courseImage": "https://res.cloudinary.com/dou96vwyp/image/upload/v1701332480/php_ab303p.png",
+    "courseImage": "https://res.cloudinary.com/dou96vwyp/image/upload/v1701332480/php.png",
     "milestone": [
       {
         "milestone": 1,
