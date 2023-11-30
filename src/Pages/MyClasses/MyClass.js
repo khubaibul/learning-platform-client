@@ -22,7 +22,7 @@ const MyClass = () => {
   };
 
   useEffect(() => {
-    fetch(`https://cse-from-home-server.vercel.app/classes/Kotlin`)
+    fetch(`https://cse-from-home-server.vercel.app/classes/${courseName}`)
       .then((res) => res.json())
       .then((data) => setMyClasses(data?.data));
   }, [courseName]);

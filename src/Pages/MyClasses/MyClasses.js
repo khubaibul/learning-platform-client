@@ -36,7 +36,7 @@ const MyClasses = () => {
                 </div>
                 <div className="flex gap-x-5 text-lg font-montserrat">
                   <Link
-                    to={`/myClass/${myClass?.courseName}`}
+                    to={`/myClass/${myClass?.courseName.toLowerCase()}`}
                     // onClick={() => nextContent()}
                     className="flex justify-center items-center bg-gradient-to-r from-purple-600 hover:from-purple-700 to-violet-500 hover:to-violet-600 px-4 py-0.5 rounded-md font-semibold text-slate-900"
                   >
