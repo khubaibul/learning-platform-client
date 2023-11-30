@@ -1254,5 +1254,1261 @@
         ]
       }
     ]
+  },
+  {
+    "courseID": "csefh3",
+    "courseName": "GO",
+    "courseImage": "https://res.cloudinary.com/dou96vwyp/image/upload/v1701334724/course_image/go.png",
+    "milestone": [
+      {
+        "milestone": 1,
+        "milestoneName": "What is GO?",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 2,
+        "milestoneName": "Build your first step using GO",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 3,
+        "milestoneName": "GO Function and it's usage",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 6,
+        "milestoneName": "All Loops in GO",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 7,
+        "milestoneName": "Logic in GO",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 8,
+        "milestoneName": "GO Generics",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 9,
+        "milestoneName": "Final projects using GO",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 4,
+        "milestoneName": "GO Object",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 5,
+        "milestoneName": "OOP in GO",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is GO? Introduction To GO Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in GO",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in GO Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO Operators Tutorial | Arithmetic & Relational Operators GO | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "GO If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "GO When Statement & Expression | Ranges in GO Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "GO While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "courseID": "csefh4",
+    "courseName": "swift",
+    "courseImage": "https://res.cloudinary.com/dou96vwyp/image/upload/v1701334724/course_image/swift.png",
+    "milestone": [
+      {
+        "milestone": 1,
+        "milestoneName": "What is Swift?",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 2,
+        "milestoneName": "Build your first step using Swift",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 3,
+        "milestoneName": "Swift Function and it's usage",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 6,
+        "milestoneName": "All Loops in Swift",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 7,
+        "milestoneName": "Logic in Swift",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 8,
+        "milestoneName": "Swift Generics",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 9,
+        "milestoneName": "Final projects using Swift",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 4,
+        "milestoneName": "Swift Object",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "milestone": 5,
+        "milestoneName": "OOP in Swift",
+        "module": [
+          {
+            "module": 1,
+            "moduleName": "Introduction To Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "What is Swift? Introduction To Swift Tutorial | CheezyCode #1",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift - Development Environment Setup Tutorial | Install Intelli J | CheezyCode #2",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift - Hello World Program | Compilation & ByteCode | CheezyCode #3",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 2,
+            "moduleName": "Variables & Data Types in Swift",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Variables & Data Types in Swift Tutorial | var & val | CheezyCode #4",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift Operators Tutorial | Arithmetic & Relational Operators Swift | CheezyCode #5",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift Logical Operators & Short Circuiting Tutorial | CheezyCode #6",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          },
+          {
+            "module": 3,
+            "moduleName": "Statement and Expression",
+            "video": [
+              {
+                "video": 1,
+                "videoTitle": "Swift If Else Statement and Expression Tutorial | CheezyCode #7",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 2,
+                "videoTitle": "Swift When Statement & Expression | Ranges in Swift Tutorial | CheezyCode #8",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              },
+              {
+                "video": 3,
+                "videoTitle": "Swift While & Do-While Loops Tutorial | CheezyCode #9",
+                "videoSource": "https://www.youtube.com/embed/YS4e4q9oBaU?si=zjXTk6s-7YoR2xYS"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
