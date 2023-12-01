@@ -127,7 +127,7 @@ const UserProfile = () => {
                 Additional Info
               </NavLink>
               <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2 rounded">
-                Address
+                Addres
               </NavLink>
               <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2 rounded">
                 Education
