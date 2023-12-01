@@ -148,7 +148,7 @@ const UserProfile = () => {
           </div>
           <div className="bg-[#0D0D21] col-span-5 rounded-md">
             <h1>Profile</h1>
-            <p>My</p>
+            <p>My profile</p>
           </div>
         </div>
       ) : (
