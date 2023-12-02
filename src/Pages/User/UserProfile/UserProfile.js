@@ -150,6 +150,9 @@ const UserProfile = () => {
             <h1>Profile</h1>
             <p>My profile</p>
             <p>Your Data Is </p>
+            <div>
+              <p>Student</p>
+            </div>
           </div>
         </div>
       ) : (
