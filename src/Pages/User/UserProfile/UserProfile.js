@@ -151,7 +151,7 @@ const UserProfile = () => {
             <p>My profile</p>
             <p>Your Data Is </p>
             <div>
-              <p>Student</p>
+              <p>Student ID:</p>
             </div>
           </div>
         </div>
