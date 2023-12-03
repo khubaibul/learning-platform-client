@@ -150,6 +150,7 @@ const UserProfile = () => {
             <div>
               <div>
                 <h1>My Profile</h1>
+                <button>Edit</button>
               </div>
               </div>
             <div></div>
