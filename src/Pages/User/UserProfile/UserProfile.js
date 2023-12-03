@@ -165,6 +165,10 @@ const UserProfile = () => {
                     <h5>Full Name</h5>
                     <span>{user?.displayName}</span>
                   </div>
+                  <div>
+                    <h5>Email Address</h5>
+                    <span>{user?.email}</span>
+                  </div>
                 </div>
               </div>
               </div>
