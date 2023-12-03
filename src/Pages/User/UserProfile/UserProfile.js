@@ -147,14 +147,12 @@ const UserProfile = () => {
             </div>
           </div>
           <div className="bg-[#0D0D21] col-span-5 rounded-md">
-            <h1>Profile</h1>
-            <p>My profile</p>
-            <p>Your Data Is </p>
             <div>
-              <p>Student ID:</p>
-              <p>Full Name:</p>
-              <p>Email Address:</p>
-            </div>
+              <div>
+                <h1>My Profile</h1>
+              </div>
+              </div>
+            <div></div>
           </div>
         </div>
       ) : (
