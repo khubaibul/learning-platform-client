@@ -169,6 +169,10 @@ const UserProfile = () => {
                     <h5>Email Address</h5>
                     <span>{user?.email}</span>
                   </div>
+                  <div>
+                    <h5>Phone</h5>
+                    <span>+8801832302170</span>
+                  </div>
                 </div>
               </div>
               </div>
