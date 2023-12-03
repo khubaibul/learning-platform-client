@@ -156,6 +156,12 @@ const UserProfile = () => {
                 <div>
                   <img src={user?.photoURL} alt="" />
                 </div>
+                <div>
+                  <div>
+                    <h5>Student ID:</h5>
+                    <span>WEB6-2001</span>
+                  </div>
+                </div>
               </div>
               </div>
             <div></div>
