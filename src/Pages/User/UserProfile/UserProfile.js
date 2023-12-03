@@ -154,7 +154,7 @@ const UserProfile = () => {
               </div>
               <div>
                 <div>
-                  <img src="" alt="" />
+                  <img src={user?.photoURL} alt="" />
                 </div>
               </div>
               </div>
