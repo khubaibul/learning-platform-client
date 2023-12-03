@@ -139,7 +139,7 @@ const UserProfile = () => {
                 Course Request
               </NavLink>
               <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2 rounded">
-                Address
+                Order History
               </NavLink>
               <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2 rounded">
                 Education
