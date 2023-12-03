@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faG, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faG, faUser, faEdit } from "@fortawesome/free-solid-svg-icons";
+import { FaEdit } from "react-icons/fa";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import { Link, NavLink } from "react-router-dom";
 import { useEffect } from "react";
@@ -146,11 +147,14 @@ const UserProfile = () => {
               </NavLink>
             </div>
           </div>
-          <div className="bg-[#0D0D21] col-span-5 rounded-md">
+          <div className="bg-[#0D0D21] col-span-5 rounded-md p-6">
             <div>
-              <div>
+              <div className="flex justify-between">
                 <h1>My Profile</h1>
-                <button>Edit</button>
+                <button>
+                  <FaEdit />
+                  Edit
+                </button>
               </div>
               <div>
                 <div>
@@ -175,7 +179,7 @@ const UserProfile = () => {
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
             <div></div>
           </div>
         </div>
