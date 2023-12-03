@@ -161,6 +161,10 @@ const UserProfile = () => {
                     <h5>Student ID:</h5>
                     <span>WEB6-2001</span>
                   </div>
+                  <div>
+                    <h5>Full Name</h5>
+                    <span>{user?.displayName}</span>
+                  </div>
                 </div>
               </div>
               </div>
