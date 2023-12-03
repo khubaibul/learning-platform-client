@@ -152,6 +152,11 @@ const UserProfile = () => {
                 <h1>My Profile</h1>
                 <button>Edit</button>
               </div>
+              <div>
+                <div>
+                  <img src="" alt="" />
+                </div>
+              </div>
               </div>
             <div></div>
           </div>
