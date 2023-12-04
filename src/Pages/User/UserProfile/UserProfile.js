@@ -122,15 +122,19 @@ const UserProfile = () => {
                     </thead>
                     <tbody>
                       {myCourses?.map((myCourse, i) => (
-                        <tr className="font-montserrat">
+                        <tr className="font-montserrat text-center">
                           <td>{myCourse?.courseName}</td>
                           <td>{myCourse?.transactionId}</td>
                           <td>
-                            {/* <FontAwesomeIcon
-                              icon={faMoneyBill1}
-                            ></FontAwesomeIcon>{" "}
-                            BDT {course_price} */}
-                            lll
+                            {myCourse?.paid ? (
+                              <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
+                                Enrolled ✅
+                              </button>
+                            ) : (
+                              <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
+                                Enroll ❎
+                              </button>
+                            )}
                           </td>
                         </tr>
                       ))}
