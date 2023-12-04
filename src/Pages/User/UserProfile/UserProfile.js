@@ -158,9 +158,10 @@ const UserProfile = () => {
                   Edit
                 </button>
               </div>
-              <div className="p-10">
+              <div className="p-10 flex gap-x-20">
                 <div>
                   <img className="w-36 h-36" src={user?.photoURL} alt="" />
+                  <button className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2 rounded">Edit Profile</button>
                 </div>
                 <div>
                   <div>
