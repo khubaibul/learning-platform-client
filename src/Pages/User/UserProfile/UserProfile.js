@@ -120,8 +120,10 @@ const UserProfile = () => {
                 </thead>
                 <tbody>
                   {myCourses?.map((myCourse, i) => (
-                    <tr className="font-montserrat text-center">
-                      <td>{myCourse?.courseName}</td>
+                    <tr className="font-montserrat text-center bg-gradient-to-r from-[#1C1730] to-[#171930]">
+                      <td className="text-lg font-bold">
+                        {myCourse?.courseName}
+                      </td>
                       <td className="text-sm font-semibold">
                         {myCourse?.transactionId}
                       </td>
