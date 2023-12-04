@@ -106,42 +106,40 @@ const UserProfile = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="mt-4">
               <h1 className="text-2xl font-publicSans font-extrabold text-slate-300">
                 My Course
               </h1>
-              <div>
-                <div>
-                  <table className="table-normal w-full text-slate-300">
-                    <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2">
-                      <tr>
-                        <th>Course Name</th>
-                        <th>Course ID</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {myCourses?.map((myCourse, i) => (
-                        <tr className="font-montserrat text-center">
-                          <td>{myCourse?.courseName}</td>
-                          <td>{myCourse?.transactionId}</td>
-                          <td>
-                            {myCourse?.paid ? (
-                              <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
-                                Enrolled ✅
-                              </button>
-                            ) : (
-                              <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
-                                Enroll ❎
-                              </button>
-                            )}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              <table className="table-normal w-full text-slate-300 mt-4">
+                <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2">
+                  <tr>
+                    <th>Course Name</th>
+                    <th>Course ID</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {myCourses?.map((myCourse, i) => (
+                    <tr className="font-montserrat text-center">
+                      <td>{myCourse?.courseName}</td>
+                      <td className="text-sm font-semibold">
+                        {myCourse?.transactionId}
+                      </td>
+                      <td>
+                        {myCourse?.paid ? (
+                          <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
+                            Enrolled ✅
+                          </button>
+                        ) : (
+                          <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
+                            Enroll ❎
+                          </button>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
