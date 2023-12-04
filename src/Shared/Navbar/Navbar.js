@@ -215,7 +215,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center">
           <img
             src={theme ? logo_for_dark_mode : logo}
-            className="lg:w-64 md:w-64"
+            className="lg:w-60 md:w-64"
             alt=""
           />
           <h1 className="ml-2 italic font-bold bg-gradient-to-r from-green-600 via-accent to-green-400 inline-block text-transparent bg-clip-text">
