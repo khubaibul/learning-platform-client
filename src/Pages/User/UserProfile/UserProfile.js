@@ -111,15 +111,32 @@ const UserProfile = () => {
                 My Course
               </h1>
               <div>
-                {myCourses?.map((myCourse, i) => (
-                  <div>
-                    <table>
-                      <th>Course Name</th>
-                      <th>Course Name</th>
-                      <th>Action</th>
-                    </table>
-                  </div>
-                ))}
+                <div>
+                  <table className="table-normal w-full text-slate-300">
+                    <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2">
+                      <tr>
+                        <th>Course Name</th>
+                        <th>Course ID</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {myCourses?.map((myCourse, i) => (
+                        <tr className="font-montserrat">
+                          <td>{myCourse?.courseName}</td>
+                          <td>fhdas</td>
+                          <td>
+                            {/* <FontAwesomeIcon
+                              icon={faMoneyBill1}
+                            ></FontAwesomeIcon>{" "}
+                            BDT {course_price} */}
+                            lll
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
