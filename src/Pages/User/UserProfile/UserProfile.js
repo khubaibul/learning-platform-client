@@ -124,7 +124,7 @@ const UserProfile = () => {
                       {myCourses?.map((myCourse, i) => (
                         <tr className="font-montserrat">
                           <td>{myCourse?.courseName}</td>
-                          <td>fhdas</td>
+                          <td>{myCourse?.transactionId}</td>
                           <td>
                             {/* <FontAwesomeIcon
                               icon={faMoneyBill1}
