@@ -165,21 +165,21 @@ const UserProfile = () => {
                     Edit Profile
                   </button>
                 </div>
-                <div>
+                <div className="text-slate-300 font-publicSans flex flex-col gap-y-4">
                   <div>
-                    <h5>Student ID:</h5>
+                    <h5 className="text-sm">Student ID:</h5>
                     <span>WEB6-2001</span>
                   </div>
                   <div>
-                    <h5>Full Name</h5>
+                    <h5 className="text-sm">Full Name</h5>
                     <span>{user?.displayName}</span>
                   </div>
                   <div>
-                    <h5>Email Address</h5>
+                    <h5 className="text-sm">Email Address</h5>
                     <span>{user?.email}</span>
                   </div>
                   <div>
-                    <h5>Phone</h5>
+                    <h5 className="text-sm">Phone</h5>
                     <span>+8801832302170</span>
                   </div>
                 </div>
