@@ -150,8 +150,10 @@ const UserProfile = () => {
           <div className="bg-[#0D0D21] col-span-5 rounded-md p-6">
             <div>
               <div className="flex justify-between">
-                <h1 className="text-3xl font-publicSans font-extrabold">My Profile</h1>
-                <button>
+                <h1 className="text-3xl font-publicSans font-extrabold text-slate-300">
+                  My Profile
+                </h1>
+                <button className="flex justify-center items-center text-accent gap-x-1 font-bold">
                   <FaEdit />
                   Edit
                 </button>
