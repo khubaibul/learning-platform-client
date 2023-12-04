@@ -158,7 +158,7 @@ const UserProfile = () => {
                   Edit
                 </button>
               </div>
-              <div>
+              <div className="p-10">
                 <div>
                   <img className="w-36 h-36" src={user?.photoURL} alt="" />
                 </div>
