@@ -111,16 +111,16 @@ const UserProfile = () => {
                 My Course
               </h1>
               <table className="w-full text-slate-300 mt-4">
-                <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2">
+                <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE]">
                   <tr>
                     <th>Course Name</th>
                     <th>Course ID</th>
                     <th>Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="">
                   {myCourses?.map((myCourse, i) => (
-                    <tr className="font-montserrat text-center bg-gradient-to-r from-[#1C1730] to-[#171930]">
+                    <tr className="font-montserrat text-center bg-gradient-to-r from-[#1C1730] to-[#171930] border border-slate-300">
                       <td className="text-lg font-bold">
                         {myCourse?.courseName}
                       </td>
