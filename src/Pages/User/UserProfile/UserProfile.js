@@ -22,7 +22,7 @@ const UserProfile = () => {
   return (
     <div>
       {user ? (
-        <div className="grid grid-cols-7 gap-x-10 lg:w-[85%] mx-auto py-6">
+        <div className="lg:grid md:grid grid-cols-7 gap-x-10 lg:w-[85%] mx-auto py-6">
           <div className="flex flex-col gap-y-10 bg-[#0D0D21] col-span-2 rounded-md p-6">
             <div className="flex flex-col gap-y-4">
               <div>
@@ -69,7 +69,7 @@ const UserProfile = () => {
             </div>
           </div>
           <div className="bg-[#0D0D21] col-span-5 rounded-md p-6">
-            <div>
+            <div className="">
               <div className="flex justify-between">
                 <h1 className="text-3xl font-publicSans font-extrabold text-slate-300">
                   My Profile
