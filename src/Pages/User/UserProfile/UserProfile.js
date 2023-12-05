@@ -79,7 +79,7 @@ const UserProfile = () => {
                   Edit
                 </button>
               </div>
-              <div className="p-10 flex gap-x-20 lg:flex-row md:flex-row flex-col">
+              <div className="p-10 flex gap-x-20 gap-y-16 lg:flex-row md:flex-row flex-col">
                 <div className="flex flex-col gap-y-3 items-center">
                   <img className="w-36 h-36" src={user?.photoURL} alt="" />
                   <button className="bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] hover:to-[#DC3DF4] hover:from-[#4C58FE] py-1 px-4 rounded font-publicSans text-slate-300">
@@ -110,7 +110,7 @@ const UserProfile = () => {
               <h1 className="text-2xl font-publicSans font-extrabold text-slate-300">
                 My Course
               </h1>
-              <table className="table-normal w-full text-slate-300 mt-4">
+              {/* <table className="table-normal w-full text-slate-300 mt-4">
                 <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2">
                   <tr>
                     <th>Course Name</th>
@@ -141,7 +141,7 @@ const UserProfile = () => {
                     </tr>
                   ))}
                 </tbody>
-              </table>
+              </table> */}
             </div>
           </div>
         </div>
