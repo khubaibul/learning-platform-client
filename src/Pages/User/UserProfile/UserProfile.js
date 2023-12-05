@@ -130,7 +130,7 @@ const UserProfile = () => {
                       <td>
                         {myCourse?.paid ? (
                           <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
-                            Enrolled ✅
+                            Enrolled df✅
                           </button>
                         ) : (
                           <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
