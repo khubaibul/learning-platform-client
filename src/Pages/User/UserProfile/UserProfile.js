@@ -110,7 +110,7 @@ const UserProfile = () => {
               <h1 className="text-2xl font-publicSans font-extrabold text-slate-300">
                 My Course
               </h1>
-              {/* <table className="table-normal w-full text-slate-300 mt-4">
+              <table className="w-full text-slate-300 mt-4">
                 <thead className="font-montserrat bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2">
                   <tr>
                     <th>Course Name</th>
@@ -141,7 +141,7 @@ const UserProfile = () => {
                     </tr>
                   ))}
                 </tbody>
-              </table> */}
+              </table>
             </div>
           </div>
         </div>
