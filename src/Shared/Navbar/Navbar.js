@@ -183,10 +183,7 @@ const Navbar = () => {
                     style={navLinkStyle}
                   >
                     {user.photoURL ? (
-                      <div
-                        className="tooltip tooltip-right"
-                        data-tip={user.displayName}
-                      >
+                      <div className="tooltip" data-tip={user.displayName}>
                         <img
                           className="w-10 rounded-full p-1 bg-accent"
                           src={user.photoURL}
