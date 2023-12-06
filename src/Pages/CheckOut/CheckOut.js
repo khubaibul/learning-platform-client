@@ -49,7 +49,7 @@ const CheckOut = () => {
           <form onSubmit={handlePay}>
             <div className="">
               <table className="table-normal text-black font-bold">
-                <thead className="bg-slate-400 font-montserrat">
+                <thead className="font-montserrat">
                   <tr>
                     <th>Course ID</th>
                     <th>Course Title</th>
@@ -72,7 +72,7 @@ const CheckOut = () => {
                 name="phone"
                 placeholder="Your Phone Number"
                 required
-                className="input rounded-none input-primary w-full focus:border-0 border-none text-black font-semibold"
+                className="input rounded-none input-primary w-full focus:border-0 border-none font-semibold"
               />
             </div>
             <button class="group relative font-semibold font-montserrat h-10 w-48 mt-4 overflow-hidden bg-white shadow cursor-pointer">
