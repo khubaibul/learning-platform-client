@@ -105,13 +105,19 @@ const CourseDetail = () => {
             </div>
           </div>
           <div className="card-actions justify-center">
-            <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-[#f25189] w-1/2 rounded">
-              <Link
-                to={`/course/checkout/${_id}/${course_price}/${courseTitle}`}
-              >
-                Get Premium Access
-              </Link>
-            </button>
+            {alreadyPurchase?.paid === true ? (
+              <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-[#f25189] w-1/2 rounded">
+                Already Enrolled
+              </button>
+            ) : (
+              <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-[#f25189] w-1/2 rounded">
+                <Link
+                  to={`/course/checkout/${_id}/${course_price}/${courseTitle}`}
+                >
+                  Get Premium Access
+                </Link>
+              </button>
+            )}
           </div>
         </div>
       </div>
