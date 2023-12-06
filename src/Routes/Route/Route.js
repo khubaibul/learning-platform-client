@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
-import Blog from "../../Pages/Blog/Blog";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
 import PaymentSuccess from "../../Pages/CheckOut/PaymentSuccess";
 import CourseDetail from "../../Pages/CourseDetail/CourseDetail";
