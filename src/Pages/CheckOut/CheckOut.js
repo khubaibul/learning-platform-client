@@ -84,7 +84,7 @@ const CheckOut = () => {
               />
             </button>
           </form>
-          <h5 className="mt-4 italic text-sm font-publicSans">
+          <h5 className="mt-4 italic text-sm font-publicSans opacity-75">
             Education is not preparation for life; education is life itself.
           </h5>
         </div>
