@@ -106,7 +106,7 @@ const CourseDetail = () => {
           </div>
           <div className="card-actions justify-center">
             {alreadyPurchase?.paid === true ? (
-              <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-[#f25189] w-1/2 rounded">
+              <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-montserrat p-3 text-[#f25189] w-1/2 rounded cursor-not-allowed">
                 Already Enrolled
               </button>
             ) : (
