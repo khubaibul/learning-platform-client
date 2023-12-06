@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf, faTools } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLoaderData } from "react-router-dom";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import PDF from "../PDF/PDF";
 import bg from "../../Assets/website-bg.png";
+import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
 const CourseDetail = () => {
   const [myCourses, setMyCourses] = useState([]);
   const { data: courseDetail } = useLoaderData();
+  const { user } = useContext(AuthContext);
   const {
     common_uses,
     courseImage,
@@ -26,6 +28,11 @@ const CourseDetail = () => {
       .then((res) => res.json())
       .then((data) => setMyCourses(data));
   }, [user?.email]);
+
+  const alreadyPurchase = myCourses?.find(
+    (myCourse) => myCourse?.courseName == courseTitle
+  );
+  console.log(alreadyPurchase);
 
   return (
     <div

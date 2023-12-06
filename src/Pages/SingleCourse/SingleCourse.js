@@ -18,10 +18,6 @@ const SingleCourse = ({ singleCourse, myCourses }) => {
     course_price,
   } = singleCourse;
 
-  const alreadyPurchase = myCourses?.find(
-    (myCourse) => myCourse?.courseName == singleCourse?.courseTitle
-  );
-  console.log(alreadyPurchase);
 
   return (
     <div
