@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf, faTools } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLoaderData } from "react-router-dom";
@@ -7,6 +7,7 @@ import PDF from "../PDF/PDF";
 import bg from "../../Assets/website-bg.png";
 
 const CourseDetail = () => {
+  const [myCourses, setMyCourses] = useState([]);
   const { data: courseDetail } = useLoaderData();
   const {
     common_uses,
@@ -19,6 +20,12 @@ const CourseDetail = () => {
     course_price,
     course_module_topics,
   } = courseDetail;
+
+  useEffect(() => {
+    fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
+      .then((res) => res.json())
+      .then((data) => setMyCourses(data));
+  }, [user?.email]);
 
   return (
     <div

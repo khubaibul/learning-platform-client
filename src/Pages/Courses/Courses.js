@@ -6,18 +6,8 @@ import SingleCourse from "../SingleCourse/SingleCourse";
 import "./Courses.css";
 
 const Courses = () => {
-  const [myCourses, setMyCourses] = useState([]);
   const { data: allCourses } = useLoaderData();
-  const { theme, user } = useContext(AuthContext);
-
-  useEffect(() => {
-    fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
-      .then((res) => res.json())
-      .then((data) => setMyCourses(data));
-  }, [user?.email]);
-
-  // console.log("from courses", myCourses);
-  // console.log(allCourses);
+  const { theme } = useContext(AuthContext);
 
   return (
     <div className="lg:px-20 mt-20 mb-20">
