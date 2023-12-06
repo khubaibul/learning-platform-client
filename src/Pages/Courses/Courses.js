@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
@@ -6,6 +6,7 @@ import SingleCourse from "../SingleCourse/SingleCourse";
 import "./Courses.css";
 
 const Courses = () => {
+  const [myCourses, setMyCourses] = useState([]);
   const { data: allCourses } = useLoaderData();
   const { theme, user } = useContext(AuthContext);
 
@@ -14,6 +15,9 @@ const Courses = () => {
       .then((res) => res.json())
       .then((data) => setMyCourses(data));
   }, [user?.email]);
+
+  // console.log("from courses", myCourses);
+  // console.log(allCourses);
 
   return (
     <div className="lg:px-20 mt-20 mb-20">
@@ -60,7 +64,8 @@ const Courses = () => {
             <SingleCourse
               key={singleCourse._id}
               singleCourse={singleCourse}
-            ></SingleCourse>
+              myCourses={myCourses}
+            />
           ))}
         </div>
       </div>

@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
-const SingleCourse = ({ singleCourse }) => {
+const SingleCourse = ({ singleCourse, myCourses }) => {
+  const { theme } = useContext(AuthContext);
   const {
     common_uses,
     courseImage,
@@ -16,7 +17,12 @@ const SingleCourse = ({ singleCourse }) => {
     course_module,
     course_price,
   } = singleCourse;
-  const { theme } = useContext(AuthContext);
+
+  const alreadyPurchase = myCourses?.find(
+    (myCourse) => myCourse?.courseName == singleCourse?.courseTitle
+  );
+  console.log(alreadyPurchase);
+
   return (
     <div
       className={`card card-compact w-full rounded-none ${
