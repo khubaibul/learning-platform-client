@@ -49,7 +49,7 @@ const CheckOut = () => {
           <form onSubmit={handlePay}>
             <div className="font-publicSans">
               <table className="table-normal text-black font-bold bg-slate-400">
-                <thead className="font-montserrat">
+                <thead className="">
                   <tr>
                     <th>Course ID</th>
                     <th>Course Title</th>
