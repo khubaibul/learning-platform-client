@@ -54,7 +54,6 @@ const Courses = () => {
             <SingleCourse
               key={singleCourse._id}
               singleCourse={singleCourse}
-              myCourses={myCourses}
             />
           ))}
         </div>

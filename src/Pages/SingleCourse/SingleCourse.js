@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 
-const SingleCourse = ({ singleCourse, myCourses }) => {
+const SingleCourse = ({ singleCourse }) => {
   const { theme } = useContext(AuthContext);
   const {
     common_uses,
