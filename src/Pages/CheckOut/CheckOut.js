@@ -44,10 +44,10 @@ const CheckOut = () => {
       style={{ backgroundImage: `url(${checkOutBg})` }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-center text-neutral-content">
+      <div className="hero-content text-center text-neutral-content bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md">
         <div>
           <form onSubmit={handlePay}>
-            <div className="bg-slate-300">
+            <div className="">
               <table className="table-normal text-black font-bold">
                 <thead className="bg-slate-400 font-montserrat">
                   <tr>
