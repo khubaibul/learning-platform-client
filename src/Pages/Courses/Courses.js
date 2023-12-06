@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
@@ -7,7 +7,14 @@ import "./Courses.css";
 
 const Courses = () => {
   const { data: allCourses } = useLoaderData();
-  const { theme } = useContext(AuthContext);
+  const { theme, user } = useContext(AuthContext);
+
+  useEffect(() => {
+    fetch(`https://cse-from-home-server.vercel.app/my-courses/${user?.email}`)
+      .then((res) => res.json())
+      .then((data) => setMyCourses(data));
+  }, [user?.email]);
+
   return (
     <div className="lg:px-20 mt-20 mb-20">
       <h2
