@@ -47,8 +47,8 @@ const CheckOut = () => {
       <div className="hero-content text-center text-neutral-content bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md">
         <div>
           <form onSubmit={handlePay}>
-            <div className="">
-              <table className="table-normal text-black font-bold bg-slate-300">
+            <div className="font-publicSans">
+              <table className="table-normal text-black font-bold bg-slate-400">
                 <thead className="font-montserrat">
                   <tr>
                     <th>Course ID</th>
