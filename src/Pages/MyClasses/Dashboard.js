@@ -22,7 +22,7 @@ const Dashboard = () => {
 
       <div className="lg:grid md:grid grid-cols-5 flex flex-col gap-5">
         <div className="col-span-4 bg-gradient-to-r from-purple-400 via-accent to-purple-800 p-[3px] rounded-lg">
-          <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg h-full flex items-center gap-x-8">
+          <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg h-full flex lg:flex-row md:flex-row flex-col items-center gap-x-8">
             <img
               className="h-56 w-96 rounded-md"
               src={courseBrandImage}
@@ -76,7 +76,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <MyClasses />
+      {/* <MyClasses /> */}
     </div>
   );
 };
