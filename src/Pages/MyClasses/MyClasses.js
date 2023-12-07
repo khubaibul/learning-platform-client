@@ -16,7 +16,11 @@ const MyClasses = () => {
   return (
     <div className="grid grid-cols-5 gap-x-5 mt-20">
       <div className="col-span-4 flex flex-col gap-y-4">
-        <h2 className="font-montserrat text-2xl font-bold tracking-wider text-[#EAAAFF]">
+        <h2
+          className={`font-montserrat text-2xl font-bold tracking-wider  ${
+            theme ? "text-[#EAAAFF]" : "text-gray-800"
+          }`}
+        >
           Your Courses
         </h2>
         {myClasses?.map((myClass) => (
