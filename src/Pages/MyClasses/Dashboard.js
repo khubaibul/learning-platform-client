@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div className="w-[80%] mx-auto mb-28">
       <h1
         className={`text-center mt-16 mb-10 font-montserrat text-2xl font-bold tracking-wider ${
-          theme ? "text-gray-800" : "text-[#EAAAFF]"
+          theme ? "text-[#EAAAFF]" : "text-gray-800"
         }`}
       >
         Welcome Back{" "}
