@@ -51,7 +51,7 @@ const MyClass = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div className="flex justify-between">
+          <div className="flex lg:flex-row flex-col justify-between items-center">
             <h2 className="font-montserrat font-bold text-xl tracking-wider bg-gradient-to-r from-purple-800 via-accent to-purple-600 inline-block text-transparent bg-clip-text">
               {contentTitle}
             </h2>
