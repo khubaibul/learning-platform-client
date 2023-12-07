@@ -14,7 +14,7 @@ const MyClasses = () => {
   }, [user?.email]);
 
   return (
-    <div className="grid grid-cols-5 gap-x-5 mt-20">
+    <div className="lg:grid grid-cols-5 gap-x-5 mt-20">
       <div className="col-span-4 flex flex-col gap-y-4">
         <h2
           className={`font-montserrat text-2xl font-bold tracking-wider  ${
@@ -25,7 +25,7 @@ const MyClasses = () => {
         </h2>
         {myClasses?.map((myClass) => (
           <div className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 p-[3px] rounded-lg">
-            <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg flex gap-x-8">
+            <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg flex lg:flex-row md:flex-col flex-col lg:gap-x-8 items-center">
               <img
                 className="h-56 w-96 rounded-md"
                 src={`https://res.cloudinary.com/dou96vwyp/image/upload/v1701334724/course_image/${myClass?.courseName.toLowerCase()}.png`}
