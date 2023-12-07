@@ -28,7 +28,7 @@ const MyClass = () => {
   }, [courseName]);
 
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="lg:w-[80%] md:w-[90%] w-[95%] mx-auto">
       <h1
         className={`text-center mt-6 mb-4 font-montserrat text-2xl font-bold tracking-wider ${
           theme ? "text-slate-300" : " text-gray-900"
@@ -39,7 +39,7 @@ const MyClass = () => {
           {courseName}
         </span>
       </h1>
-      <div className="flex lg:flex-row flex-col mb-10 gap-x-10">
+      <div className="flex lg:flex-row flex-col mb-10 gap-10">
         <div className="flex flex-col gap-y-8">
           <iframe
             className="shadow-lg shadow-violet-200 rounded-md lg:w-[800px] w-full lg:h-[450px] h-[400px]"
@@ -51,8 +51,8 @@ const MyClass = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div className="flex lg:flex-row flex-col justify-between items-center">
-            <h2 className="font-montserrat font-bold text-xl tracking-wider bg-gradient-to-r from-purple-800 via-accent to-purple-600 inline-block text-transparent bg-clip-text">
+          <div className="flex lg:flex-row flex-col justify-between items-center gap-4">
+            <h2 className="font-montserrat font-bold  lg:text-2xl md:text-lg text-sm tracking-wider bg-gradient-to-r from-purple-800 via-accent to-purple-600 inline-block text-transparent bg-clip-text">
               {contentTitle}
             </h2>
             <div className="flex gap-x-5 text-lg font-montserrat">
