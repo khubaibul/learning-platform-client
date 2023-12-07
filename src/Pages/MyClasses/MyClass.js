@@ -39,10 +39,10 @@ const MyClass = () => {
           {courseName}
         </span>
       </h1>
-      <div className="lg:flex mb-10 gap-x-10">
+      <div className="flex lg:flex-row flex-col mb-10 gap-x-10">
         <div className="flex flex-col gap-y-8">
           <iframe
-            className="shadow-lg shadow-violet-200 rounded-md lg:w-[800px] lg:h-[450px]"
+            className="shadow-lg shadow-violet-200 rounded-md lg:w-[800px] w-full lg:h-[450px] h-[400px]"
             // width="800"
             // height="450"
             src={contentURL}
