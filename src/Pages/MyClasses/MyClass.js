@@ -39,12 +39,12 @@ const MyClass = () => {
           {courseName}
         </span>
       </h1>
-      <div className="flex mb-10 gap-x-10">
+      <div className="lg:flex mb-10 gap-x-10">
         <div className="flex flex-col gap-y-8">
           <iframe
-            className="shadow-lg shadow-violet-200 rounded-md"
-            width="800"
-            height="450"
+            className="shadow-lg shadow-violet-200 rounded-md lg:w-[800px] lg:h-[450px]"
+            // width="800"
+            // height="450"
             src={contentURL}
             title="YouTube video player"
             frameborder="0"
