@@ -47,7 +47,7 @@ const PaymentSuccess = () => {
         <p className="my-4 text-center text-sm text-gray-500 font-semibold font-mono">
           Enrolled at{" "}
         </p>
-        <div className="space-x-4 bg-gray-100 py-4 text-center">
+        <div className="space-x-4 py-4 text-center">
           <button className="inline-block rounded-md bg-green-500 p-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400">
             TRANSACTION ID:{" "}
           </button>
