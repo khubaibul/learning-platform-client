@@ -19,12 +19,14 @@ const PaymentSuccess = () => {
       .then((data) => setEnrollment(data.data));
     if (enrollment?.paid === true) {
       toast.success(
-        "Congratulation",
-        "You've successfully enrolled",
-        enrollment?.courseName
+        "Congratulation" +
+          " " +
+          "You've successfully enrolled" +
+          " " +
+          enrollment?.courseName
       );
     }
-  }, [tranSactionId, enrollment?.paid,]);
+  }, [tranSactionId, enrollment?.paid, enrollment?.courseName]);
 
   console.log(enrollment);
 
@@ -33,7 +35,7 @@ const PaymentSuccess = () => {
       style={{ backgroundImage: `url(${bg2})` }}
       className="bg-cover bg-no-repeat bg-center flex h-screen flex-col bg-yellow-400 items-center justify-center space-y-6 px-4 sm:flex-row sm:space-x-6 sm:space-y-0"
     >
-      <div className="w-full max-w-sm overflow-hidden bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md duration-300 hover:scale-105 hover:shadow-xl font-montserrat">
+      <div className="w-full max-w-sm overflow-hidden bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md duration-300 hover:scale-105 hover:shadow-xl font-publicSans text-slate-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="mx-auto mt-8 h-16 w-16 text-green-400"
@@ -46,18 +48,19 @@ const PaymentSuccess = () => {
             clip-rule="evenodd"
           />
         </svg>
-        <h1 className="mt-2 text-center text-2xl font-bold text-gray-500">
-          Success
-        </h1>
-        <p className="my-4 text-center text-sm text-gray-500 font-semibold">
+        <h1 className="mt-2 text-center text-2xl font-bold">Success</h1>
+        <p className="my-4 text-center text-sm font-semibold">
           Woah, successfully enrolled{" "}
         </p>
-        <p className="my-4 text-center text-sm text-gray-500 font-semibold font-mono">
+        <p className="my-4 text-center font-semibold">
           Enrolled at{" "}
+          <span className="italic font-extrabold bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text text-lg">
+            {enrollment?.courseName}
+          </span>
         </p>
         <div className="space-x-4 py-4 text-center">
-          <button className="inline-block rounded-md bg-green-500 p-2 font-semibold text-green-100 shadow-md duration-75 hover:bg-green-400">
-            TRANSACTION ID:{" "}
+          <button className="inline-block rounded-sm bg-green-500 px-4 py-1 font-semibold shadow-md duration-75 hover:bg-green-400 text-gray-800">
+            Go To Class
           </button>
         </div>
       </div>
