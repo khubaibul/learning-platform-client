@@ -18,9 +18,13 @@ const PaymentSuccess = () => {
       .then((res) => res.json())
       .then((data) => setEnrollment(data.data));
     if (enrollment?.paid === true) {
-      toast.success("Congratulation");
+      toast.success(
+        "Congratulation",
+        "You've successfully enrolled",
+        enrollment?.courseName
+      );
     }
-  }, [tranSactionId, enrollment?.paid]);
+  }, [tranSactionId, enrollment?.paid,]);
 
   console.log(enrollment);
 
