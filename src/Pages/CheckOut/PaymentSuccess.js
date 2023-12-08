@@ -8,15 +8,6 @@ const PaymentSuccess = () => {
     const location = useLocation();
     const query = new URLSearchParams(location.search);
     const tranSactionId = query.get("transactionId");
-
-    // const { data: enrollment, isLoading, refetch } = useQuery({
-    //     queryKey: ["enrollInfo", tranSactionId],
-    //     queryFn: () => fetch(`https://cse-from-home-server.vercel.app/enrollInfo?tranSactionId=${tranSactionId}`)
-    //         .then(res => res.json())
-    // })
-
-    // console.log(enrollment, "From Enrollment");
-    // console.log(enrollment);
     useEffect(() => {
         localStorage.setItem("tranSactionId", tranSactionId)
     }, [tranSactionId]);

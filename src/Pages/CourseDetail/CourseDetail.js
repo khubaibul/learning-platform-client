@@ -32,7 +32,6 @@ const CourseDetail = () => {
   const alreadyPurchase = myCourses?.find(
     (myCourse) => myCourse?.courseName == courseTitle
   );
-  console.log(alreadyPurchase);
 
   return (
     <div

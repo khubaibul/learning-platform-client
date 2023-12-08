@@ -13,6 +13,8 @@ const MyClasses = () => {
       .then((data) => setMyClasses(data));
   }, [user?.email]);
 
+  const paidClasses = myClasses?.filter((myClass) => myClass?.paid === true);
+
   return (
     <div className="lg:grid grid-cols-5 gap-x-5 mt-20">
       <div className="col-span-4 flex flex-col gap-y-4">
@@ -23,7 +25,7 @@ const MyClasses = () => {
         >
           Your Courses
         </h2>
-        {myClasses?.map((myClass) => (
+        {paidClasses?.map((myClass) => (
           <div className="bg-gradient-to-r from-purple-800 via-accent to-purple-400 p-[3px] rounded-lg">
             <div className="bg-gradient-to-l from-[#1B0B30] to-[#1e0f4b] p-8 rounded-lg flex lg:flex-row md:flex-col flex-col lg:gap-x-8 items-center">
               <img
