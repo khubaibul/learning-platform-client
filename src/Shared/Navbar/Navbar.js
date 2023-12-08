@@ -341,7 +341,7 @@ const Navbar = () => {
                     data-tip={user.displayName}
                   >
                     <img
-                      className="w-12 rounded-full p-1 bg-accent"
+                      className="w-12 h-12 rounded-full p-1 bg-accent"
                       src={user.photoURL}
                       alt="User"
                     />

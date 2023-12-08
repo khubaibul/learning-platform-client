@@ -4,6 +4,7 @@ import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import { Link, NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const UserProfile = () => {
   const { user, logOut, theme } = useContext(AuthContext);
@@ -15,7 +16,16 @@ const UserProfile = () => {
       .then((data) => setMyCourses(data));
   }, [user?.email]);
 
-  
+  const userLogOut = () => {
+    logOut()
+      .then((result) => {
+        console.log(result);
+        toast.success("LogOut Successful");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div>
@@ -31,7 +41,11 @@ const UserProfile = () => {
                 </div>
               </div>
               <div className="flex justify-center">
-                <img src={user?.photoURL} className="w-20 h-20" alt="" />
+                <img
+                  src={user?.photoURL}
+                  className="w-20 h-20 rounded-full border-4 border-[#A12350]"
+                  alt=""
+                />
               </div>
               <div className="flex justify-center">
                 <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-5 text-[#f25189] rounded-sm  transition-all duration-300">
@@ -65,7 +79,7 @@ const UserProfile = () => {
                 Certification
               </NavLink>
               <button
-                onClick={() => logOut()}
+                onClick={() => userLogOut()}
                 className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-2 px-5 text-[#f25189] text-center rounded-sm  transition-all duration-300"
               >
                 Logout
@@ -85,7 +99,11 @@ const UserProfile = () => {
               </div>
               <div className="p-10 flex gap-x-20 gap-y-16 lg:flex-row md:flex-row flex-col">
                 <div className="flex flex-col gap-y-3 items-center">
-                  <img className="w-36 h-36" src={user?.photoURL} alt="" />
+                  <img
+                    className="w-36 h-36 rounded-full border-4 border-[#A12350]"
+                    src={user?.photoURL}
+                    alt=""
+                  />
                   <button className="bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] hover:to-[#DC3DF4] hover:from-[#4C58FE] py-1 px-4 rounded font-publicSans text-slate-300">
                     Edit Profile
                   </button>
@@ -133,9 +151,12 @@ const UserProfile = () => {
                       </td>
                       <td>
                         {myCourse?.paid ? (
-                          <button className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 lg:text-base md:text-base text-xs lg:px-5 md:px-3 px-2 text-[#f25189] rounded-sm  transition-all duration-300 cursor-not-allowed">
+                          <Link
+                            to={`/myClass/${myCourse?.courseName.toLowerCase()}`}
+                            className="bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 lg:text-base md:text-base text-xs lg:px-5 md:px-3 px-2 text-[#f25189] rounded-sm  transition-all duration-300"
+                          >
                             Enrolled ✅
-                          </button>
+                          </Link>
                         ) : (
                           <Link
                             to={`/courses`}
