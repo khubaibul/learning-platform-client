@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import bg2 from "../../Assets/website-bg-another.png";
+import toast from "react-hot-toast";
 
 const PaymentSuccess = () => {
   const [enrollment, setEnrollment] = useState({});
@@ -16,7 +17,10 @@ const PaymentSuccess = () => {
     )
       .then((res) => res.json())
       .then((data) => setEnrollment(data.data));
-  }, [tranSactionId]);
+    if (enrollment?.paid === true) {
+      toast.success("Congratulation");
+    }
+  }, [tranSactionId, enrollment?.paid]);
 
   console.log(enrollment);
 
