@@ -7,8 +7,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
+import Spinner from "../../../Shared/Spinner/Spinner";
 
 const Login = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [err, setErr] = useState("");
   const {
     loginUser,
@@ -30,6 +32,7 @@ const Login = () => {
     const form = e.target;
     const userEmail = form.email.value;
     const userPassword = form.password.value;
+    setIsLoading(true);
 
     loginUser(userEmail, userPassword)
       .then((result) => {
@@ -37,14 +40,16 @@ const Login = () => {
         setErr("");
         toast.success("Login Successful");
         form.reset();
+        setIsLoading(false);
         navigate(from, { replace: true });
       })
       .catch((err) => {
         setErr(err.message);
+        setIsLoading(false);
         toast.error(err.message.slice(10));
       })
       .finally(() => {
-        setLoading(false);
+        setIsLoading(false);
       });
   };
 
@@ -135,7 +140,7 @@ const Login = () => {
               </Link>
             </p>
             <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300">
-              Login
+              {isLoading ? "Login" : <Spinner />}
             </button>
           </form>
           <div className="flex justify-center gap-x-2 pb-8">
