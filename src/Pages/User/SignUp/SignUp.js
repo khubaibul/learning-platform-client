@@ -8,8 +8,10 @@ import bg from "../../../Assets/website-bg-another.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import toast from "react-hot-toast";
+import Spinner from "../../../Shared/Spinner/Spinner";
 
 const SignUp = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const [err, setErr] = useState("");
   const [accepted, setAccepted] = useState(false);
@@ -32,28 +34,43 @@ const SignUp = () => {
     e.preventDefault();
     const form = e.target;
     const userName = form.name.value;
-    const userPhotoURL = form.photoURL.value;
+    const image = form.image.files[0];
     const userEmail = form.email.value;
     const userPassword = form.password.value;
     if (userPassword.length < 6) {
       setErr("Password should be more than 6 character...");
       return;
     }
-    createUser(userEmail, userPassword)
-      .then((result) => {
-        // toast.success("User Created Successfully");
-        handleUpdateUserProfile(userName, userPhotoURL);
-        handleEmailVerification();
-        if (result.user.emailVerified === true) {
-          navigate(from, { replace: true });
-        } else {
-          toast.error("Your Email Isn't Verified. Please Verify Your Email.");
+    // Upload Image Into Cloudinary
+    const data = new FormData();
+    data.append("file", image);
+    data.append("upload_preset", "CSE_From_Home");
+    data.append("cloud_name", "dou96vwyp");
+
+    setIsLoading(true);
+
+    fetch("https://api.cloudinary.com/v1_1/dou96vwyp/image/upload", {
+      method: "post",
+      body: data,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.secure_url) {
+          createUser(userEmail, userPassword)
+            .then((result) => {
+              // toast.success("User Created Successfully");
+              handleUpdateUserProfile({ userName, userPhotoURL: data.url });
+              setIsLoading(false);
+              form.reset();
+              toast.success("SignUp Successful...!");
+              navigate(from, { replace: true });
+            })
+            .catch((err) => {
+              console.log(err);
+              setIsLoading(false);
+              toast.error(err.message.slice(10));
+            });
         }
-        form.reset();
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error(err.message.slice(10));
       });
   };
 
@@ -61,7 +78,7 @@ const SignUp = () => {
     setAccepted(e.target.checked);
   };
 
-  const handleUpdateUserProfile = (userName, userPhotoURL) => {
+  const handleUpdateUserProfile = ({ userName, userPhotoURL }) => {
     const profile = {
       displayName: userName,
       photoURL: userPhotoURL,
@@ -148,7 +165,7 @@ const SignUp = () => {
                 placeholder="Username Full Name"
               />
             </div>
-            <div className="flex items-center text-lg mb-6 md:mb-8">
+            <div className="flex items-center text-lg mb-6 md:mb-8 bg-gray-200 rounded">
               <img
                 className="absolute ml-3"
                 width="24"
@@ -157,12 +174,12 @@ const SignUp = () => {
                 alt=""
               />
               <input
-                type="text"
-                name="photoURL"
-                required="required"
-                id="photoURL"
-                className="bg-gray-200 pl-12 lg:py-4 md:py-2 focus:outline-none w-full rounded"
-                placeholder="Photo URL"
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+                className="w-full p-2 pl-12 focus:outline-primary bg-gray-light"
+                required={true}
               />
             </div>
             <div className="flex items-center text-lg mb-6 md:mb-8">
@@ -219,7 +236,7 @@ const SignUp = () => {
               disabled={!accepted}
               className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium font-publicSans tracking-widest lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300"
             >
-              Sign Up
+              {isLoading ? <Spinner borderColor={"#EF4444"} /> : "Sign Up"}
             </button>
           </form>
           <div className="flex justify-center gap-x-2 pb-4">
