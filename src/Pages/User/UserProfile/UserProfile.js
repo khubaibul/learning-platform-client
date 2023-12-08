@@ -133,13 +133,16 @@ const UserProfile = () => {
                             Enrolled ✅
                           </button>
                         ) : (
-                          <button className="border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-2.5 text-[#f25189] rounded-sm  transition-all duration-300 group relative overflow-hidden cursor-pointe lg:text-baser">
+                          <Link
+                            to={`/courses`}
+                            className="border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-1 px-2.5 text-[#f25189] rounded-sm  transition-all duration-300 group relative overflow-hidden cursor-pointe lg:text-baser"
+                          >
                             <div className="absolute inset-0 w-3 bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] transition-all duration-[500ms] ease-out group-hover:w-full"></div>
                             <span className="relative group-hover:text-white ml-2 cursor-pointer">
                               {" "}
                               Go To Enroll ➡
                             </span>
-                          </button>
+                          </Link>
                         )}
                       </td>
                     </tr>
