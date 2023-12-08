@@ -59,9 +59,12 @@ const PaymentSuccess = () => {
           </span>
         </p>
         <div className="space-x-4 py-4 text-center">
-          <button className="inline-block rounded-sm bg-green-500 px-4 py-1 font-semibold shadow-md duration-75 hover:bg-green-400 text-gray-800">
+          <Link
+            to={`/myClass/${enrollment?.courseName?.toLowerCase()}`}
+            className="inline-block rounded-sm bg-green-500 px-4 py-1 font-semibold shadow-md duration-75 hover:bg-green-400 text-gray-800"
+          >
             Go To Class
-          </button>
+          </Link>
         </div>
       </div>
     </div>

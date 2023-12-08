@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import lock from "../../Assets/lock.png";
 import { AuthContext } from "../../Context/AuthProvider/AuthProvider";
 import { useParams } from "react-router-dom";
+import MyClasses from "./MyClasses";
 
 const MyClass = () => {
   const [classes, setMyClasses] = useState([]);
@@ -27,6 +28,8 @@ const MyClass = () => {
       .then((data) => setMyClasses(data?.data));
   }, [courseName]);
 
+  console.log(MyClasses);
+
   return (
     <div className="lg:w-[80%] md:w-[90%] w-[95%] mx-auto">
       <h1
@@ -36,7 +39,7 @@ const MyClass = () => {
       >
         CSE From Home -{" "}
         <span className="italic font-extrabold bg-gradient-to-r from-purple-800 via-accent to-purple-400 inline-block text-transparent bg-clip-text">
-          {courseName}
+          {courseName?.toLocaleUpperCase()}
         </span>
       </h1>
       <div className="flex lg:flex-row flex-col mb-10 gap-10">
