@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faG, faUser, faEdit } from "@fortawesome/free-solid-svg-icons";
 import { FaEdit } from "react-icons/fa";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 import { Link, NavLink } from "react-router-dom";
@@ -17,7 +15,7 @@ const UserProfile = () => {
       .then((data) => setMyCourses(data));
   }, [user?.email]);
 
-  console.log(myCourses);
+  
 
   return (
     <div>
@@ -66,6 +64,12 @@ const UserProfile = () => {
               <NavLink className="hover:bg-gradient-to-r from-[#DC3DF4] via-[#984AF9] to-[#4C58FE] p-2 rounded">
                 Certification
               </NavLink>
+              <button
+                onClick={() => logOut()}
+                className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest py-2 px-5 text-[#f25189] text-center rounded-sm  transition-all duration-300"
+              >
+                Logout
+              </button>
             </div>
           </div>
           <div className="bg-[#0D0D21] col-span-5 rounded-md p-6">
