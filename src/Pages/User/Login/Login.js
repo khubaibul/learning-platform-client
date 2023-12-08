@@ -140,7 +140,7 @@ const Login = () => {
               </Link>
             </p>
             <button className="hover:bg-gradient-to-l from-[#A12350] via-[#60277B] to-[#362298] border-2 border-[#A12350] font-medium  font-publicSans tracking-widest lg:py-4 md:py-2 text-[#f25189] w-full rounded transition-all duration-300">
-              {isLoading ? "Login" : <Spinner />}
+              {isLoading ? <Spinner /> : "Login"}
             </button>
           </form>
           <div className="flex justify-center gap-x-2 pb-8">
