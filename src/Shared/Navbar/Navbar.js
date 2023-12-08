@@ -212,7 +212,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center">
           <img
             src={theme ? logo_for_dark_mode : logo}
-            className="lg:w-60 md:w-64"
+            className="lg:w-48 md:w-64"
             alt=""
           />
           <h1 className="ml-2 italic font-bold bg-gradient-to-r from-green-600 via-accent to-green-400 inline-block text-transparent bg-clip-text">
@@ -341,7 +341,7 @@ const Navbar = () => {
                     data-tip={user.displayName}
                   >
                     <img
-                      className="w-14 rounded-full p-1 bg-accent"
+                      className="w-12 rounded-full p-1 bg-accent"
                       src={user.photoURL}
                       alt="User"
                     />
