@@ -33,7 +33,7 @@ const PaymentSuccess = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg2})` }}
-      className="bg-cover bg-no-repeat bg-center flex h-screen flex-col bg-yellow-400 items-center justify-center space-y-6 px-4 sm:flex-row sm:space-x-6 sm:space-y-0"
+      className="relative bg-cover bg-no-repeat bg-center flex h-screen flex-col bg-yellow-400 items-center justify-center space-y-6 px-4 sm:flex-row sm:space-x-6 sm:space-y-0"
     >
       <div className="w-full max-w-sm overflow-hidden bg-gradient-to-tr from-[#A12350] via-[#60277B] to-[#362298] shadow-2xl rounded-md duration-300 hover:scale-105 hover:shadow-xl font-publicSans text-slate-300">
         <svg
