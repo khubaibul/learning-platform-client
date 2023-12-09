@@ -74,6 +74,10 @@ const CheckOut = () => {
                 required
                 className="input rounded-none input-primary w-full focus:border-0 border-none text-black font-semibold"
               />
+              <span className="text-xs flex flex-row justify-center items-center pt-1">
+                Please use mobile banking in next checkout page. <br /> It's
+                just for test purpose. Don't worry. It won't take your money 😆
+              </span>
             </div>
             <button className="group relative font-semibold font-montserrat h-10 w-48 mt-4 overflow-hidden bg-white shadow cursor-pointer">
               <div className="absolute inset-0 w-3 bg-accent transition-all duration-[500ms] ease-out group-hover:w-full"></div>
