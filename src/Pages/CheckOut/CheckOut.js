@@ -76,7 +76,7 @@ const CheckOut = () => {
               />
               <span className="text-xs flex flex-row justify-center items-center pt-1">
                 Please use mobile banking in next checkout page. <br /> It's
-                just for test purpose. Don't worry. It won't take your money 😆
+                just for test purpose. Don't worry. It won't take your money ✅
               </span>
             </div>
             <button className="group relative font-semibold font-montserrat h-10 w-48 mt-4 overflow-hidden bg-white shadow cursor-pointer">
