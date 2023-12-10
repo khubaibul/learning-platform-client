@@ -11,19 +11,22 @@ const CheckOut = () => {
   const { _id, course_price, courseTitle } = useParams();
   const { user } = useContext(AuthContext);
 
+  // console.log(user?.email);
+
   const handlePay = (e) => {
     e.preventDefault();
     const phone = e.target.phone.value;
+    const email = e.target.email.value;
     // toast.success("Your Order Is Placed Successfully...")
     const paymentData = {
       total_amount: course_price,
       currency: "BDT",
       product_name: courseTitle,
       cus_name: user.displayName,
-      cus_email: user.email,
+      cus_email: user.email || email,
       cus_phone: phone,
     };
-
+    console.log(paymentData);
     fetch("https://cse-from-home-server.vercel.app/checkout", {
       method: "POST",
       headers: {
@@ -74,6 +77,15 @@ const CheckOut = () => {
                 required
                 className="input rounded-none input-primary w-full focus:border-0 border-none text-black font-semibold"
               />
+              {user?.email === null && (
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                  className="input rounded-none input-primary w-full focus:border-0 border-none text-black font-semibold"
+                />
+              )}
               <span className="text-xs flex flex-row justify-center items-center pt-1">
                 Please use mobile banking in next checkout page. <br /> It's
                 just for test purpose. Don't worry. It won't take your money ✅
